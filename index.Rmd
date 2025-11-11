@@ -7,14 +7,19 @@ site: bookdown::bookdown_site
 
 
 # Introduction
-##Fecilitators
-Dr.V.Mallika
-Associate Professor and Dean
-School of Commerce
-PSG College of Arts & Science
+## Fecilitators
+_Dr.V.Mallika_  
+
+Associate Professor and Dean  
+
+School of Commerce  
+
+PSG College of Arts & Science  
 
 &
 
-Dr. M. Rajakrishnan
-Assistant Professor in Commerce CA
+Dr. M. Rajakrishnan  
+
+Assistant Professor in Commerce CA  
+
 PSG College of Arts & Science
