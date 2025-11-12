@@ -1,2 +1,33 @@
-# Gateway to Tally
+# Fundamentals: Company Creation
+
+This chapter explains the basic steps for creating and maintaining a company in **Tally Prime**, including company details, statutory information (GST, TDS, TCS), and account management.
+
+---
+
+## 1. Creating a Company
+
+### Steps
+
+1. Open **Tally Prime**.
+2. From the **Gateway of Tally**, select **Create Company**.
+3. Enter the following details carefully:
+
+| Field | Description |
+|--------|--------------|
+| **Directory** | The folder path where company data will be stored. |
+| **Name** | Enter the legal name of the company (e.g., *ABC Traders Pvt. Ltd.*). |
+| **Mailing Name** | This can be the same as the company name or a trade name. |
+| **Address** | Enter the full postal address. |
+| **Country** and **State** | Choose the correct location for GST and statutory compliance. |
+| **Pincode** | Optional but recommended. |
+| **Telephone No. / Mobile / Email / Website** | Contact information for invoices and reports. |
+
+### Example
+```text
+Name: RK Enterprises  
+Mailing Name: RK Enterprises  
+Address: No. 12, Main Road, Chennai – 600001  
+Country: India  
+State: Tamil Nadu  
+Email: info@rkenterprises.in
 
