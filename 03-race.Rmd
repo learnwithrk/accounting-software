@@ -25,7 +25,7 @@ When prompted, enter **GST details**:
 
 ---
 
-## 3. Currency Symbol Setup
+## Currency Symbol Setup
 
 Tally automatically assigns the **₹ (Rupee symbol)** for Indian companies.
 
@@ -37,7 +37,7 @@ To change or view the currency symbol:
 
 ---
 
-## 4. Maintaining Accounts
+## Maintaining Accounts
 
 In the **Company Creation** screen:
 
@@ -48,7 +48,7 @@ Select the appropriate option based on business needs.
 
 ---
 
-## 5. Selection, Closure, and Alteration of Company
+## Selection, Closure, and Alteration of Company
 
 ### (a) Selecting a Company
 
@@ -72,7 +72,7 @@ Select the appropriate option based on business needs.
 
 ---
 
-## 6. Backup and Security (Recommended)
+## Backup and Security (Recommended)
 
 - **Backup:** Go to **Alt + F3 → Backup**, choose the destination drive, and confirm.  
 - **Restore:** Use **Alt + F3 → Restore** when required.  

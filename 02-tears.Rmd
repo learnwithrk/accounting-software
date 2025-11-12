@@ -4,7 +4,7 @@ This chapter explains the basic steps for creating and maintaining a company in 
 
 ---
 
-## 1. Creating a Company
+## Creating a Company
 
 ### Steps
 
@@ -23,11 +23,14 @@ This chapter explains the basic steps for creating and maintaining a company in 
 | **Telephone No. / Mobile / Email / Website** | Contact information for invoices and reports. |
 
 ### Example
-```text
 Name: RK Enterprises  
 Mailing Name: RK Enterprises  
 Address: No. 12, Main Road, Chennai – 600001  
 Country: India  
 State: Tamil Nadu  
 Email: info@rkenterprises.in
+
+![Company Creation – Step 1](path/to/image1.png){width=70%}  
+*Figure: Company Creation screen in TallyPrime – entering name, address, mailing name, books-beginning date, currency symbol.*  
+
 
