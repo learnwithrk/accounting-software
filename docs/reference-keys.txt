@@ -9,9 +9,9 @@ enable-statutory-taxation
 currency-symbol-setup
 maintaining-accounts
 selection-closure-and-alteration-of-company
-a-selecting-a-company
-b-altering-company-information
-c-closing-a-company
+selecting-a-company
+altering-company-information
+closing-a-company
 backup-and-security-recommended
 summary
 accounting-groups-and-ledgers-in-r
