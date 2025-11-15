@@ -15,6 +15,7 @@ closing-a-company
 backup-and-security-recommended
 summary
 chart-of-accounts-groups-ledgers
+this-chapter-explains-the-structure-of-the-chart-of-accounts-in-tally-prime-and-gives-step-by-step-procedures-to-create-primary-groups-sub-groups-and-ledgers-single-and-bulk.
 overview-concepts
 typical-group-hierarchy-example
 creating-a-primary-group-step-by-step
