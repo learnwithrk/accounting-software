@@ -1,6 +1,7 @@
 # Chart of Accounts: Groups & Ledgers
 
 This chapter explains the structure of the **Chart of Accounts** in Tally Prime, and gives step-by-step procedures to create **Primary Groups**, **Sub-Groups**, and **Ledgers** (single and bulk). 
+
 ---
 
 ## Overview — Concepts
@@ -93,8 +94,7 @@ Follow the *same* steps as Primary Group creation, but choose a different **Unde
 
 ## Deletion of Ledgers and Groups
 
-⚠️ **Warning:** Deleting accounts with transactions can cause data issues.  
-Use *Alter → Set to Inactive* where possible, or take a backup first.
+⚠️ **Warning:** Deleting accounts with transactions can cause data issues. Use *Alter → Set to Inactive* where possible, or take a backup first.
 
 ### To Delete a Ledger
 
