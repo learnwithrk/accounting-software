@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>3 Chart of Accounts: Groups &amp; Ledgers | ACCOUNTING SOFTWARE</title>
-  <meta name="description" content="3 Chart of Accounts: Groups &amp; Ledgers | ACCOUNTING SOFTWARE" />
+  <title>5 Statement of Accounts | ACCOUNTING SOFTWARE</title>
+  <meta name="description" content="5 Statement of Accounts | ACCOUNTING SOFTWARE" />
   <meta name="generator" content="bookdown 0.45 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="3 Chart of Accounts: Groups &amp; Ledgers | ACCOUNTING SOFTWARE" />
+  <meta property="og:title" content="5 Statement of Accounts | ACCOUNTING SOFTWARE" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="3 Chart of Accounts: Groups &amp; Ledgers | ACCOUNTING SOFTWARE" />
+  <meta name="twitter:title" content="5 Statement of Accounts | ACCOUNTING SOFTWARE" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="fundamentals-company-creation.html"/>
-<link rel="next" href="accounting-vouchers-types.html"/>
+<link rel="prev" href="accounting-vouchers-types.html"/>
+
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -251,208 +251,474 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="chart-of-accounts-groups-ledgers" class="section level1 hasAnchor" number="3">
-<h1><span class="header-section-number">3</span> Chart of Accounts: Groups &amp; Ledgers<a href="chart-of-accounts-groups-ledgers.html#chart-of-accounts-groups-ledgers" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>This chapter explains the structure of the <strong>Chart of Accounts</strong> in Tally Prime, and gives step-by-step procedures to create <strong>Primary Groups</strong>, <strong>Sub-Groups</strong>, and <strong>Ledgers</strong> (single and bulk).</p>
+<div id="statement-of-accounts" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">5</span> Statement of Accounts<a href="statement-of-accounts.html#statement-of-accounts" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This chapter explains various statement of accounts in Tally Prime.</p>
 <hr />
-<div id="overview-concepts" class="section level2 hasAnchor" number="3.1">
-<h2><span class="header-section-number">3.1</span> Overview — Concepts<a href="chart-of-accounts-groups-ledgers.html#overview-concepts" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="balance-sheet" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Balance Sheet<a href="statement-of-accounts.html#balance-sheet" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="how-to-view-the-balance-sheet" class="section level3 hasAnchor" number="5.1.1">
+<h3><span class="header-section-number">5.1.1</span> How to View the Balance Sheet?<a href="statement-of-accounts.html#how-to-view-the-balance-sheet" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li><strong>Group of Accounts</strong>: A way to classify ledgers. Groups can be <strong>Primary (root)</strong> groups or <strong>Sub-groups</strong>.</li>
-<li><strong>Primary Group</strong>: e.g., <code>Capital Account</code>, <code>Current Assets</code>, <code>Current Liabilities</code>, <code>Direct Expenses</code>.</li>
-<li><strong>Sub-Group</strong>: Group under a primary group, e.g., <code>Sundry Creditors</code> under <code>Current Liabilities</code>.</li>
-<li><strong>Ledger</strong>: Individual account (e.g., <code>Cash</code>, <code>Bank of India</code>, <code>Rent Expense</code>) that belongs to a group.</li>
+<li>Open Tally Prime.<br />
+</li>
+<li>From <strong>Gateway of Tally</strong>, go to:<br />
+<code>Reports → Balance Sheet</code><br />
+</li>
+<li>Tally displays:
+<ul>
+<li>Sources of Funds (Capital, Loans, Liabilities)<br />
+</li>
+<li>Application of Funds (Fixed Assets, Current Assets, Investments)</li>
+</ul></li>
 </ul>
-<hr />
 </div>
-<div id="typical-group-hierarchy-example" class="section level2 hasAnchor" number="3.2">
-<h2><span class="header-section-number">3.2</span> Typical Group hierarchy (example)<a href="chart-of-accounts-groups-ledgers.html#typical-group-hierarchy-example" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="adjust-period" class="section level3 hasAnchor" number="5.1.2">
+<h3><span class="header-section-number">5.1.2</span> Adjust Period<a href="statement-of-accounts.html#adjust-period" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Press <code>F2</code>: Period → Set desired dates (e.g., 01-04-2024 to 31-03-2025).</li>
+</ul>
+</div>
+<div id="example-8" class="section level3 hasAnchor" number="5.1.3">
+<h3><span class="header-section-number">5.1.3</span> Example<a href="statement-of-accounts.html#example-8" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>If the company has:</p>
 <table>
 <thead>
 <tr class="header">
-<th>Level</th>
-<th>Example</th>
+<th>Account</th>
+<th>Amount (₹)</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Primary Group</td>
-<td>Current Assets</td>
+<td>Capital</td>
+<td>5,00,000</td>
 </tr>
 <tr class="even">
-<td>Sub-Group</td>
-<td>Bank Accounts</td>
+<td>Cash in Hand</td>
+<td>60,000</td>
 </tr>
 <tr class="odd">
-<td>Ledger</td>
-<td>Bank of India - Current A/c</td>
+<td>Stock-in-Hand</td>
+<td>2,50,000</td>
+</tr>
+<tr class="even">
+<td>Sundry Creditors</td>
+<td>1,20,000</td>
+</tr>
+</tbody>
+</table>
+<p>The Balance Sheet will show:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Amount (₹)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Capital &amp; Liabilities</td>
+<td>6,20,000</td>
+</tr>
+<tr class="even">
+<td>Assets</td>
+<td>6,20,000</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<div id="creating-a-primary-group-step-by-step" class="section level3 hasAnchor" number="3.2.1">
-<h3><span class="header-section-number">3.2.1</span> Creating a Primary Group (Step-by-step)<a href="chart-of-accounts-groups-ledgers.html#creating-a-primary-group-step-by-step" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ol style="list-style-type: decimal">
-<li>Open <strong>Tally Prime</strong> and go to <strong>Gateway of Tally</strong>.<br />
-</li>
-<li>Select <strong>Accounts Info.</strong> → <strong>Groups</strong> → <strong>Create</strong>.<br />
-</li>
-<li>In <strong>Name</strong>, type the group name, e.g., <code>Bank Accounts</code>.<br />
-</li>
-<li>In <strong>Under</strong>, choose the parent group (for a primary top-level choose a suitable primary group, e.g., <code>Current Assets</code>).<br />
-</li>
-<li>If required, set <strong>Maintain balances bill-by-bill</strong> or other group-specific features.<br />
-</li>
-<li>Press <strong>Ctrl + A</strong> to accept and save.</li>
-</ol>
-<p><strong>Example</strong></p>
+</div>
+</div>
+<div id="profit-loss-account-pl" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> Profit &amp; Loss Account (P&amp;L)<a href="statement-of-accounts.html#profit-loss-account-pl" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="view-pl-statement" class="section level3 hasAnchor" number="5.2.1">
+<h3><span class="header-section-number">5.2.1</span> View P&amp;L Statement<a href="statement-of-accounts.html#view-pl-statement" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
-<li>Name: <code>Bank Accounts</code><br />
+<li>Go to: <code>Gateway of Tally → Profit &amp; Loss A/c</code><br />
 </li>
-<li>Under: <code>Current Assets</code><br />
+<li>P&amp;L shows:
+<ul>
+<li>Indirect Expenses / Direct Expenses<br />
 </li>
-<li>Accept → Group saved.</li>
+<li>Sales<br />
+</li>
+<li>Indirect Income</li>
+</ul></li>
+</ul>
+</div>
+<div id="example-9" class="section level3 hasAnchor" number="5.2.2">
+<h3><span class="header-section-number">5.2.2</span> Example<a href="statement-of-accounts.html#example-9" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Entries done:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Entry</th>
+<th>Amount (₹)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sales</td>
+<td>2,50,000</td>
+</tr>
+<tr class="even">
+<td>Purchase</td>
+<td>1,50,000</td>
+</tr>
+<tr class="odd">
+<td>Rent Expense</td>
+<td>30,000</td>
+</tr>
+</tbody>
+</table>
+<p>P&amp;L will show:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Result</th>
+<th>Amount (₹)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Gross Profit</td>
+<td>1,00,000</td>
+</tr>
+<tr class="even">
+<td>Net Profit</td>
+<td>70,000</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</div>
+</div>
+<div id="trial-balance" class="section level2 hasAnchor" number="5.3">
+<h2><span class="header-section-number">5.3</span> Trial Balance<a href="statement-of-accounts.html#trial-balance" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="how-to-view" class="section level3 hasAnchor" number="5.3.1">
+<h3><span class="header-section-number">5.3.1</span> How to View<a href="statement-of-accounts.html#how-to-view" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Go to <code>Gateway of Tally → Display More Reports → Trial Balance</code>.<br />
+</li>
+<li>Displays all ledger balances.<br />
+</li>
+<li>Debit = Credit for accuracy.</li>
+</ul>
+</div>
+<div id="example-10" class="section level3 hasAnchor" number="5.3.2">
+<h3><span class="header-section-number">5.3.2</span> Example<a href="statement-of-accounts.html#example-10" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<table>
+<thead>
+<tr class="header">
+<th>Ledger</th>
+<th>Dr (₹)</th>
+<th>Cr (₹)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cash</td>
+<td>60,000</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>Sales</td>
+<td>—</td>
+<td>2,50,000</td>
+</tr>
+<tr class="odd">
+<td>Capital</td>
+<td>—</td>
+<td>5,00,000</td>
+</tr>
+</tbody>
+</table>
+<p>Total Dr = Total Cr → balanced.</p>
+<hr />
+</div>
+</div>
+<div id="sales-register" class="section level2 hasAnchor" number="5.4">
+<h2><span class="header-section-number">5.4</span> Sales Register<a href="statement-of-accounts.html#sales-register" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="steps-1" class="section level3 hasAnchor" number="5.4.1">
+<h3><span class="header-section-number">5.4.1</span> Steps<a href="statement-of-accounts.html#steps-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Go to <code>Display More Reports → Account Books → Sales Register</code>.<br />
+</li>
+<li>Select the period using <code>F2</code>.<br />
+</li>
+<li>Tally shows all Sales vouchers month-wise.</li>
+</ul>
+</div>
+<div id="example-11" class="section level3 hasAnchor" number="5.4.2">
+<h3><span class="header-section-number">5.4.2</span> Example<a href="statement-of-accounts.html#example-11" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A sale of ₹10,000 to customer ABC on 05-05-2025 will appear under May.</p>
+<hr />
+</div>
+</div>
+<div id="purchase-register" class="section level2 hasAnchor" number="5.5">
+<h2><span class="header-section-number">5.5</span> Purchase Register<a href="statement-of-accounts.html#purchase-register" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="steps-2" class="section level3 hasAnchor" number="5.5.1">
+<h3><span class="header-section-number">5.5.1</span> Steps<a href="statement-of-accounts.html#steps-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Go to <code>Display More Reports → Account Books → Purchase Register</code>.<br />
+</li>
+<li>Choose the date range.<br />
+</li>
+<li>Shows all purchase vouchers.</li>
+</ul>
+</div>
+<div id="example-12" class="section level3 hasAnchor" number="5.5.2">
+<h3><span class="header-section-number">5.5.2</span> Example<a href="statement-of-accounts.html#example-12" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Purchase from XYZ Suppliers amount ₹15,000 recorded on 10-05-2025 will appear in May.</p>
+<hr />
+</div>
+</div>
+<div id="cash-book" class="section level2 hasAnchor" number="5.6">
+<h2><span class="header-section-number">5.6</span> Cash Book<a href="statement-of-accounts.html#cash-book" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="steps-3" class="section level3 hasAnchor" number="5.6.1">
+<h3><span class="header-section-number">5.6.1</span> Steps<a href="statement-of-accounts.html#steps-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Go to <code>Display More Reports → Cash/Bank Books → Cash Book</code>.<br />
+</li>
+<li>Select the Cash ledger (e.g., Cash-in-Hand).</li>
+</ul>
+</div>
+<div id="example-13" class="section level3 hasAnchor" number="5.6.2">
+<h3><span class="header-section-number">5.6.2</span> Example<a href="statement-of-accounts.html#example-13" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Cash transactions:<br />
+- Receipt: ₹5,000<br />
+- Payment: ₹2,500</p>
+<p>Cash Book shows:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Description</th>
+<th>Amount (₹)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Opening</td>
+<td>25,000</td>
+</tr>
+<tr class="even">
+<td>Closing</td>
+<td>27,500</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</div>
+</div>
+<div id="bank-book" class="section level2 hasAnchor" number="5.7">
+<h2><span class="header-section-number">5.7</span> Bank Book<a href="statement-of-accounts.html#bank-book" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="steps-4" class="section level3 hasAnchor" number="5.7.1">
+<h3><span class="header-section-number">5.7.1</span> Steps<a href="statement-of-accounts.html#steps-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Go to <code>Display More Reports → Cash/Bank Books → Bank Book</code>.<br />
+</li>
+<li>Select bank ledger (e.g., HDFC Bank).</li>
+</ul>
+</div>
+<div id="example-14" class="section level3 hasAnchor" number="5.7.2">
+<h3><span class="header-section-number">5.7.2</span> Example<a href="statement-of-accounts.html#example-14" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Transactions:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Description</th>
+<th>Amount (₹)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cheque Deposit</td>
+<td>50,000</td>
+</tr>
+<tr class="even">
+<td>Bank Charges</td>
+<td>250</td>
+</tr>
+</tbody>
+</table>
+<p>Closing balance updates accordingly.</p>
+<hr />
+</div>
+</div>
+<div id="ledger-statement" class="section level2 hasAnchor" number="5.8">
+<h2><span class="header-section-number">5.8</span> Ledger Statement<a href="statement-of-accounts.html#ledger-statement" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="steps-5" class="section level3 hasAnchor" number="5.8.1">
+<h3><span class="header-section-number">5.8.1</span> Steps<a href="statement-of-accounts.html#steps-5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Go to <code>Gateway of Tally → Display More Reports → Account Books → Ledger</code>.<br />
+</li>
+<li>Choose any ledger (example: Rent Expense).</li>
+</ul>
+</div>
+<div id="example-15" class="section level3 hasAnchor" number="5.8.2">
+<h3><span class="header-section-number">5.8.2</span> Example<a href="statement-of-accounts.html#example-15" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Rent Ledger:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Date</th>
+<th>Debit (₹)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>01-05-2025</td>
+<td>10,000</td>
+</tr>
+<tr class="even">
+<td>01-06-2025</td>
+<td>10,000</td>
+</tr>
+</tbody>
+</table>
+<p>Closing balance = ₹20,000 (Dr).</p>
+<hr />
+</div>
+</div>
+<div id="sales-vs-purchase-register-example-summary" class="section level2 hasAnchor" number="5.9">
+<h2><span class="header-section-number">5.9</span> Sales vs Purchase Register Example Summary<a href="statement-of-accounts.html#sales-vs-purchase-register-example-summary" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<table>
+<thead>
+<tr class="header">
+<th>Statement</th>
+<th>What It Shows</th>
+<th>Shortcut Path</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sales Register</td>
+<td>All sales invoices</td>
+<td>Display → Account Books</td>
+</tr>
+<tr class="even">
+<td>Purchase Register</td>
+<td>All purchase vouchers</td>
+<td>Display → Account Books</td>
+</tr>
+<tr class="odd">
+<td>Cash Book</td>
+<td>Cash receipts/payments</td>
+<td>Cash/Bank Books</td>
+</tr>
+<tr class="even">
+<td>Bank Book</td>
+<td>Bank receipts/payments</td>
+<td>Cash/Bank Books</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</div>
+<div id="common-buttons-shortcuts" class="section level2 hasAnchor" number="5.10">
+<h2><span class="header-section-number">5.10</span> Common Buttons &amp; Shortcuts<a href="statement-of-accounts.html#common-buttons-shortcuts" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<table>
+<thead>
+<tr class="header">
+<th>Action</th>
+<th>Shortcut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Change Period</td>
+<td>F2</td>
+</tr>
+<tr class="even">
+<td>Export Report</td>
+<td>Alt + E</td>
+</tr>
+<tr class="odd">
+<td>Print Report</td>
+<td>Ctrl + P</td>
+</tr>
+<tr class="even">
+<td>Configure Report</td>
+<td>F12</td>
+</tr>
+<tr class="odd">
+<td>Detailed/Condensed View</td>
+<td>Alt + F1</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</div>
+<div id="practical-example-complete-flow" class="section level2 hasAnchor" number="5.11">
+<h2><span class="header-section-number">5.11</span> Practical Example — Complete Flow<a href="statement-of-accounts.html#practical-example-complete-flow" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="transactions-entered" class="section level3 hasAnchor" number="5.11.1">
+<h3><span class="header-section-number">5.11.1</span> Transactions Entered<a href="statement-of-accounts.html#transactions-entered" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<table>
+<thead>
+<tr class="header">
+<th>Transaction</th>
+<th>Amount (₹)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sales</td>
+<td>20,000</td>
+</tr>
+<tr class="even">
+<td>Purchase</td>
+<td>12,000</td>
+</tr>
+<tr class="odd">
+<td>Cash Received</td>
+<td>20,000</td>
+</tr>
+<tr class="even">
+<td>Rent Expense</td>
+<td>5,000</td>
+</tr>
+<tr class="odd">
+<td>Bank Withdrawal</td>
+<td>10,000</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="result-in-reports" class="section level3 hasAnchor" number="5.11.2">
+<h3><span class="header-section-number">5.11.2</span> Result in Reports<a href="statement-of-accounts.html#result-in-reports" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Sales Register → Shows ₹20,000<br />
+</li>
+<li>Purchase Register → Shows ₹12,000<br />
+</li>
+<li>Cash Book → Opening +₹20,000 minus withdrawals<br />
+</li>
+<li>Bank Book → Opening minus ₹10,000<br />
+</li>
+<li>P&amp;L Account → Net Profit = Sales − Purchase − Rent<br />
+</li>
+<li>Balance Sheet → Asset/Liability updated</li>
 </ul>
 <hr />
 </div>
-<div id="creating-a-sub-group" class="section level3 hasAnchor" number="3.2.2">
-<h3><span class="header-section-number">3.2.2</span> Creating a Sub-Group<a href="chart-of-accounts-groups-ledgers.html#creating-a-sub-group" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Follow the <em>same</em> steps as Primary Group creation, but choose a different <strong>Under</strong> value.</p>
-<p><strong>Example</strong></p>
+</div>
+<div id="summary-for-students" class="section level2 hasAnchor" number="5.12">
+<h2><span class="header-section-number">5.12</span> Summary for Students<a href="statement-of-accounts.html#summary-for-students" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
-<li>Name: <code>Cash at Branch</code><br />
+<li><strong>Balance Sheet</strong> → Financial position<br />
 </li>
-<li>Under: <code>Bank Accounts</code> (the sub-group’s parent)<br />
+<li><strong>P&amp;L Account</strong> → Profitability<br />
 </li>
-<li>Accept → Sub-group saved.</li>
+<li><strong>Trial Balance</strong> → Accuracy check<br />
+</li>
+<li><strong>Sales/Purchase Register</strong> → Transaction details<br />
+</li>
+<li><strong>Cash/Bank Book</strong> → Day-to-day cash/bank activities<br />
+</li>
+<li><strong>Ledgers</strong> → Individual account performance</li>
 </ul>
-<hr />
-</div>
-<div id="creating-a-single-ledger-step-by-step" class="section level3 hasAnchor" number="3.2.3">
-<h3><span class="header-section-number">3.2.3</span> Creating a Single Ledger (Step-by-step)<a href="chart-of-accounts-groups-ledgers.html#creating-a-single-ledger-step-by-step" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ol style="list-style-type: decimal">
-<li><strong>Gateway of Tally</strong> → <strong>Accounts Info.</strong> → <strong>Ledgers</strong> → <strong>Create</strong>.<br />
-</li>
-<li>In <strong>Name</strong>, enter ledger name (e.g., <code>Cash in Hand - Chennai</code>).<br />
-</li>
-<li><strong>Under</strong> → choose the appropriate Group (e.g., <code>Cash-in-Hand</code> or <code>Bank Accounts</code>).<br />
-</li>
-<li>Enter <strong>Opening Balance</strong> if required (e.g., <code>Dr 10,000</code>).<br />
-</li>
-<li>Provide other fields as needed:
-<ul>
-<li><strong>Inventory values are affected</strong>: Yes/No<br />
-</li>
-<li><strong>Mailing details</strong> (address, GSTIN) — if required for statutory ledgers<br />
-</li>
-</ul></li>
-<li>Press <strong>Ctrl + A</strong> to save.</li>
-</ol>
-<p><strong>Example</strong></p>
-<ul>
-<li>Name: <code>Cash in Hand - Chennai</code><br />
-</li>
-<li>Under: <code>Cash-in-Hand</code> (Primary Group: <code>Current Assets</code>)<br />
-</li>
-<li>Opening Balance: <code>Dr 12,000</code><br />
-</li>
-<li>Save.</li>
-</ul>
-<hr />
-</div>
-</div>
-<div id="alteration-modify-of-groups-and-ledgers" class="section level2 hasAnchor" number="3.3">
-<h2><span class="header-section-number">3.3</span> Alteration (Modify) of Groups and Ledgers<a href="chart-of-accounts-groups-ledgers.html#alteration-modify-of-groups-and-ledgers" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="to-alter-a-group" class="section level3 hasAnchor" number="3.3.1">
-<h3><span class="header-section-number">3.3.1</span> To Alter a Group<a href="chart-of-accounts-groups-ledgers.html#to-alter-a-group" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ol style="list-style-type: decimal">
-<li>Gateway of Tally → Accounts Info. → ’Groups → Alter`<br />
-</li>
-<li>Choose the group to alter.<br />
-</li>
-<li>Modify fields (Name / Under / other options).<br />
-</li>
-<li>Press <code>Ctrl + A</code> to save.</li>
-</ol>
-</div>
-<div id="to-alter-a-ledger" class="section level3 hasAnchor" number="3.3.2">
-<h3><span class="header-section-number">3.3.2</span> To Alter a Ledger<a href="chart-of-accounts-groups-ledgers.html#to-alter-a-ledger" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ol style="list-style-type: decimal">
-<li>Gateway of Tally → Accounts Info. → ’Ledgers → Alter`<br />
-</li>
-<li>Select the ledger.<br />
-</li>
-<li>Change details (e.g., Group or Opening Balance).<br />
-</li>
-<li>Press <code>Ctrl + A</code> to save.</li>
-</ol>
-<p><strong>Note:</strong> Changing a ledger’s parent group affects reports. Always back up before major changes.</p>
-<hr />
-</div>
-</div>
-<div id="deletion-of-ledgers-and-groups" class="section level2 hasAnchor" number="3.4">
-<h2><span class="header-section-number">3.4</span> Deletion of Ledgers and Groups<a href="chart-of-accounts-groups-ledgers.html#deletion-of-ledgers-and-groups" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>⚠️ <strong>Warning:</strong> Deleting accounts with transactions can cause data issues. Use <em>Alter → Set to Inactive</em> where possible, or take a backup first.</p>
-<div id="to-delete-a-ledger" class="section level3 hasAnchor" number="3.4.1">
-<h3><span class="header-section-number">3.4.1</span> To Delete a Ledger<a href="chart-of-accounts-groups-ledgers.html#to-delete-a-ledger" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ol style="list-style-type: decimal">
-<li>Gateway of Tally → Accounts Info. → ’Ledgers → Alter`<br />
-</li>
-<li>Select the ledger.<br />
-</li>
-<li>If allowed, press <code>Alt + D</code> (or choose Delete) and confirm.<br />
-</li>
-<li>If transactions exist, Tally will block deletion.</li>
-</ol>
-</div>
-<div id="to-delete-a-group" class="section level3 hasAnchor" number="3.4.2">
-<h3><span class="header-section-number">3.4.2</span> To Delete a Group<a href="chart-of-accounts-groups-ledgers.html#to-delete-a-group" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ol style="list-style-type: decimal">
-<li>Gateway of Tally → Accounts Info. → ’Groups → Alter`<br />
-</li>
-<li>Select the group.<br />
-</li>
-<li>Press <code>Alt + D</code> to delete.<br />
-</li>
-<li>Ensure all ledgers or child groups inside it are deleted or reassigned first.</li>
-</ol>
-<hr />
-</div>
-</div>
-<div id="examples-typical-ledgers-and-groups" class="section level2 hasAnchor" number="3.5">
-<h2><span class="header-section-number">3.5</span> Examples: Typical Ledgers and Groups<a href="chart-of-accounts-groups-ledgers.html#examples-typical-ledgers-and-groups" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="example-chart-for-a-small-business" class="section level3 hasAnchor" number="3.5.1">
-<h3><span class="header-section-number">3.5.1</span> Example Chart for a Small Business<a href="chart-of-accounts-groups-ledgers.html#example-chart-for-a-small-business" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ul>
-<li><strong>Current Assets</strong>
-<ul>
-<li><em>Cash-in-Hand</em>
-<ul>
-<li>Cash in Hand - Chennai (Ledger)</li>
-<li>Petty Cash (Ledger)</li>
-</ul></li>
-<li><em>Bank Accounts</em>
-<ul>
-<li>Bank of India - Current (Ledger)</li>
-</ul></li>
-</ul></li>
-<li><strong>Current Liabilities</strong>
-<ul>
-<li>Sundry Creditors (Ledger)</li>
-</ul></li>
-<li><strong>Indirect Expenses</strong>
-<ul>
-<li>Rent Expense (Ledger)</li>
-<li>Travel Expense (Ledger)</li>
-</ul></li>
-<li><strong>Sales Accounts</strong>
-<ul>
-<li>Sales (Ledger)</li>
-</ul></li>
-</ul>
-<hr />
 
-</div>
 </div>
 </div>
             </section>
@@ -460,8 +726,8 @@
           </div>
         </div>
       </div>
-<a href="fundamentals-company-creation.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="accounting-vouchers-types.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="accounting-vouchers-types.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -492,7 +758,7 @@ gitbook.start({
     "size": 2
   },
   "edit": {
-    "link": "https://github.com/learnwithrk/Accounting-Software/edit/main/03-ch.Rmd",
+    "link": "https://github.com/learnwithrk/Accounting-Software/edit/main/05-ch.Rmd",
     "text": "Edit"
   },
   "history": {
@@ -500,7 +766,7 @@ gitbook.start({
     "text": null
   },
   "view": {
-    "link": "https://github.com/learnwithrk/Accounting-Software/blob/main/03-ch.Rmd",
+    "link": "https://github.com/learnwithrk/Accounting-Software/blob/main/05-ch.Rmd",
     "text": null
   },
   "download": null,
