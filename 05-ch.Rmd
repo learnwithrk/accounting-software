@@ -224,7 +224,7 @@ Closing balance = ₹20,000 (Dr).
 
 ---
 
-## Summary for Students
+## Summary
 
 - **Balance Sheet** → Financial position  
 - **P&L Account** → Profitability  

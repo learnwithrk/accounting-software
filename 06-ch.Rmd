@@ -1,0 +1,225 @@
+# Inventory Accounting - Prerequisites
+
+- Open the correct company and financial year in Tally (`Alt + F1` to select company).
+- Ensure Inventory Features are enabled:  
+  `Gateway of Tally → F11: Features → Inventory Features → Enable Inventory → Set required options (enable Batch/Expiry if needed).`
+- Backup your company before bulk changes (`Alt + F3 → Backup`).
+
+---
+
+## Units of Measure (UOM)
+
+Units define how quantities are measured (Nos, Kg, Meter, Litre, Pack, Box).
+
+**When to use:**  
+Use base UOM (e.g., Nos) for countable items; use alternate UOMs (e.g., Box = 12 Nos) for packaging/conversion.
+
+**Steps to create a UOM:**
+
+1. `Gateway of Tally → Accounts Info / Inventory Info → Units of Measure → Create`  
+   *(may appear as: Gateway → Inventory Info → Units of Measure → Create)*
+2. Unit Name: Enter e.g., Nos.
+3. Number of Units: Leave blank for simple unit.
+4. Choose “Unit Type”:
+   - Simple — Nos, Kg, etc.
+   - Compound — e.g., Box where 1 Box = 12 Nos.
+5. For compound UOM, specify conversion (e.g., 1 Box = 12 Nos).
+6. Press `Ctrl + A` to save.
+
+**Examples:**  
+- Nos — simple unit for countable items  
+- Kg — weight unit  
+- Box — compound unit (1 Box = 12 Nos)
+
+> 💡 **Tip:** 
+Decide base units early. Changing UOM after transactions is messy.
+
+---
+
+## Stock Groups (Primary & Multiple)
+
+Stock Groups classify stock items (Raw Materials, Finished Goods, Packing Materials).
+
+**Structure example:**  
+- Primary: Raw Materials, Finished Goods, Packaging  
+- Sub-group: Under Raw Materials → Chemicals, Components
+
+**Steps to create a Stock Group:**
+
+1. `Gateway of Tally → Inventory Info → Stock Groups → Create`
+2. Name: Enter group name (e.g., Raw Materials)
+3. Under: Choose parent (Primary for top-level)
+4. Set "Is the group a Primary group?" as required
+5. Save (`Ctrl + A`)
+
+**Creating multiple stock groups:**  
+- Create one by one via Create screen  
+- For many, prepare an import file (XML/TSV/CSV) with Name and Parent fields
+
+**Example:**  
+- Finished Goods under Primary  
+- Electronics under Finished Goods
+
+> 💡 **Tip:**
+Keep naming consistent and avoid long names for ease of voucher selection.
+
+---
+
+## Stock Categories (Multiple)
+
+Stock Categories group items across attributes (Colour, Size, Brand).
+
+**When to use:**  
+Manage variants (e.g., size/color) without separate items; for reporting/filtering.
+
+**Steps to create Stock Category:**
+
+1. `Gateway of Tally → Inventory Info → Stock Categories → Create`  
+   - Name: e.g., Colour, Size, Brand
+   - Save (`Ctrl + A`)
+
+**Create Category Values:**  
+1. After creating category (e.g., Colour), create values (Red, Blue, Green):  
+   `Inventory Info → Stock Categories → Alter (choose Colour)` and define values
+
+**Multiple categories usage:**  
+Apply categories per item (e.g., T-Shirt → Size: M, Colour: Blue, Brand: X).
+
+> 💡 **Tip:** 
+If stock balances needed for each variant, create separate stock items or use Godowns/Batches.
+
+---
+
+## Creating Stock Items (Single & Multiple)
+
+Stock Items represent inventory transacted.
+
+**Minimum required fields:**  
+- Name (unique)  
+- Alias (optional)  
+- Under (Stock Group)  
+- Units (UOM)  
+- Opening Balance (Qty and Value)  
+- Rate/Price (optional)
+
+**Single stock item — steps:**
+
+1. `Gateway of Tally → Inventory Info → Stock Items → Create`
+2. Name: e.g., Widget A - Blue - M
+3. Alias: Optional short code
+4. Under: Choose stock group
+5. Unit: Nos, Kg, etc.
+6. Opening Balance: Enter qty and value (100 Nos @ ₹50 = ₹5000)
+7. Assign category values (if needed)
+8. Enter batch details if using Batch/Expiry
+9. Save (`Ctrl + A`)
+
+**Bulk creation (multiple stock items):**
+
+- Option A — Tally Import (XML/TSV/CSV):  
+  Prepare CSV with columns: Name, Parent, UOM, OpeningQty, OpeningValue, Rate, Category1, Category2  
+  In Tally: `Gateway → Import of Data → Masters → select file and import; map columns.`
+
+- Option B — Excel → Save as XML / TSV:  
+  Check Tally help for template.
+
+**Example entries:**  
+- Bag Leather Small (Finished Goods, Nos, 50, ₹12,500, ₹250)  
+- Flour (Raw Materials, Kg, 200, ₹10,000, ₹50)
+
+> 💡 **Tip:**
+Use clear naming (Product - Variant - Size or Categories).  
+Test import with 3–5 items before doing a full import.
+
+---
+
+## Using Stock Categories & Batches with Items
+
+You can associate category values and batch info with stock items for detailed inventory tracking.
+
+**Example:**  
+Paracetamol 500mg → Batch001 Expiry 12/2026.  
+View quantities per batch.
+
+---
+
+## Verifying Inventory After Creation
+
+- `Display → Inventory Books → Stock Summary` (stock balances by group and item)
+- `Display → Inventory Books → Stock Item` (ledger for opening/closing qty)
+- `Display → Item-wise Details / Batch-wise Details`  
+- Run Reports → Movement Analysis (stock issues/receipts pattern)
+
+---
+
+## Example Walkthrough (End-to-End)
+
+### Scenario
+
+You sell T-shirts in sizes S, M, L and colors Red, Blue.  
+You want to manage using Stock Groups, Units, Categories.
+
+### Steps
+
+1. Create UOM (Nos)
+2. Create Stock Groups: Finished Goods (Primary), Apparel (under Finished Goods)
+3. Create Stock Categories:  
+   - Size (S, M, L)  
+   - Colour (Red, Blue)
+4. Create Stock Items:  
+   - Option A: Single item + select categories  
+   - Option B: Separate item per variant ("T-Shirt - S - Red")  
+   - Enter opening qty/value for each (e.g., 50 Nos @ ₹200)
+5. Verify in Stock Summary and Item Ledgers
+
+---
+
+## Common Pitfalls & Troubleshooting
+
+- UOM mismatch: E.g., item created with Box, used as Nos without conversion; causes errors.
+- Wrong Stock Group: Items under wrong group distort reports; fix via Alter.
+- Import errors: Incorrect column names, encoding (use UTF-8), wrong parent names. Use exact names.
+- Batch/Expiry not enabled: Must enable before creating items.
+- Duplicate item names: Tally allows duplicates with different aliases—avoid for accuracy.
+
+---
+
+## Advanced: Godowns/Locations & Stock Transfer
+
+- Create Godowns via `Inventory Info → Godowns` (e.g., Main Warehouse, Shop1)
+- Use Stock Journal/Transfer Voucher to move stock between Godowns
+- Useful for multi-location tracking and reconciliation
+
+---
+
+## Reports to Check Inventory Health
+
+- Stock Summary — quantities & values by group
+- Movement Analysis / Receipts & Issues — item flow
+- Ageing Analysis (slow-moving items, if available)
+- Stock Transfer Register — inter-godown transfers
+
+---
+
+## Best Practices
+
+- Decide naming conventions before data entry
+- Use categories for variant management if supported; otherwise, create separate items per variant
+- Maintain consistent UOMs
+- Always backup before large imports or changes
+- Keep master data clean for accurate MIS
+- Run weekly stock summary and monthly reconciliation
+
+---
+
+## Quick Reference — Common Menu Paths & Shortcuts
+
+- **Inventory Features:** F11 → Inventory Features
+- **Create UOM:** Inventory Info → Units of Measure → Create
+- **Create Stock Group:** Inventory Info → Stock Groups → Create
+- **Create Stock Category:** Inventory Info → Stock Categories → Create
+- **Create Stock Item:** Inventory Info → Stock Items → Create
+- **Stock Summary:** Display → Inventory Books → Stock Summary
+- **Import Masters:** Gateway of Tally → Import Data → Masters
+
+---

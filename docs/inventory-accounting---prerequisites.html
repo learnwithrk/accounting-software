@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | ACCOUNTING SOFTWARE</title>
-  <meta name="description" content="Page not found | ACCOUNTING SOFTWARE" />
+  <title>6 Inventory Accounting - Prerequisites | ACCOUNTING SOFTWARE</title>
+  <meta name="description" content="6 Inventory Accounting - Prerequisites | ACCOUNTING SOFTWARE" />
   <meta name="generator" content="bookdown 0.45 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | ACCOUNTING SOFTWARE" />
+  <meta property="og:title" content="6 Inventory Accounting - Prerequisites | ACCOUNTING SOFTWARE" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | ACCOUNTING SOFTWARE" />
+  <meta name="twitter:title" content="6 Inventory Accounting - Prerequisites | ACCOUNTING SOFTWARE" />
   
   
   
@@ -30,7 +30,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
+<link rel="prev" href="statement-of-accounts.html"/>
 
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -270,18 +270,247 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="inventory-accounting---prerequisites" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">6</span> Inventory Accounting - Prerequisites<a href="inventory-accounting---prerequisites.html#inventory-accounting---prerequisites" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<ul>
+<li>Open the correct company and financial year in Tally (<code>Alt + F1</code> to select company).</li>
+<li>Ensure Inventory Features are enabled:<br />
+<code>Gateway of Tally → F11: Features → Inventory Features → Enable Inventory → Set required options (enable Batch/Expiry if needed).</code></li>
+<li>Backup your company before bulk changes (<code>Alt + F3 → Backup</code>).</li>
+</ul>
+<hr />
+<div id="units-of-measure-uom" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> Units of Measure (UOM)<a href="inventory-accounting---prerequisites.html#units-of-measure-uom" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Units define how quantities are measured (Nos, Kg, Meter, Litre, Pack, Box).</p>
+<p><strong>When to use:</strong><br />
+Use base UOM (e.g., Nos) for countable items; use alternate UOMs (e.g., Box = 12 Nos) for packaging/conversion.</p>
+<p><strong>Steps to create a UOM:</strong></p>
+<ol style="list-style-type: decimal">
+<li><code>Gateway of Tally → Accounts Info / Inventory Info → Units of Measure → Create</code><br />
+<em>(may appear as: Gateway → Inventory Info → Units of Measure → Create)</em></li>
+<li>Unit Name: Enter e.g., Nos.</li>
+<li>Number of Units: Leave blank for simple unit.</li>
+<li>Choose “Unit Type”:
+<ul>
+<li>Simple — Nos, Kg, etc.</li>
+<li>Compound — e.g., Box where 1 Box = 12 Nos.</li>
+</ul></li>
+<li>For compound UOM, specify conversion (e.g., 1 Box = 12 Nos).</li>
+<li>Press <code>Ctrl + A</code> to save.</li>
+</ol>
+<p><strong>Examples:</strong><br />
+- Nos — simple unit for countable items<br />
+- Kg — weight unit<br />
+- Box — compound unit (1 Box = 12 Nos)</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong>
+Decide base units early. Changing UOM after transactions is messy.</p>
+</blockquote>
+<hr />
+</div>
+<div id="stock-groups-primary-multiple" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> Stock Groups (Primary &amp; Multiple)<a href="inventory-accounting---prerequisites.html#stock-groups-primary-multiple" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Stock Groups classify stock items (Raw Materials, Finished Goods, Packing Materials).</p>
+<p><strong>Structure example:</strong><br />
+- Primary: Raw Materials, Finished Goods, Packaging<br />
+- Sub-group: Under Raw Materials → Chemicals, Components</p>
+<p><strong>Steps to create a Stock Group:</strong></p>
+<ol style="list-style-type: decimal">
+<li><code>Gateway of Tally → Inventory Info → Stock Groups → Create</code></li>
+<li>Name: Enter group name (e.g., Raw Materials)</li>
+<li>Under: Choose parent (Primary for top-level)</li>
+<li>Set “Is the group a Primary group?” as required</li>
+<li>Save (<code>Ctrl + A</code>)</li>
+</ol>
+<p><strong>Creating multiple stock groups:</strong><br />
+- Create one by one via Create screen<br />
+- For many, prepare an import file (XML/TSV/CSV) with Name and Parent fields</p>
+<p><strong>Example:</strong><br />
+- Finished Goods under Primary<br />
+- Electronics under Finished Goods</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong>
+Keep naming consistent and avoid long names for ease of voucher selection.</p>
+</blockquote>
+<hr />
+</div>
+<div id="stock-categories-multiple" class="section level2 hasAnchor" number="6.3">
+<h2><span class="header-section-number">6.3</span> Stock Categories (Multiple)<a href="inventory-accounting---prerequisites.html#stock-categories-multiple" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Stock Categories group items across attributes (Colour, Size, Brand).</p>
+<p><strong>When to use:</strong><br />
+Manage variants (e.g., size/color) without separate items; for reporting/filtering.</p>
+<p><strong>Steps to create Stock Category:</strong></p>
+<ol style="list-style-type: decimal">
+<li><code>Gateway of Tally → Inventory Info → Stock Categories → Create</code>
+<ul>
+<li>Name: e.g., Colour, Size, Brand</li>
+<li>Save (<code>Ctrl + A</code>)</li>
+</ul></li>
+</ol>
+<p><strong>Create Category Values:</strong><br />
+1. After creating category (e.g., Colour), create values (Red, Blue, Green):<br />
+<code>Inventory Info → Stock Categories → Alter (choose Colour)</code> and define values</p>
+<p><strong>Multiple categories usage:</strong><br />
+Apply categories per item (e.g., T-Shirt → Size: M, Colour: Blue, Brand: X).</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong>
+If stock balances needed for each variant, create separate stock items or use Godowns/Batches.</p>
+</blockquote>
+<hr />
+</div>
+<div id="creating-stock-items-single-multiple" class="section level2 hasAnchor" number="6.4">
+<h2><span class="header-section-number">6.4</span> Creating Stock Items (Single &amp; Multiple)<a href="inventory-accounting---prerequisites.html#creating-stock-items-single-multiple" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Stock Items represent inventory transacted.</p>
+<p><strong>Minimum required fields:</strong><br />
+- Name (unique)<br />
+- Alias (optional)<br />
+- Under (Stock Group)<br />
+- Units (UOM)<br />
+- Opening Balance (Qty and Value)<br />
+- Rate/Price (optional)</p>
+<p><strong>Single stock item — steps:</strong></p>
+<ol style="list-style-type: decimal">
+<li><code>Gateway of Tally → Inventory Info → Stock Items → Create</code></li>
+<li>Name: e.g., Widget A - Blue - M</li>
+<li>Alias: Optional short code</li>
+<li>Under: Choose stock group</li>
+<li>Unit: Nos, Kg, etc.</li>
+<li>Opening Balance: Enter qty and value (100 Nos @ ₹50 = ₹5000)</li>
+<li>Assign category values (if needed)</li>
+<li>Enter batch details if using Batch/Expiry</li>
+<li>Save (<code>Ctrl + A</code>)</li>
+</ol>
+<p><strong>Bulk creation (multiple stock items):</strong></p>
+<ul>
+<li><p>Option A — Tally Import (XML/TSV/CSV):<br />
+Prepare CSV with columns: Name, Parent, UOM, OpeningQty, OpeningValue, Rate, Category1, Category2<br />
+In Tally: <code>Gateway → Import of Data → Masters → select file and import; map columns.</code></p></li>
+<li><p>Option B — Excel → Save as XML / TSV:<br />
+Check Tally help for template.</p></li>
+</ul>
+<p><strong>Example entries:</strong><br />
+- Bag Leather Small (Finished Goods, Nos, 50, ₹12,500, ₹250)<br />
+- Flour (Raw Materials, Kg, 200, ₹10,000, ₹50)</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong>
+Use clear naming (Product - Variant - Size or Categories).<br />
+Test import with 3–5 items before doing a full import.</p>
+</blockquote>
+<hr />
+</div>
+<div id="using-stock-categories-batches-with-items" class="section level2 hasAnchor" number="6.5">
+<h2><span class="header-section-number">6.5</span> Using Stock Categories &amp; Batches with Items<a href="inventory-accounting---prerequisites.html#using-stock-categories-batches-with-items" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>You can associate category values and batch info with stock items for detailed inventory tracking.</p>
+<p><strong>Example:</strong><br />
+Paracetamol 500mg → Batch001 Expiry 12/2026.<br />
+View quantities per batch.</p>
+<hr />
+</div>
+<div id="verifying-inventory-after-creation" class="section level2 hasAnchor" number="6.6">
+<h2><span class="header-section-number">6.6</span> Verifying Inventory After Creation<a href="inventory-accounting---prerequisites.html#verifying-inventory-after-creation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><code>Display → Inventory Books → Stock Summary</code> (stock balances by group and item)</li>
+<li><code>Display → Inventory Books → Stock Item</code> (ledger for opening/closing qty)</li>
+<li><code>Display → Item-wise Details / Batch-wise Details</code><br />
+</li>
+<li>Run Reports → Movement Analysis (stock issues/receipts pattern)</li>
+</ul>
+<hr />
+</div>
+<div id="example-walkthrough-end-to-end" class="section level2 hasAnchor" number="6.7">
+<h2><span class="header-section-number">6.7</span> Example Walkthrough (End-to-End)<a href="inventory-accounting---prerequisites.html#example-walkthrough-end-to-end" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="scenario" class="section level3 hasAnchor" number="6.7.1">
+<h3><span class="header-section-number">6.7.1</span> Scenario<a href="inventory-accounting---prerequisites.html#scenario" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>You sell T-shirts in sizes S, M, L and colors Red, Blue.<br />
+You want to manage using Stock Groups, Units, Categories.</p>
+</div>
+<div id="steps-6" class="section level3 hasAnchor" number="6.7.2">
+<h3><span class="header-section-number">6.7.2</span> Steps<a href="inventory-accounting---prerequisites.html#steps-6" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ol style="list-style-type: decimal">
+<li>Create UOM (Nos)</li>
+<li>Create Stock Groups: Finished Goods (Primary), Apparel (under Finished Goods)</li>
+<li>Create Stock Categories:
+<ul>
+<li>Size (S, M, L)<br />
+</li>
+<li>Colour (Red, Blue)</li>
+</ul></li>
+<li>Create Stock Items:
+<ul>
+<li>Option A: Single item + select categories<br />
+</li>
+<li>Option B: Separate item per variant (“T-Shirt - S - Red”)<br />
+</li>
+<li>Enter opening qty/value for each (e.g., 50 Nos @ ₹200)</li>
+</ul></li>
+<li>Verify in Stock Summary and Item Ledgers</li>
+</ol>
+<hr />
+</div>
+</div>
+<div id="common-pitfalls-troubleshooting" class="section level2 hasAnchor" number="6.8">
+<h2><span class="header-section-number">6.8</span> Common Pitfalls &amp; Troubleshooting<a href="inventory-accounting---prerequisites.html#common-pitfalls-troubleshooting" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>UOM mismatch: E.g., item created with Box, used as Nos without conversion; causes errors.</li>
+<li>Wrong Stock Group: Items under wrong group distort reports; fix via Alter.</li>
+<li>Import errors: Incorrect column names, encoding (use UTF-8), wrong parent names. Use exact names.</li>
+<li>Batch/Expiry not enabled: Must enable before creating items.</li>
+<li>Duplicate item names: Tally allows duplicates with different aliases—avoid for accuracy.</li>
+</ul>
+<hr />
+</div>
+<div id="advanced-godownslocations-stock-transfer" class="section level2 hasAnchor" number="6.9">
+<h2><span class="header-section-number">6.9</span> Advanced: Godowns/Locations &amp; Stock Transfer<a href="inventory-accounting---prerequisites.html#advanced-godownslocations-stock-transfer" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>Create Godowns via <code>Inventory Info → Godowns</code> (e.g., Main Warehouse, Shop1)</li>
+<li>Use Stock Journal/Transfer Voucher to move stock between Godowns</li>
+<li>Useful for multi-location tracking and reconciliation</li>
+</ul>
+<hr />
+</div>
+<div id="reports-to-check-inventory-health" class="section level2 hasAnchor" number="6.10">
+<h2><span class="header-section-number">6.10</span> Reports to Check Inventory Health<a href="inventory-accounting---prerequisites.html#reports-to-check-inventory-health" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>Stock Summary — quantities &amp; values by group</li>
+<li>Movement Analysis / Receipts &amp; Issues — item flow</li>
+<li>Ageing Analysis (slow-moving items, if available)</li>
+<li>Stock Transfer Register — inter-godown transfers</li>
+</ul>
+<hr />
+</div>
+<div id="best-practices" class="section level2 hasAnchor" number="6.11">
+<h2><span class="header-section-number">6.11</span> Best Practices<a href="inventory-accounting---prerequisites.html#best-practices" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>Decide naming conventions before data entry</li>
+<li>Use categories for variant management if supported; otherwise, create separate items per variant</li>
+<li>Maintain consistent UOMs</li>
+<li>Always backup before large imports or changes</li>
+<li>Keep master data clean for accurate MIS</li>
+<li>Run weekly stock summary and monthly reconciliation</li>
+</ul>
+<hr />
+</div>
+<div id="quick-reference-common-menu-paths-shortcuts" class="section level2 hasAnchor" number="6.12">
+<h2><span class="header-section-number">6.12</span> Quick Reference — Common Menu Paths &amp; Shortcuts<a href="inventory-accounting---prerequisites.html#quick-reference-common-menu-paths-shortcuts" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><strong>Inventory Features:</strong> F11 → Inventory Features</li>
+<li><strong>Create UOM:</strong> Inventory Info → Units of Measure → Create</li>
+<li><strong>Create Stock Group:</strong> Inventory Info → Stock Groups → Create</li>
+<li><strong>Create Stock Category:</strong> Inventory Info → Stock Categories → Create</li>
+<li><strong>Create Stock Item:</strong> Inventory Info → Stock Items → Create</li>
+<li><strong>Stock Summary:</strong> Display → Inventory Books → Stock Summary</li>
+<li><strong>Import Masters:</strong> Gateway of Tally → Import Data → Masters</li>
+</ul>
+<hr />
+
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
+<a href="statement-of-accounts.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
     </div>
   </div>
@@ -313,7 +542,7 @@ gitbook.start({
     "size": 2
   },
   "edit": {
-    "link": "https://github.com/learnwithrk/Accounting-Software/edit/main/%s",
+    "link": "https://github.com/learnwithrk/Accounting-Software/edit/main/06-ch.Rmd",
     "text": "Edit"
   },
   "history": {
@@ -321,7 +550,7 @@ gitbook.start({
     "text": null
   },
   "view": {
-    "link": "https://github.com/learnwithrk/Accounting-Software/blob/main/%s",
+    "link": "https://github.com/learnwithrk/Accounting-Software/blob/main/06-ch.Rmd",
     "text": null
   },
   "download": null,
