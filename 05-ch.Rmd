@@ -1,0 +1,235 @@
+# Statement of Accounts
+
+This chapter explains various statement of accounts in Tally Prime.
+
+---
+
+## Balance Sheet
+
+### How to View the Balance Sheet?
+
+- Open Tally Prime.  
+- From **Gateway of Tally**, go to:  
+  `Reports → Balance Sheet`  
+- Tally displays:  
+  - Sources of Funds (Capital, Loans, Liabilities)  
+  - Application of Funds (Fixed Assets, Current Assets, Investments)
+
+### Adjust Period
+
+- Press `F2`: Period → Set desired dates (e.g., 01-04-2024 to 31-03-2025).
+
+### Example
+
+If the company has:
+
+| Account          | Amount (₹)   |
+|------------------|--------------|
+| Capital          | 5,00,000     |
+| Cash in Hand     | 60,000       |
+| Stock-in-Hand    | 2,50,000     |
+| Sundry Creditors | 1,20,000     |
+
+The Balance Sheet will show:
+
+| Category             | Amount (₹)  |
+|----------------------|-------------|
+| Capital & Liabilities| 6,20,000    |
+| Assets               | 6,20,000    |
+
+---
+
+## Profit & Loss Account (P&L)
+
+### View P&L Statement
+
+- Go to: `Gateway of Tally → Profit & Loss A/c`  
+- P&L shows:  
+  - Indirect Expenses / Direct Expenses  
+  - Sales  
+  - Indirect Income
+
+### Example
+
+Entries done:
+
+| Entry         | Amount (₹) |
+|---------------|------------|
+| Sales         | 2,50,000   |
+| Purchase      | 1,50,000   |
+| Rent Expense  | 30,000     |
+
+P&L will show:
+
+| Result      | Amount (₹) |
+|-------------|------------|
+| Gross Profit| 1,00,000   |
+| Net Profit  | 70,000     |
+
+---
+
+## Trial Balance
+
+### How to View
+
+- Go to `Gateway of Tally → Display More Reports → Trial Balance`.  
+- Displays all ledger balances.  
+- Debit = Credit for accuracy.
+
+### Example
+
+| Ledger  | Dr (₹)  | Cr (₹)  |
+|---------|---------|---------|
+| Cash    | 60,000  | —       |
+| Sales   | —       | 2,50,000|
+| Capital | —       | 5,00,000|
+
+Total Dr = Total Cr → balanced.
+
+---
+
+## Sales Register
+
+### Steps
+
+- Go to `Display More Reports → Account Books → Sales Register`.  
+- Select the period using `F2`.  
+- Tally shows all Sales vouchers month-wise.
+
+### Example
+
+A sale of ₹10,000 to customer ABC on 05-05-2025 will appear under May.
+
+---
+
+## Purchase Register
+
+### Steps
+
+- Go to `Display More Reports → Account Books → Purchase Register`.  
+- Choose the date range.  
+- Shows all purchase vouchers.
+
+### Example
+
+Purchase from XYZ Suppliers amount ₹15,000 recorded on 10-05-2025 will appear in May.
+
+---
+
+## Cash Book
+
+### Steps
+
+- Go to `Display More Reports → Cash/Bank Books → Cash Book`.  
+- Select the Cash ledger (e.g., Cash-in-Hand).
+
+### Example
+
+Cash transactions:  
+- Receipt: ₹5,000  
+- Payment: ₹2,500  
+
+Cash Book shows:
+
+| Description | Amount (₹)   |
+|-------------|--------------|
+| Opening     | 25,000       |
+| Closing     | 27,500       |
+
+---
+
+## Bank Book
+
+### Steps
+
+- Go to `Display More Reports → Cash/Bank Books → Bank Book`.  
+- Select bank ledger (e.g., HDFC Bank).
+
+### Example
+
+Transactions:
+
+| Description    | Amount (₹) |
+|----------------|------------|
+| Cheque Deposit | 50,000     |
+| Bank Charges   | 250        |
+
+Closing balance updates accordingly.
+
+---
+
+## Ledger Statement
+
+### Steps
+
+- Go to `Gateway of Tally → Display More Reports → Account Books → Ledger`.  
+- Choose any ledger (example: Rent Expense).
+
+### Example
+
+Rent Ledger:
+
+| Date      | Debit (₹) |
+|-----------|-----------|
+| 01-05-2025| 10,000    |
+| 01-06-2025| 10,000    |
+
+Closing balance = ₹20,000 (Dr).
+
+---
+
+## Sales vs Purchase Register Example Summary
+
+| Statement         | What It Shows          | Shortcut Path           |
+|-------------------|-----------------------|------------------------|
+| Sales Register    | All sales invoices     | Display → Account Books |
+| Purchase Register | All purchase vouchers  | Display → Account Books |
+| Cash Book        | Cash receipts/payments | Cash/Bank Books         |
+| Bank Book        | Bank receipts/payments | Cash/Bank Books         |
+
+---
+
+## Common Buttons & Shortcuts
+
+| Action            | Shortcut    |
+|-------------------|-------------|
+| Change Period     | F2          |
+| Export Report     | Alt + E     |
+| Print Report      | Ctrl + P    |
+| Configure Report  | F12         |
+| Detailed/Condensed View | Alt + F1 |
+
+---
+
+## Practical Example — Complete Flow
+
+### Transactions Entered
+
+| Transaction     | Amount (₹) |
+|-----------------|------------|
+| Sales           | 20,000     |
+| Purchase        | 12,000     |
+| Cash Received   | 20,000     |
+| Rent Expense    | 5,000      |
+| Bank Withdrawal | 10,000     |
+
+### Result in Reports
+
+- Sales Register → Shows ₹20,000  
+- Purchase Register → Shows ₹12,000  
+- Cash Book → Opening +₹20,000 minus withdrawals  
+- Bank Book → Opening minus ₹10,000  
+- P&L Account → Net Profit = Sales − Purchase − Rent  
+- Balance Sheet → Asset/Liability updated
+
+---
+
+## Summary for Students
+
+- **Balance Sheet** → Financial position  
+- **P&L Account** → Profitability  
+- **Trial Balance** → Accuracy check  
+- **Sales/Purchase Register** → Transaction details  
+- **Cash/Bank Book** → Day-to-day cash/bank activities  
+- **Ledgers** → Individual account performance
+
