@@ -1,0 +1,224 @@
+# Inventory Vouchers in Tally Prime — Detailed Steps & Examples
+
+Tally Prime provides several inventory vouchers for tracking the movement of goods from purchase to sale, physical verification, and stock adjustments. This section explains each voucher type, how to enable it, how to record transactions, and provides real-world examples.
+
+---
+
+## Enabling Inventory Vouchers
+
+Before using inventory vouchers, enable the features:
+
+1. Open Tally Prime
+2. Press `F11` → Inventory Features
+3. Set the following to Yes:
+    - Enable Purchase Order Processing
+    - Enable Sales Order Processing
+    - Enable Material In & Out
+    - Enable Delivery & Receipt Notes
+    - Enable Rejection In & Out
+    - Enable Stock Journal
+    - Enable Physical Stock
+4. Press `Ctrl + A` to save.
+
+---
+
+## Purchase Order (PO)
+
+A Purchase Order is issued to a supplier to request goods.
+
+**Steps:**
+
+1. Go to `Gateway of Tally → Vouchers`
+2. Press `Alt + F4` for Purchase Order
+3. Select Supplier Name
+4. Enter Order No. (auto/manual)
+5. Enter Stock Item, Quantity, Rate, and Amount
+6. Press `Ctrl + A` to save
+
+**Example:**  
+- Supplier: ABC Traders  
+- Item: T-Shirt – M – Red  
+- Qty: 100  
+- Rate: ₹200  
+- Amount: ₹20,000
+
+---
+
+## Sales Order
+
+A Sales Order confirms a customer’s order.
+
+**Steps:**
+
+1. `Gateway of Tally → Vouchers`
+2. Press `Alt + F5` for Sales Order
+3. Select Customer Name
+4. Enter Order No.
+5. Enter Stock Item, Quantity, Rate
+6. Save `Ctrl + A`
+
+**Example:**  
+- Customer: RK Stores  
+- Item: T-Shirt – L – Blue  
+- Qty: 20  
+- Rate: ₹250  
+- Amount: ₹5,000
+
+---
+
+## Material In
+
+Used when material arrives at the warehouse without a Purchase Order or purchase details (job work, free samples).
+
+**Steps:**
+
+1. `Vouchers → Material In` (`Alt + W`)
+2. Choose Party (optional)
+3. Enter Stock Item, Quantity, etc.
+4. Save `Ctrl + A`
+
+**Example:**  
+50 units of Flour received for job work (no purchase invoice)
+
+---
+
+## Material Out
+
+Used for sending material out without a sale (samples, job work, testing).
+
+**Steps:**
+
+1. `Vouchers → Material Out` (`Alt + W`)
+2. Select Party (optional)
+3. Enter items & quantity
+4. Save
+
+**Example:**  
+Sending 10 T-shirts to a printing vendor for logo printing; no sale entry involved.
+
+---
+
+## Receipt Note
+
+Used when goods are physically received before recording a Purchase Voucher.
+
+**Steps:**
+
+1. `Vouchers → Alt + F9 → Receipt Note`
+2. Select Supplier
+3. Enter Item, Qty, Rejection Qty (if any), Rate
+4. Save
+
+**Example:**  
+- Supplier sends goods first; invoice not yet received  
+- Received: 100 T-Shirts  
+- This increases stock, but does not affect accounts until the purchase voucher is entered.
+
+---
+
+## Delivery Note
+
+Used when goods are delivered before a Sales Invoice is issued.
+
+**Steps:**
+
+1. `Vouchers → Alt + F8 → Delivery Note`
+2. Select Customer
+3. Enter Item, Quantity, Tracking details
+4. Save
+
+**Example:**  
+- Customer collects goods before invoice  
+- Delivered: 30 T-Shirts  
+- Stock reduces, but accounts aren’t updated until Sales Voucher is passed.
+
+---
+
+## Rejection In
+
+Records goods returned into stock by customer (sales return) or by internal rejection.
+
+**Steps:**
+
+1. `Vouchers → Rejection In` (`Ctrl + F6`)
+2. Choose Customer/Party
+3. Enter Item, Quantity returned
+4. Save
+
+**Example:**  
+Customer returns 5 defective T-shirts. Increases stock; does not adjust ledgers unless mapped with a credit note.
+
+---
+
+## Rejection Out
+
+Used when you send goods back to supplier (purchase return).
+
+**Steps:**
+
+1. `Vouchers → Rejection Out`
+2. Select Supplier
+3. Enter Item, Quantity
+4. Save
+
+**Example:**  
+8 T-Shirts returned to supplier due to damage; this decreases stock.
+
+---
+
+## Stock Journal
+
+For stock adjustments, inter-godown transfers, or production (Raw materials → Finished Goods).
+
+**Steps:**
+
+1. `Gateway of Tally → Vouchers → F7 (Stock Journal)`
+2. Two sections:
+    - Source (Consumption)
+    - Destination (Production)
+3. Enter Items consumed and produced
+4. Save
+
+**Example 1 — Adjustment:**  
+Reduce 5 damaged T-shirts (Consumption only)
+
+**Example 2 — Production:**  
+2 kg Flour (Source) → 1 kg Dough (Destination)
+
+---
+
+## Physical Stock Voucher
+
+During stock verification, if physical stock ≠ book stock.
+
+**Steps:**
+
+1. `Vouchers → Inventory Vouchers → Physical Stock`
+2. Enter:
+    - Stock Item
+    - Actual Physical Quantity
+3. Save
+
+Tally automatically adjusts differences.
+
+**Example:**  
+Book stock of T-Shirts: 120  
+Physical count: 118  
+Voucher updates the difference.
+
+---
+
+## Summary Table
+
+| Voucher Type     | Purpose                                     |
+|------------------|---------------------------------------------|
+| Purchase Order   | Ordering goods from supplier                |
+| Sales Order      | Customer orders received                    |
+| Material In      | Stock received without invoice              |
+| Material Out     | Stock sent without sale                     |
+| Receipt Note     | Goods received before invoice               |
+| Delivery Note    | Goods delivered before invoice              |
+| Rejection In     | Sales return or internal rejection          |
+| Rejection Out    | Purchase return                             |
+| Stock Journal    | Stock adjustment, production                |
+| Physical Stock   | Physical verification adjustments           |

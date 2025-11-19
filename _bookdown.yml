@@ -9,6 +9,8 @@ rmd_files:
   - 04-ch.Rmd
   - 05-ch.Rmd
   - 06-ch.Rmd
+  - 07-ch.Rmd
+  - 08-ch.Rmd
 
 edit: https://github.com/learnwithrk/Accounting-Software/edit/main/%s
 view: https://github.com/learnwithrk/Accounting-Software/blob/main/%s

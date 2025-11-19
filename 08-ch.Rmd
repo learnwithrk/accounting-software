@@ -1,0 +1,255 @@
+# Inventory Reports
+
+Reports Covered
+
+- Stock Summary
+- MIS Reports (Key Inventory MIS views)
+- Stock Item (Item-wise ledger / movement)
+- Stock Group Summary
+- Stock Transfer Register
+
+---
+
+## Stock Summary
+
+### What it is
+
+- An overall snapshot of stock quantities and values by Stock Group and Stock Item: opening, inwards, outwards, closing balances.
+
+### How to Open
+
+- `Gateway of Tally → Display → Inventory Books → Stock Summary`
+- or `Display → Inventory Books → Stock Summary`
+
+### Steps (Exact)
+
+1. Open Tally and select the correct company & financial year.
+2. `Gateway → Display → Inventory Books → Stock Summary`
+3. Press `F2` to set the period (e.g., 01-04-2024 to 31-03-2025)
+4. Press `F12` (Configure) to enable/disable columns: Show Opening, Inwards, Outwards, Closing, Value, Zero Balances, Show Rate, etc.
+5. Ctrl+A to apply configuration.
+6. Drill down: press Enter on any Stock Group to view items; press Enter again to drill into item-wise movements.
+
+### Useful Filters
+
+- `F2` Period — date range
+- `Ctrl+F`, `F4`, or `F5` to filter by Godown or Batch
+- `Alt+F5` to view Group Summary only (if available)
+
+### Example Output
+
+Stock Summary (01-04-2024 to 31-03-2025):
+
+| Group          | Opening | Inwards | Outwards | Closing | Value     |
+|----------------|---------|---------|----------|---------|-----------|
+| Finished Goods | 1,000   | 500     | 600      | 900     | ₹180,000  |
+| Raw Materials  | 200     | 1,000   | 950      | 250     | ₹25,000   |
+
+### Export / Print
+
+- Press `Alt+E` → choose format (Excel/CSV/PDF/HTML/Word)
+- `Ctrl+P` to print
+
+> 💡 **Tip:**
+- If values look wrong, check Opening Balance dates and voucher dates.
+- If zero balances are missing, enable **Show Zero Balances** in F12.
+- For valuation method (FIFO/LIFO/Average), set it in F11 → Inventory Features.
+
+---
+
+## MIS Reports (Inventory MIS)
+
+### What it is
+
+- Management reporting views: slow/fast movers, stock ageing, valuation, movement analysis.
+
+### How to Open (Common MIS)
+
+- `Gateway → Display → Inventory Books → Movement Analysis / Receipts & Issues`
+- `Ageing Analysis` (if enabled)
+- `Reorder Status / Reorder Level Report`
+- `Stock Summary` (overview)
+
+### Steps (Movement Analysis Example)
+
+1. `Gateway → Display → Inventory Books → Movement Analysis`
+2. Press `F2` to set Period.
+3. Press `F4 / F5` (varies) to select Stock Item or Group.
+4. Press `F12` to configure columns (month-wise, value, quantity).
+5. Drill down into months to view vouchers.
+
+### Example Output
+
+Movement Analysis for T-Shirt (01-04-2024 to 31-03-2025):
+
+| Month | In  | Out |
+|-------|-----|-----|
+| Apr   | 200 | 150 |
+| May   | 100 | 120 |
+| ...   | ... | ... |
+| **Total** | 1,000 | 980 |
+| **Closing** | | 20 |
+
+- Ageing Analysis: days held per item; identifies slow movers.
+
+> 💡 **Tip:**
+- `Alt+E` to export any MIS report.
+- Use Movement Analysis to set reorder alerts.
+- Ensure GRNs/Receipt Notes are dated & recorded accurately for ageing.
+
+---
+
+## Stock Item (Item-wise Report / Ledger)
+
+### What it is
+
+- Detailed ledger for a single stock item, showing voucher-wise receipts/issues: dates, qty, value.
+
+### How to Open
+
+- `Gateway → Display → Inventory Books → Stock Item → select item`
+
+### Steps (Exact)
+
+1. Go to Stock Item.
+2. Choose the item.
+3. Press `F2` to set Period.
+4. Item Ledger: shows Opening Qty & Value, each voucher (type/date), received/issued qty, running balance.
+5. Use `F12` for batch/godown/rate/narration columns.
+6. Drill into any voucher for details.
+
+### Useful Variations
+
+- **Batch-wise:** If enabled, select item and press key for batch view.
+- **Godown-wise:** Filter for location-specific reports.
+
+### Example
+
+Stock Item: T-Shirt - M - Red
+
+- Opening: 50 Nos @ ₹200 = ₹10,000
+- 05-05-2024 Receipt PO#123: +100 Nos @ ₹200 → balance 150
+- 10-06-2024 Delivery Note DN#10: −40 Nos → balance 110
+- Closing: 110 Nos; Closing Value ₹22,000
+
+### Export / Print
+
+- `Alt+E` for Excel/CSV/PDF
+
+> 💡 **Tip:**
+- Item Ledger and Stock Summary mismatch? Check item/UOM in all vouchers.
+- If batch balances zero, verify batch selection.
+
+---
+
+## Stock Group Summary
+
+### What it is
+
+- Aggregate view of stock by group, ideal for valuation and category reviews.
+
+### How to Open
+
+- `Gateway → Display → Inventory Books → Stock Summary (group view)`
+- or `Display → Inventory Books → Stock Group Summary`
+
+### Steps
+
+1. Stock Summary.
+2. Press `Alt+F5` or "View as Groups" for group summary.
+3. Press `F2` to set period.
+4. Drill down for underlying items/reports.
+
+### Example
+
+Group: Finished Goods
+
+| Opening Qty | Inwards | Outwards | Closing | Value    |
+|-------------|---------|----------|---------|----------|
+| 1,000       | 300     | 350      | 950     | ₹190,000 |
+
+### Export / Print
+
+- `Alt+E` for all formats
+
+> 💡 **Tip:**
+- Group Summary is useful to spot capital tied up in categories.
+- Unexpected values? Drill down to spot mis-valued items.
+
+---
+
+## Stock Transfer Register
+
+### What it is
+
+- Complete log of inter-Godown (warehouse) stock transfers, including voucher, dates, qty, source/destination.
+
+### How to Open
+
+- `Gateway → Display → Inventory Books → Stock Transfer Register`
+- or `Stock Transfer / Stock Journal Register` (menu varies)
+
+### Steps
+
+1. Open Stock Transfer Register.
+2. Set `F2` Period.
+3. Use `F4` or filters for specific Stock Item or Godown.
+4. View each Stock Journal: Date, Voucher No, From/To Godown, Item, Qty, Value.
+5. Drill down on voucher for details.
+
+### Example
+
+| Date       | SJ#   | From         | To     | Item           | Qty   | Value   |
+|------------|-------|--------------|--------|----------------|-------|---------|
+| 02-07-2024 | SJ#01 | Main WH      | Shop1  | T-Shirt M Red  | 50    | 10,000  |
+| 15-08-2024 | SJ#05 | Main WH      | Shop2  | Flour          | 100   | 5,000   |
+
+### Export / Print
+
+- `Alt+E` for CSV/Excel/PDF
+
+> 💡 **Tip:**
+- Unexpected transfers? Check Stock Journals for data entry errors.
+- Consistent use of voucher types aids reporting clarity.
+
+---
+
+## Extra: Common Filters & Keys
+
+- `F2` — Change Period (set exact dates)
+- `F12` — Configure report view: show rates, opening, batch/godown columns
+- `Alt+E` — Export (Excel/CSV/PDF/Word)
+- `Ctrl+F` or `/` — Search/report filter (Tally version dependent)
+- `Enter` — Drill down; `Esc` — Go back
+
+---
+
+## Reconciliation & Validation Checklist
+
+- **Total Match:** Stock Summary closing should match sum of all item ledgers.
+- **Stock vs GL:** Inventory value in Balance Sheet (Stock-in-Hand) = Stock Summary value.
+- **UOM Check:** Same unit in vouchers & masters.
+- **Batch/Godown Mismatch:** Filter and reconcile, if differences.
+- **Date Ranges:** Missing transactions? Check period.
+- **Backup:** Take one (`Alt+F3`) before large adjustments.
+
+---
+
+## Example Walkthrough (End-to-End)
+
+**Scenario:**
+- Opening: T-Shirts M Red — 100 Nos @ ₹200 → ₹20,000
+- Purchases: +300 Nos @ ₹190 → +₹57,000
+- Sales/issues: −320 Nos
+
+**Calculation:**
+`Opening 100 + In 300 − Out 320 = Closing 80 Nos`
+Avg cost: `(20,000 + 57,000) / 400 = ₹192.5`
+Closing value: `80 × 192.5 = ₹15,400`
+
+**Run sequence:**
+- Stock Summary — check quantities and values
+- Stock Item ledger — see voucher wise movement
+- Movement Analysis — view monthly flows
+- Stock Transfer Register — validate inter-location transfers
+- Export item ledger for Excel-based MIS
