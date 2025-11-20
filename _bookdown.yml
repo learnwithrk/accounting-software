@@ -13,6 +13,9 @@ rmd_files:
   - 08-ch.Rmd
   - 09-ch.Rmd
   - 10-ch.Rmd
+  - 11-ch.Rmd
+  - 12-ch.Rmd
+  - 13-ch.Rmd
 
 edit: https://github.com/learnwithrk/Accounting-Software/edit/main/%s
 view: https://github.com/learnwithrk/Accounting-Software/blob/main/%s

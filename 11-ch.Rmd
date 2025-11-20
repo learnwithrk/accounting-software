@@ -1,0 +1,134 @@
+# Ratio Analysis, Cash Flow and Fund Flow in Tally Prime
+
+## Ratio Analysis
+Ratio Analysis provides key business ratios and financial performance metrics based on your accounting data, like profitability, liquidity, and efficiency.
+
+### How to View Ratio Analysis
+
+1. Open Tally Prime.
+2. Go to `Gateway of Tally > Ratio Analysis`.
+3. The report displays **Principal Groups** (Working Capital, Cash-in-Hand, Bank Accounts, Debtors, Creditors, Stock-in-hand, Net Profit, etc.) and **Principal Ratios** (Current Ratio, Quick Ratio, Gross Profit %, Net Profit %, Return on Investment %, Inventory Turnover, Debt/Equity, etc.).
+4. Press `F2` to set the reporting period as required.
+5. Drill-down: Highlight any ratio or group, press `Enter` for detailed underlying ledgers and calculations.
+6. For horizontal/vertical view toggle, use `F5` if available.
+7. Export the report with `Alt+E` for Excel/PDF.
+
+**Example Ratios shown:**
+- Current Ratio (Current Assets / Current Liabilities)
+- Gross Profit %
+- Net Profit %
+- Inventory Turnover
+
+> 💡 **Tip:**
+You can click on any ratio (e.g., Gross Profit %) to drill to Profit & Loss, or on Current Ratio to go to Balance Sheet for full calculation.
+
+---
+
+## Fund Flow Statement
+
+### What is Fund Flow?
+
+Fund Flow tracks the Source and Application of funds to analyze changes in working capital over a period.
+
+### How to View Fund Flow Statement
+
+1. Open Tally Prime.
+2. Go to `Gateway of Tally > Display More Reports > Funds Flow`.
+3. Set the period (`F2`) — e.g., 01-04-2024 to 31-03-2025.
+4. The statement shows:
+    - **Sources of Funds**: Profit from operations, fundraising, decrease in working capital, etc.
+    - **Application of Funds**: Purchases, investments, loan repayments, increase in working capital.
+5. Drill down by pressing `Enter` on any line for group or voucher level detail.
+6. Export with `Alt+E` as required.
+
+**Example:**
+- Opening Working Capital: ₹2,00,000
+- Closing Working Capital: ₹2,50,000
+- Net Increase: ₹50,000 (Funds generated from operations/financing)
+
+> 💡 **Tip:**
+Use Fund Flow to analyze long-term funding and application of capital, not just short-term liquidity.
+
+---
+
+## Cash Flow Statement
+
+### What is Cash Flow?
+
+Cash Flow gives a detailed overview of all cash inflows and outflows, helping you track liquidity and plan for payments, expenses, and investments.
+
+### How to View Cash Flow Statement
+
+1. Open Tally Prime.
+2. Go to `Gateway of Tally > Display More Reports > Cash Flow`.
+3. Set the reporting period using `F2` (e.g., 01-04-2024 to 31-03-2025).
+4. The report lists:
+    - Opening Balance
+    - Receipts (sources of cash: collections, sales, loans, etc.)
+    - Payments (uses of cash: supplier payments, expenses, investments, etc.)
+    - Closing Balance
+5. Press `F5` for a month-wise or vertical representation (visualize cash trends).
+6. Press `Alt+F5` for a graphical report of cash flows if available.
+7. Export or print using `Alt+E` / `Ctrl+P`.
+
+**Practical Example**
+- Opening cash balance: ₹75,000
+- Receipts: ₹2,80,000 (including sales, loan proceeds, etc.)
+- Payments: ₹2,40,000 (supplier payments, wages, rent)
+- Closing cash balance: ₹1,15,000
+
+> 💡 **Tip:**  
+Drill down on any figure to view the individual vouchers behind the flow.
+
+---
+
+## General Tips & Troubleshooting
+
+- Always check your date periods with `F2`—incorrect periods cause missing/misleading reports.
+- For accurate analysis, ensure all vouchers (including non-cash) are properly recorded and classified.
+- For Fund and Cash Flow, transfers between accounts (cash to bank, etc.) are not shown as business cash movement.
+- Use export features for detailed audit and MIS.
+
+---
+
+## Summary Table: Where to Find Reports in Tally Prime
+
+| Report         | Menu Path                                  |
+|----------------|--------------------------------------------|
+| Ratio Analysis | Gateway of Tally > Ratio Analysis          |
+| Fund Flow      | Gateway of Tally > Display More Reports > Funds Flow |
+| Cash Flow      | Gateway of Tally > Display More Reports > Cash Flow  |
+
+---
+
+## End-to-End Example
+
+**Scenario:**
+- Company ABC, FY 2024-25
+
+### Ratio Analysis
+
+- Reports Current Ratio = 2.10, Net Profit % = 8.5%
+
+### Fund Flow
+
+| Item                  | Amount (₹) |
+|-----------------------|------------|
+| Opening W. Capital    | 2,00,000   |
+| Closing W. Capital    | 2,50,000   |
+| Net Increase in WC    | 50,000     |
+| Funds From Operations | 90,000     |
+| Issue of Share Capital| 1,00,000   |
+| Application: Equipment Purchased | 1,40,000 |
+| Loan Repaid           | 20,000     |
+
+### Cash Flow
+
+| Item                  | Amount (₹) |
+|-----------------------|------------|
+| Opening Cash/Bank     | 75,000     |
+| Receipts (Sales, etc.)| 2,80,000   |
+| Payments              | 2,40,000   |
+| Closing Cash/Bank     | 1,15,000   |
+
+---

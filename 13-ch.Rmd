@@ -1,0 +1,98 @@
+# Cheque Printing in Tally Prime
+
+Tally Prime allows you to print cheques directly from payment vouchers, saving manual effort and ensuring accuracy in cheque details. You can customize cheque layouts based on your bank's cheque format.
+
+---
+
+## Prerequisites
+
+- Install a compatible printer connected to your computer
+- Know your cheque layout details (cheque dimensions, positions for date, amount, payee, signature, etc.)
+- Have the latest version of Tally Prime installed with payment vouchers entered
+
+---
+
+## Configure Cheque Printing
+
+1. Open Tally Prime.
+2. Go to `Gateway of Tally → F12: Configure`.
+3. Select **Cheque Printing Configuration**.
+4. Set **Enable Cheque Printing** → Yes.
+5. Select your **Printer** if multiple printers are installed.
+6. Choose the **Cheque Format** that matches your bank’s cheque book:
+   - If your cheque format is not listed, you can create a custom format by adjusting fields such as alignment and position.
+7. Configure alignment for the following fields:
+   - Date
+   - Amount in figures
+   - Amount in words
+   - Payee name
+8. Save configuration by pressing `Ctrl + A`.
+
+---
+
+## Enter Payment Voucher with Cheque Details
+
+1. Go to `Accounting Vouchers → F5 Payment`.
+2. Select the Bank Ledger (e.g., HDFC Bank - Current).
+3. Enter the Payment details:
+   - Party Name (payee)
+   - Voucher amount
+   - Narration if any
+4. Enter cheque number in the **Instrument Number** field.
+5. Enter cheque date in the **Instrument Date** field.
+6. Save the voucher (`Ctrl + A`).
+
+**Example:**  
+Payment to Supplier XYZ  
+- Amount: ₹15,000  
+- Cheque No: 102345  
+- Cheque Date: 20-11-2025
+
+---
+
+## Print Cheque
+
+1. After saving the payment voucher, select the voucher again from the voucher screen.
+2. Press `Alt + P` or choose the **Print** option.
+3. In the Print Configuration screen:
+   - Select **Cheque Printing** as the print type.
+   - Verify cheque format selected.
+   - Preview the cheque layout.
+4. Insert cheque paper in printer.
+5. Press **Print**.
+
+The cheque will print with details: date, payee, amount (figures and words), and signature line (if configured).
+
+---
+
+## Customize Cheque Format (If Needed)
+
+- Go to `Gateway of Tally → Print Configuration → Cheque Printing`.
+- Select **Manage Cheque Formats**.
+- You can adjust positions of fields using X and Y offsets.
+- Save and test print the cheque.
+- Save backups of your customized format for re-use.
+
+---
+
+> 💡 **Tip:** 
+- If cheque details do not align properly, adjust X/Y offsets in the cheque format settings.
+- Use cheque paper recommended by your bank for best print quality.
+- Ensure printer settings (paper size, orientation) match Tally configurations.
+- Test print with blank vouchers before printing real cheques.
+- Always preview print before printing multiple cheques.
+
+---
+
+## Sample Scenario
+
+- You need to pay ₹25,000 to vendor ABC Pvt Ltd.
+- Cheque number 123456, dated 25-11-2025.
+- Steps:
+  - Enter Payment Voucher with ledger ABC Pvt Ltd.
+  - Fill instrument number and date.
+  - Save voucher.
+  - Print cheque with configured format.
+- Verify cheque details and sign physically before issue.
+
+---

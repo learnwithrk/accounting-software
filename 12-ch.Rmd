@@ -1,0 +1,118 @@
+# GST
+
+## Enabling GST in Tally Prime
+
+1. Open Tally Prime.
+2. Go to `Gateway of Tally → F11: Features → Statutory & Taxation`.
+3. Set **Enable Goods and Services Tax (GST)** → Yes.
+4. Set other applicable options (e.g., Enable GST for Composition or Regular Taxpayer).
+5. Press `Ctrl + A` to save.
+
+---
+
+## Work with GST for Intra-State and Inter-State Supply of Goods
+
+### Intra-State Supply (Within the Same State)
+
+- Record sales/purchases with CGST and SGST components.
+- In sales/purchase vouchers, select the customer/supplier with proper state information.
+- Tally applies CGST and SGST tax rates automatically based on the state.
+- Example: Sale to a customer in the same state attracts CGST 9% + SGST 9%.
+
+### Inter-State Supply (Between Different States)
+
+- Record sales/purchases attracting IGST instead of CGST+SGST.
+- Tally calculates IGST based on the destination state.
+- Example: Selling goods from Delhi to Maharashtra attracts IGST 18%.
+
+---
+
+## Recording Return of Goods (Credit/Debit Notes)
+
+- To record return of goods, use **Credit Note** (for sales returns) or **Debit Note** (for purchase returns).
+- Go to `Accounting Vouchers → Sales / Purchase menu → Credit/Debit Note`.
+- Select party, enter quantities, rates, and tax details.
+- Tally adjusts GST amounts accordingly.
+
+---
+
+## GST Reports in Tally Prime
+
+Navigate to `Gateway of Tally → Display → Statutory Reports → GST Reports`.
+
+Key reports include:
+- **GSTR-1 Report:** Details of outward supplies (sales).
+- **GSTR-2 Report:** Details of inward supplies (purchases).
+- **GSTR-3B Report:** Monthly summary return.
+- **GST Audit Report:** Tax liability verification and reconciliation.
+- **GST Payment Summary:** Track GST payments made.
+
+Reports allow filtering by:
+- GSTIN number (for multi-GSTIN setups)
+- Period (month/quarter)
+- Tax type (CGST, SGST, IGST)
+- Party or voucher type
+
+Export or print reports via `Alt + E` or `Ctrl + P`.
+
+---
+
+## GST Audit Trail in Tally Prime
+
+Tally maintains an audit trail of GST transactions:
+
+- View detailed transaction vouchers contributing to GST returns.
+- Reconcile GST payable, input credit, and payments.
+- Use `Gateway → Display → Audit & Compliance → GST Audit Report`.
+- Audit Report shows discrepancies, missing invoices, or mismatches.
+- Enables compliance readiness for statutory audits.
+
+---
+
+## Example Walkthrough — Intra-State Sale with GST
+
+1. Create a sales ledger with GST applicable:
+    - Name: Sales Ledger
+    - Under: Sales Accounts
+    - GST details: Taxability = Taxable, GST rate = 18%
+2. Create a party ledger with state information (e.g., Maharashtra).
+3. Pass a Sales Voucher:
+    - Select party in Maharashtra
+    - Enter item quantity, rate
+    - GST is auto-calculated as CGST 9% + SGST 9%
+4. Review GST Tax Analysis report for accurate tax calculations.
+
+---
+
+## Example Walkthrough — Inter-State Purchase with GST
+
+1. Create purchase ledger with GST:
+    - Taxability: Taxable Purchase
+    - GST rate: 18%
+2. Create supplier ledger from different state (e.g., Karnataka).
+3. Pass Purchase Voucher selecting supplier in Karnataka.
+4. GST calculated as IGST 18%.
+5. Check Input Tax Credit in GST reports.
+
+---
+
+> 💡 **Tip:** 
+- Maintain accurate **State** and **GSTIN** details in party ledgers.
+- Use Multi-GSTIN feature if operating in multiple states to manage GST returns separately.
+- Regularly verify GST reports against filed returns.
+- Backup data before large GST returns or corrections.
+- Use narration and reference fields to note reasons for returns or adjustments.
+
+---
+
+## Quick Reference Table — Menu Paths for GST in Tally
+
+| Function                | Path in Tally Prime                              |
+|-------------------------|-------------------------------------------------|
+| Enable GST              | Gateway → F11 → Statutory & Taxation             |
+| Record Sales/Purchase   | Gateway → Accounting Vouchers → Sales / Purchase |
+| GST Reports             | Gateway → Display → Statutory Reports → GST      |
+| GST Audit Trail         | Gateway → Display → Audit & Compliance → GST Audit |
+| Credit/Debit Notes      | Accounting Vouchers → Sales / Purchase → Credit/Debit Note |
+
+---
