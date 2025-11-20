@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>2 Fundamentals: Company Creation | ACCOUNTING SOFTWARE</title>
-  <meta name="description" content="2 Fundamentals: Company Creation | ACCOUNTING SOFTWARE" />
+  <title>9 Bank Reconciliation | ACCOUNTING SOFTWARE</title>
+  <meta name="description" content="9 Bank Reconciliation | ACCOUNTING SOFTWARE" />
   <meta name="generator" content="bookdown 0.45 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="2 Fundamentals: Company Creation | ACCOUNTING SOFTWARE" />
+  <meta property="og:title" content="9 Bank Reconciliation | ACCOUNTING SOFTWARE" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="2 Fundamentals: Company Creation | ACCOUNTING SOFTWARE" />
+  <meta name="twitter:title" content="9 Bank Reconciliation | ACCOUNTING SOFTWARE" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="chart-of-accounts-groups-ledgers.html"/>
+<link rel="prev" href="inventory-reports.html"/>
+<link rel="next" href="calculation-of-interest.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -381,245 +381,230 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="fundamentals-company-creation" class="section level1 hasAnchor" number="2">
-<h1><span class="header-section-number">2</span> Fundamentals: Company Creation<a href="fundamentals-company-creation.html#fundamentals-company-creation" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>This chapter explains the basic steps for creating and maintaining a company in <strong>Tally Prime</strong>, including company details, statutory information (GST, TDS, TCS), and account management.</p>
+<div id="bank-reconciliation" class="section level1 hasAnchor" number="9">
+<h1><span class="header-section-number">9</span> Bank Reconciliation<a href="bank-reconciliation.html#bank-reconciliation" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Bank reconciliation matches company’s bank ledger entries with the bank’s statement.<br />
+The result is a Reconciliation Statement showing:
+- Items cleared (matched in both Tally and Bank)
+- Outstanding items (not yet cleared)
+- Bank balance per books vs bank balance per bank statement
+- Reconciling items: cheques in transit, unpresented cheques, bank charges, direct credits</p>
 <hr />
-<div id="creating-a-company" class="section level2 hasAnchor" number="2.1">
-<h2><span class="header-section-number">2.1</span> Creating a Company<a href="fundamentals-company-creation.html#creating-a-company" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="steps" class="section level3 hasAnchor" number="2.1.1">
-<h3><span class="header-section-number">2.1.1</span> Steps<a href="fundamentals-company-creation.html#steps" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ol style="list-style-type: decimal">
-<li>Open <strong>Tally Prime</strong>.<br />
-</li>
-<li>From the <strong>Gateway of Tally</strong>, select <strong>Create Company</strong>.<br />
-</li>
-<li>Enter the following details carefully:</li>
-</ol>
-<table>
-<colgroup>
-<col width="38%" />
-<col width="61%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Field</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Directory</strong></td>
-<td>Folder path where company data will be stored.</td>
-</tr>
-<tr class="even">
-<td><strong>Name</strong></td>
-<td>Legal name of the company (e.g., <em>ABC Traders Pvt. Ltd.</em>).</td>
-</tr>
-<tr class="odd">
-<td><strong>Mailing Name</strong></td>
-<td>Can be same as the company name or a trade name.</td>
-</tr>
-<tr class="even">
-<td><strong>Address</strong></td>
-<td>Full postal address.</td>
-</tr>
-<tr class="odd">
-<td><strong>Country</strong> and <strong>State</strong></td>
-<td>Choose correct location for GST and statutory compliance.</td>
-</tr>
-<tr class="even">
-<td><strong>Pincode</strong></td>
-<td>Optional but recommended.</td>
-</tr>
-<tr class="odd">
-<td><strong>Telephone / Mobile / Email / Website</strong></td>
-<td>Contact details for invoices and reports.</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="example" class="section level3 hasAnchor" number="2.1.2">
-<h3><span class="header-section-number">2.1.2</span> Example<a href="fundamentals-company-creation.html#example" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><strong>Name:</strong> RK Enterprises<br />
-<strong>Mailing Name:</strong> RK Enterprises<br />
-<strong>Address:</strong> No. 12, Main Road, Chennai – 600001<br />
-<strong>Country:</strong> India<br />
-<strong>State:</strong> Tamil Nadu<br />
-<strong>Email:</strong> <a href="mailto:info@rkenterprises.in" class="email">info@rkenterprises.in</a></p>
-<hr />
-</div>
-</div>
-<div id="company-features-and-statutory-details" class="section level2 hasAnchor" number="2.2">
-<h2><span class="header-section-number">2.2</span> Company Features and Statutory Details<a href="fundamentals-company-creation.html#company-features-and-statutory-details" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>After filling the basic company details, press <strong>F11 – Features</strong> or <strong>F3 – Statutory &amp; Taxation</strong> to configure additional options.</p>
-<hr />
-</div>
-<div id="enable-statutory-taxation" class="section level2 hasAnchor" number="2.3">
-<h2><span class="header-section-number">2.3</span> Enable Statutory &amp; Taxation<a href="fundamentals-company-creation.html#enable-statutory-taxation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Set the following options to <strong>Yes</strong> as applicable:</p>
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Option</strong></th>
-<th><strong>Purpose</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Enable Goods &amp; Services Tax (GST)</td>
-<td>For GST-registered businesses.</td>
-</tr>
-<tr class="even">
-<td>Enable Tax Deducted at Source (TDS)</td>
-<td>If applicable under the Income Tax Act.</td>
-</tr>
-<tr class="odd">
-<td>Enable Tax Collected at Source (TCS)</td>
-<td>For applicable transactions.</td>
-</tr>
-</tbody>
-</table>
-<p>When prompted, enter <strong>GST details</strong>:</p>
-<table>
-<thead>
-<tr class="header">
-<th><strong>Field</strong></th>
-<th><strong>Example Entry</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>GSTIN</td>
-<td>33ABCDE1234F1Z5</td>
-</tr>
-<tr class="even">
-<td>Applicable from</td>
-<td>01-04-2024</td>
-</tr>
-<tr class="odd">
-<td>Type of Registration</td>
-<td>Regular / Composition</td>
-</tr>
-<tr class="even">
-<td>Assessee Type</td>
-<td>Individual / Company / Partnership</td>
-</tr>
-</tbody>
-</table>
-<hr />
-</div>
-<div id="currency-symbol-setup" class="section level2 hasAnchor" number="2.4">
-<h2><span class="header-section-number">2.4</span> Currency Symbol Setup<a href="fundamentals-company-creation.html#currency-symbol-setup" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Tally automatically assigns the <strong>₹ (Rupee symbol)</strong> for Indian companies.</p>
-<p>To change or view the currency symbol:</p>
-<ol style="list-style-type: decimal">
-<li>Go to <strong>Gateway of Tally → Accounts Info → Currencies → Alter</strong></li>
-<li>Edit the currency symbol or name as required.
+<div id="prerequisites" class="section level2 hasAnchor" number="9.1">
+<h2><span class="header-section-number">9.1</span> Prerequisites<a href="bank-reconciliation.html#prerequisites" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
-<li>Example: <code>$</code> for USD, <code>£</code> for GBP.</li>
+<li>Company selected and correct financial year opened</li>
+<li>Bank ledger(s) created (e.g., HDFC Bank - Current)</li>
+<li>Vouchers and bank transactions entered in Tally (payments, receipts, contra, charges)</li>
+<li>Bank statement received (Excel/CSV/PDF) for the period</li>
+<li>(Optional) If importing, prepare CSV: Date, Description, Debit, Credit, Reference</li>
+</ul>
+<hr />
+</div>
+<div id="entering-bank-data-in-tally" class="section level2 hasAnchor" number="9.2">
+<h2><span class="header-section-number">9.2</span> Entering Bank Data in Tally<a href="bank-reconciliation.html#entering-bank-data-in-tally" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="manual-entry" class="section level3 hasAnchor" number="9.2.1">
+<h3><span class="header-section-number">9.2.1</span> Manual Entry<a href="bank-reconciliation.html#manual-entry" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Record all bank transactions using vouchers:
+<ul>
+<li><strong>Payments</strong>: Payment Voucher (select bank ledger)</li>
+<li><strong>Receipts</strong>: Receipt Voucher (bank ledger as Dr)</li>
+<li><strong>Contra</strong>: For cash-bank transfers</li>
+<li><strong>Bank Charges/Interest</strong>: Payment voucher (bank ledger credited, expense/interest debited)</li>
 </ul></li>
-</ol>
-<hr />
-</div>
-<div id="maintaining-accounts" class="section level2 hasAnchor" number="2.5">
-<h2><span class="header-section-number">2.5</span> Maintaining Accounts<a href="fundamentals-company-creation.html#maintaining-accounts" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>In the <strong>Company Creation</strong> screen:</p>
-<ul>
-<li><strong>Maintain Accounts Only</strong> → For non-inventory businesses.<br />
-</li>
-<li><strong>Maintain Accounts with Inventory</strong> → For businesses dealing with goods or stock.</li>
 </ul>
-<p>Select the appropriate option based on business needs.</p>
-<hr />
-</div>
-<div id="selection-closure-and-alteration-of-company" class="section level2 hasAnchor" number="2.6">
-<h2><span class="header-section-number">2.6</span> Selection, Closure, and Alteration of Company<a href="fundamentals-company-creation.html#selection-closure-and-alteration-of-company" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="selecting-a-company" class="section level3 hasAnchor" number="2.6.1">
-<h3><span class="header-section-number">2.6.1</span> Selecting a Company<a href="fundamentals-company-creation.html#selecting-a-company" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ol style="list-style-type: decimal">
-<li>From the <strong>Gateway of Tally</strong>, select <strong>Select Company</strong>.<br />
-</li>
-<li>Choose the desired company name from the list.</li>
-</ol>
-</div>
-<div id="altering-company-information" class="section level3 hasAnchor" number="2.6.2">
-<h3><span class="header-section-number">2.6.2</span> Altering Company Information<a href="fundamentals-company-creation.html#altering-company-information" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ol style="list-style-type: decimal">
-<li>From the <strong>Company Info</strong> screen, select <strong>Alter</strong>.<br />
-</li>
-<li>Modify details such as address, email, or GSTIN.<br />
-</li>
-<li>Press <strong>Ctrl + A</strong> to save.</li>
-</ol>
-</div>
-<div id="closing-a-company" class="section level3 hasAnchor" number="2.6.3">
-<h3><span class="header-section-number">2.6.3</span> Closing a Company<a href="fundamentals-company-creation.html#closing-a-company" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ol style="list-style-type: decimal">
-<li>Press <strong>Alt + F1 (Shut Company)</strong> to close the current company.<br />
-</li>
-<li>The system will return to the <strong>Company Info</strong> menu.</li>
-</ol>
+<p><strong>Example Entries</strong>
+- 03-07-2025 — Cheque to Supplier XYZ — ₹15,000 (Payment voucher: Credit HDFC, Debit Creditors)
+- 10-07-2025 — Customer RTGS receipt — ₹20,000 (Receipt voucher: Debit HDFC, Credit Debtors)
+- 31-07-2025 — Bank charges ₹200 (Payment: Credit HDFC, Debit Bank Charges)</p>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Record cheque numbers and reference for easy matching.</p>
+</blockquote>
 <hr />
 </div>
 </div>
-<div id="backup-and-security-recommended" class="section level2 hasAnchor" number="2.7">
-<h2><span class="header-section-number">2.7</span> Backup and Security (Recommended)<a href="fundamentals-company-creation.html#backup-and-security-recommended" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="open-the-bank-reconciliation-screen" class="section level2 hasAnchor" number="9.3">
+<h2><span class="header-section-number">9.3</span> Open the Bank Reconciliation Screen<a href="bank-reconciliation.html#open-the-bank-reconciliation-screen" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
-<li><strong>Backup:</strong> Go to <strong>Alt + F3 → Backup</strong>, choose the destination drive, and confirm.<br />
-</li>
-<li><strong>Restore:</strong> Use <strong>Alt + F3 → Restore</strong> when required.<br />
-</li>
-<li><strong>Security Control:</strong> Enable user-level access under <strong>F11 → Security Control</strong>.</li>
+<li>Path: <code>Gateway of Tally → Display → Statements → Bank Reconciliation</code></li>
+<li>or <code>Gateway → Accounting Vouchers → Bank Reconciliation</code></li>
+<li>Choose the Bank Ledger (e.g., HDFC Bank - Current)</li>
+<li>Set period with <code>F2</code> (e.g., 01-07-2025 to 31-07-2025)</li>
+<li>Screen displays: bank statement lines (if imported), book entries, ability to mark “Reconciled”</li>
 </ul>
 <hr />
 </div>
-<div id="summary" class="section level2 hasAnchor" number="2.8">
-<h2><span class="header-section-number">2.8</span> Summary<a href="fundamentals-company-creation.html#summary" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="matching-marking-reconciled-entries" class="section level2 hasAnchor" number="9.4">
+<h2><span class="header-section-number">9.4</span> Matching / Marking Reconciled Entries<a href="bank-reconciliation.html#matching-marking-reconciled-entries" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="manual-reconciliation" class="section level3 hasAnchor" number="9.4.1">
+<h3><span class="header-section-number">9.4.1</span> Manual Reconciliation<a href="bank-reconciliation.html#manual-reconciliation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Match each bank statement line with the Tally voucher (amount, date, cheque/UTR/reference)</li>
+<li>Select both, mark as reconciled (key/button varies; Space/R/Match/Enter)</li>
+<li>Confirm reconciliation date (often bank statement date)</li>
+<li>Repeat for all cleared items</li>
+</ul>
+<p><strong>Example</strong>
+- Bank shows RTGS ₹20,000, 10-07-2025, UTR123; Tally shows same receipt on same date. Mark both as reconciled.</p>
+</div>
+<div id="handling-special-cases" class="section level3 hasAnchor" number="9.4.2">
+<h3><span class="header-section-number">9.4.2</span> Handling Special Cases<a href="bank-reconciliation.html#handling-special-cases" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Amounts differ: record adjustment voucher for bank charge, reconcile difference</li>
+<li>Cheque bounced: don’t reconcile; create reversal voucher</li>
+<li>Unpresented cheques: leave as unreconciled—in future, clear when bank shows them</li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="review-reconciled-unreconciled-lists" class="section level2 hasAnchor" number="9.5">
+<h2><span class="header-section-number">9.5</span> Review Reconciled &amp; Unreconciled Lists<a href="bank-reconciliation.html#review-reconciled-unreconciled-lists" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>Filter to see:
+<ul>
+<li><strong>Reconciled Entries</strong>: matched, with reconciliation date</li>
+<li><strong>Unreconciled (Book)</strong>: vouchers entered, not yet cleared in bank</li>
+<li><strong>Unreconciled (Bank)</strong>: bank statement entries not recorded in Tally</li>
+</ul></li>
+</ul>
+<p><strong>How to view:</strong><br />
+Within the Reconciliation screen, use F12/View to switch between lists.</p>
+<p><strong>Example Output</strong>
+- Reconciled: Receipt ₹20,000 (10-07-2025), Payment ₹15,000 (03-07-2025)
+- Unreconciled: Cheque payment ₹5,000 (27-07-2025, not yet cleared)
+- Bank charges not in Tally: Bank charges ₹200 (31-07-2025)</p>
+<hr />
+</div>
+<div id="creatingreversing-vouchers-for-bank-adjustments" class="section level2 hasAnchor" number="9.6">
+<h2><span class="header-section-number">9.6</span> Creating/Reversing Vouchers for Bank Adjustments<a href="bank-reconciliation.html#creatingreversing-vouchers-for-bank-adjustments" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>Bank charges/interest/direct credits: create vouchers in Tally (Payment for charges, Receipt for credits), then mark as reconciled</li>
+<li>Dishonour/bank debit errors: create reversal/adjusment vouchers</li>
+</ul>
+<p><strong>Example</strong>
+- Bank debits ₹300 service charge (31-07-2025): Payment voucher — Debit Bank Charges ₹300, Credit HDFC ₹300</p>
+<hr />
+</div>
+<div id="generate-reconciled-statement-reconciliation-report" class="section level2 hasAnchor" number="9.7">
+<h2><span class="header-section-number">9.7</span> Generate Reconciled Statement / Reconciliation Report<a href="bank-reconciliation.html#generate-reconciled-statement-reconciliation-report" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="summary-statement" class="section level3 hasAnchor" number="9.7.1">
+<h3><span class="header-section-number">9.7.1</span> Summary Statement<a href="bank-reconciliation.html#summary-statement" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Shows:
+- Balance as per Bank Statement (closing)
+- Add: Deposits in transit
+- Less: Unpresented cheques
+- Adjusted bank balance (should match books)
+- Balance as per Tally books</p>
+<p><strong>Sample Bank Reconciliation Statement Format</strong></p>
 <table>
 <thead>
 <tr class="header">
-<th><strong>Operation</strong></th>
-<th><strong>Key Shortcut</strong></th>
-<th><strong>Purpose</strong></th>
+<th>Description</th>
+<th>Amount (₹)</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Create Company</td>
-<td>Alt + F3</td>
-<td>Begin new company setup</td>
+<td>Balance as per Bank Statement (closing)</td>
+<td>XXX</td>
 </tr>
 <tr class="even">
-<td>Select Company</td>
-<td>Alt + F1</td>
-<td>Open existing company</td>
+<td>Add: Deposits in transit</td>
+<td>YYY</td>
 </tr>
 <tr class="odd">
-<td>Alter Company</td>
-<td>Alt + F3 → Alter</td>
-<td>Modify details</td>
+<td>Less: Unpresented Cheques</td>
+<td>ZZZ</td>
 </tr>
 <tr class="even">
-<td>Shut Company</td>
-<td>Alt + F1</td>
-<td>Close company</td>
+<td><strong>Adjusted Bank Balance</strong></td>
+<td>XXX + YYY - ZZZ</td>
 </tr>
 <tr class="odd">
-<td>Backup</td>
-<td>Alt + F3 → Backup</td>
-<td>Save data copy</td>
+<td>Balance as per Books (Bank Ledger Closing)</td>
+<td>AAA</td>
 </tr>
 </tbody>
 </table>
+<p>If adjusted bank balance = book balance → reconciliation complete.</p>
+</div>
+<div id="detailed-report" class="section level3 hasAnchor" number="9.7.2">
+<h3><span class="header-section-number">9.7.2</span> Detailed Report<a href="bank-reconciliation.html#detailed-report" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li>Lists each reconciled/unreconciled item with status, reference, date, amount</li>
+</ul>
+<p><strong>Print/Export</strong>
+- Alt+P: Print
+- Alt+E: Export (PDF/Excel/CSV/Word)
+- Use UTF-8 for CSV if needed</p>
 <hr />
-<blockquote>
-<p>💡 <strong>Tip:</strong> Always verify company information after creation and before entering vouchers to ensure accuracy in GST and financial reporting.</p>
-</blockquote>
+</div>
+</div>
+<div id="saving-locking-reconciliation-audit-trail" class="section level2 hasAnchor" number="9.8">
+<h2><span class="header-section-number">9.8</span> Saving &amp; Locking Reconciliation (Audit Trail)<a href="bank-reconciliation.html#saving-locking-reconciliation-audit-trail" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>Save session; Tally records reconciliation date</li>
+<li>Some versions allow locking or audit notes—add narration for reconciling items</li>
+</ul>
+<hr />
+</div>
+<div id="practical-example-full-walkthrough" class="section level2 hasAnchor" number="9.9">
+<h2><span class="header-section-number">9.9</span> Practical Example: Full Walkthrough<a href="bank-reconciliation.html#practical-example-full-walkthrough" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Scenario</strong>
+- Book closing balance (HDFC) 31-07-2025: ₹50,000
+- Bank statement closing: ₹42,500</p>
+<p><strong>Bank statement items not in Tally</strong>
+- Bank charges ₹200
+- Interest credited ₹700
+- Customer cheque ₹7,000 cleared</p>
+<p><strong>Tally book items not in statement</strong>
+- Cheque to supplier ₹5,000 (not yet presented)
+- Cheque to staff ₹500 (not yet presented)</p>
+<p><strong>Steps</strong>
+- Open reconciliation for HDFC, set period
+- Match &amp; reconcile receipts, charges, interest
+- Leave cheques as unreconciled
+- Generate statement:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Description</th>
+<th>Amount (₹)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bank statement</td>
+<td>₹42,500</td>
+</tr>
+<tr class="even">
+<td>Less unpresented</td>
+<td>₹5,500</td>
+</tr>
+<tr class="odd">
+<td>Adjusted bank balance</td>
+<td>₹37,000</td>
+</tr>
+<tr class="even">
+<td>Book balance</td>
+<td>₹37,000</td>
+</tr>
+</tbody>
+</table>
+<p>Export reconciliation report as PDF for audit.</p>
+<hr />
+</div>
+<div id="troubleshooting-common-problems" class="section level2 hasAnchor" number="9.10">
+<h2><span class="header-section-number">9.10</span> Troubleshooting Common Problems<a href="bank-reconciliation.html#troubleshooting-common-problems" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>Totals don’t match: check for missing charges/credits, wrong dates</li>
+<li>Rounding errors: adjust with voucher if needed</li>
+<li>Duplicate matches: unmatch and retry</li>
+<li>Import format wrong: reformat CSV, re-import</li>
+<li>Cheque numbers missing: use narration for matching</li>
+</ul>
+<hr />
 
 </div>
 </div>
@@ -628,8 +613,8 @@
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="chart-of-accounts-groups-ledgers.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="inventory-reports.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="calculation-of-interest.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -660,7 +645,7 @@ gitbook.start({
     "size": 2
   },
   "edit": {
-    "link": "https://github.com/learnwithrk/Accounting-Software/edit/main/02-ch.Rmd",
+    "link": "https://github.com/learnwithrk/Accounting-Software/edit/main/09-ch.Rmd",
     "text": "Edit"
   },
   "history": {
@@ -668,7 +653,7 @@ gitbook.start({
     "text": null
   },
   "view": {
-    "link": "https://github.com/learnwithrk/Accounting-Software/blob/main/02-ch.Rmd",
+    "link": "https://github.com/learnwithrk/Accounting-Software/blob/main/09-ch.Rmd",
     "text": null
   },
   "download": null,

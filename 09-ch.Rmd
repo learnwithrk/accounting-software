@@ -1,0 +1,180 @@
+# Bank Reconciliation
+
+Bank reconciliation matches company’s bank ledger entries with the bank’s statement.  
+The result is a Reconciliation Statement showing:
+- Items cleared (matched in both Tally and Bank)
+- Outstanding items (not yet cleared)
+- Bank balance per books vs bank balance per bank statement
+- Reconciling items: cheques in transit, unpresented cheques, bank charges, direct credits
+
+---
+
+## Prerequisites
+
+- Company selected and correct financial year opened
+- Bank ledger(s) created (e.g., HDFC Bank - Current)
+- Vouchers and bank transactions entered in Tally (payments, receipts, contra, charges)
+- Bank statement received (Excel/CSV/PDF) for the period
+- (Optional) If importing, prepare CSV: Date, Description, Debit, Credit, Reference
+
+---
+
+## Entering Bank Data in Tally
+
+### Manual Entry
+
+- Record all bank transactions using vouchers:
+    - **Payments**: Payment Voucher (select bank ledger)
+    - **Receipts**: Receipt Voucher (bank ledger as Dr)
+    - **Contra**: For cash-bank transfers
+    - **Bank Charges/Interest**: Payment voucher (bank ledger credited, expense/interest debited)
+
+**Example Entries**
+- 03-07-2025 — Cheque to Supplier XYZ — ₹15,000 (Payment voucher: Credit HDFC, Debit Creditors)
+- 10-07-2025 — Customer RTGS receipt — ₹20,000 (Receipt voucher: Debit HDFC, Credit Debtors)
+- 31-07-2025 — Bank charges ₹200 (Payment: Credit HDFC, Debit Bank Charges)
+
+> 💡 **Tip:** Record cheque numbers and reference for easy matching.
+
+---
+
+## Open the Bank Reconciliation Screen
+
+- Path: `Gateway of Tally → Display → Statements → Bank Reconciliation`
+- or `Gateway → Accounting Vouchers → Bank Reconciliation`
+- Choose the Bank Ledger (e.g., HDFC Bank - Current)
+- Set period with `F2` (e.g., 01-07-2025 to 31-07-2025)
+- Screen displays: bank statement lines (if imported), book entries, ability to mark “Reconciled”
+
+---
+
+## Matching / Marking Reconciled Entries
+
+### Manual Reconciliation
+
+- Match each bank statement line with the Tally voucher (amount, date, cheque/UTR/reference)
+- Select both, mark as reconciled (key/button varies; Space/R/Match/Enter)
+- Confirm reconciliation date (often bank statement date)
+- Repeat for all cleared items
+
+**Example**
+- Bank shows RTGS ₹20,000, 10-07-2025, UTR123; Tally shows same receipt on same date. Mark both as reconciled.
+
+### Handling Special Cases
+
+- Amounts differ: record adjustment voucher for bank charge, reconcile difference
+- Cheque bounced: don’t reconcile; create reversal voucher
+- Unpresented cheques: leave as unreconciled—in future, clear when bank shows them
+
+---
+
+## Review Reconciled & Unreconciled Lists
+
+- Filter to see:
+    - **Reconciled Entries**: matched, with reconciliation date
+    - **Unreconciled (Book)**: vouchers entered, not yet cleared in bank
+    - **Unreconciled (Bank)**: bank statement entries not recorded in Tally
+
+**How to view:**  
+Within the Reconciliation screen, use F12/View to switch between lists.
+
+**Example Output**
+- Reconciled: Receipt ₹20,000 (10-07-2025), Payment ₹15,000 (03-07-2025)
+- Unreconciled: Cheque payment ₹5,000 (27-07-2025, not yet cleared)
+- Bank charges not in Tally: Bank charges ₹200 (31-07-2025)
+
+---
+
+## Creating/Reversing Vouchers for Bank Adjustments
+
+- Bank charges/interest/direct credits: create vouchers in Tally (Payment for charges, Receipt for credits), then mark as reconciled
+- Dishonour/bank debit errors: create reversal/adjusment vouchers
+
+**Example**
+- Bank debits ₹300 service charge (31-07-2025): Payment voucher — Debit Bank Charges ₹300, Credit HDFC ₹300
+
+---
+
+## Generate Reconciled Statement / Reconciliation Report
+
+### Summary Statement
+
+Shows:
+- Balance as per Bank Statement (closing)
+- Add: Deposits in transit
+- Less: Unpresented cheques
+- Adjusted bank balance (should match books)
+- Balance as per Tally books
+
+**Sample Bank Reconciliation Statement Format**
+
+| Description                                   | Amount (₹)         |
+|-----------------------------------------------|--------------------|
+| Balance as per Bank Statement (closing)       | XXX                |
+| Add: Deposits in transit                      | YYY                |
+| Less: Unpresented Cheques                     | ZZZ                |
+| **Adjusted Bank Balance**                     | XXX + YYY - ZZZ    |
+| Balance as per Books (Bank Ledger Closing)    | AAA                |
+
+
+If adjusted bank balance = book balance → reconciliation complete.
+
+### Detailed Report
+
+- Lists each reconciled/unreconciled item with status, reference, date, amount
+
+**Print/Export**
+- Alt+P: Print
+- Alt+E: Export (PDF/Excel/CSV/Word)
+- Use UTF-8 for CSV if needed
+
+---
+
+## Saving & Locking Reconciliation (Audit Trail)
+
+- Save session; Tally records reconciliation date
+- Some versions allow locking or audit notes—add narration for reconciling items
+
+---
+
+## Practical Example: Full Walkthrough
+
+**Scenario**
+- Book closing balance (HDFC) 31-07-2025: ₹50,000
+- Bank statement closing: ₹42,500
+
+**Bank statement items not in Tally**
+- Bank charges ₹200
+- Interest credited ₹700
+- Customer cheque ₹7,000 cleared
+
+**Tally book items not in statement**
+- Cheque to supplier ₹5,000 (not yet presented)
+- Cheque to staff ₹500 (not yet presented)
+
+**Steps**
+- Open reconciliation for HDFC, set period
+- Match & reconcile receipts, charges, interest
+- Leave cheques as unreconciled
+- Generate statement:
+
+| Description          | Amount (₹) |
+|----------------------|------------|
+| Bank statement       | ₹42,500    |
+| Less unpresented     | ₹5,500     |
+| Adjusted bank balance| ₹37,000    |
+| Book balance         | ₹37,000    |
+
+Export reconciliation report as PDF for audit.
+
+---
+
+## Troubleshooting Common Problems
+
+- Totals don’t match: check for missing charges/credits, wrong dates
+- Rounding errors: adjust with voucher if needed
+- Duplicate matches: unmatch and retry
+- Import format wrong: reformat CSV, re-import
+- Cheque numbers missing: use narration for matching
+
+---

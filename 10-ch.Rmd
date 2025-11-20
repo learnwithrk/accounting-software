@@ -1,0 +1,216 @@
+# Calculation of Interest
+
+Tally can automatically calculate:
+
+- Interest Receivable (interest earned from customers)
+- Interest Payable (interest owed to suppliers)
+
+Interest may be calculated on outstanding balances, overdue invoices, advances, at simple or compound rates, as per the configuration.
+
+---
+
+## Enable Interest Calculations in Tally
+
+Before use, enable interest calculation features:
+
+1. Go to `Gateway of Tally`
+2. Press `F11 – Features`
+3. Select `Accounting Features`
+4. Set `Activate interest calculation` → YES
+5. Set `Use advanced parameters` → YES (for bill-wise interest)
+6. Press `Ctrl + A` to save
+
+---
+
+## Create or Modify Ledgers for Interest Calculation
+
+Interest settings are applied at the ledger level (e.g. customer/supplier).  
+Interest can be enabled for:
+- Sundry Debtors (Interest Receivable)
+- Sundry Creditors (Interest Payable)
+- Loans & Advances
+- Bank Loans
+- Capital Accounts
+
+---
+
+## Interest Receivable (Customer) — Step-by-Step
+
+**Example Scenario:**  
+Sale to ABC Traders  
+- Sale amount: ₹10,000  
+- Due date: same day  
+- Payment late, interest at 18% p.a. on overdue
+
+### Create Customer Ledger
+
+1. Go to `Gateway → Accounts Info → Ledgers → Create`
+2. Name: ABC Traders
+3. Under Group: Sundry Debtors
+4. `Maintain Bill-wise details` → YES
+5. `Activate Interest Calculation` → YES
+6. `Calculate Interest Transaction-by-Transaction` → YES
+7. `Override Parameters` → YES
+8. On advanced parameters screen:
+    - Interest Style: On Outstanding
+    - Calculate From: Due Date
+    - Rate: 18% per annum
+    - Applicability: Always
+9. Press `Ctrl + A` to save
+
+### Enter Sales Transaction
+
+- Go to `Accounting Vouchers → F8 Sales`
+- Customer: ABC Traders
+- Sale: ₹10,000
+- Tally automatically creates a bill reference (e.g. Bill 001)
+
+### Payment Arrives Late
+
+- Customer pays after 30 days
+- Go to `Accounting Vouchers → F6 Receipt`
+- Customer: ABC Traders
+- Amount: ₹10,000
+- Select bill Bill 001
+- Payment date: 30 days late
+
+Tally notes payment, keeps interest outstanding.
+
+### View Interest Receivable
+
+- Go to `Gateway → Display More Reports → Statement of Accounts → Interest Calculations → Ledger`
+- Select: ABC Traders
+
+**You will see:**
+- Principal amount
+- Days overdue
+- Interest rate
+- Interest amount
+
+**Example Output:**  
+ABC Traders  
+Bill 001  
+Principal: ₹10,000  
+Days overdue: 30  
+Interest: ₹150  
+_Calculation: ₹10,000 × 18% × 30/365_
+
+### Pass Journal for Interest Receivable
+
+- Go to `Accounting Vouchers → F7 Journal`
+- Debit: ABC Traders – ₹150
+- Credit: Interest Income (Indirect Income) – ₹150
+- Narration: "Interest receivable on Bill 001 for 30-day delay."
+
+---
+
+## Interest Payable (Supplier)
+
+**Example Scenario:**  
+Supplier: XYZ Suppliers  
+- Amount owed: ₹20,000  
+- Payment delayed by 45 days  
+- Interest charged: 12% p.a.
+
+### Create Supplier Ledger
+
+1. Go to `Gateway → Accounts Info → Ledgers → Create`
+2. Name: XYZ Suppliers
+3. Under Group: Sundry Creditors
+4. `Maintain bill-wise` → YES
+5. `Activate Interest Calculation` → YES
+6. Calculate interest: Transaction by Transaction
+7. Advanced Parameters:
+    - Interest Style: On Outstanding
+    - Calculate From: Expiry / Due Date
+    - Rate: 12% p.a.
+    - Applicability: Always
+
+### Record Purchase
+
+- Go to `Accounting Vouchers → F9 Purchase`
+- Supplier: XYZ Suppliers
+- Amount: ₹20,000
+- Bill ref: P001
+
+### Payment Delayed
+
+- F5 Payment
+- Supplier: XYZ Suppliers
+- Amount: ₹20,000
+- Select bill P001
+
+Tally tracks overdue interest.
+
+### View Interest Payable
+
+- Go to `Gateway → Display More Reports → Statement of Accounts → Interest Calculations → Ledger`
+- Select: XYZ Suppliers
+
+**Example Output:**  
+XYZ Suppliers  
+Bill P001  
+Principal: ₹20,000  
+Days overdue: 45  
+Rate: 12%  
+Interest: ₹296.71  
+_Calculation: ₹20,000 × 12% × 45/365_
+
+### Book Interest Payable (Journal)
+
+- Go to `F7 Journal`
+- Debit: Interest Expense (Indirect Expense) – ₹296.71
+- Credit: XYZ Suppliers – ₹296.71
+- Narration: "Interest payable to supplier for P001"
+
+---
+
+## Interest Groups & Ledgers
+
+For reporting/classification:
+- **Interest Income**
+    - Gateway → Accounts Info → Ledgers → Create
+    - Under Group: Indirect Incomes
+- **Interest Expense**
+    - Under Group: Indirect Expenses
+
+These appear in P&L automatically.
+
+---
+
+## Reports Used for Interest
+
+- **Interest Calculation Ledger Report**
+    - Path: Display → Statement of Accounts → Interest Calculations → Ledger
+- **Interest Outstanding Summary**
+    - Path: Display → Statement of Accounts → Interest Calculations → Outstanding
+- **Interest Voucher Report**
+    - Shows all interest journals posted
+
+---
+
+## Example
+
+| Transaction              | Amount  | Interest Rate | Status                      |
+|--------------------------|---------|---------------|-----------------------------|
+| Sale to ABC Traders      | ₹10,000 | 18%           | 30 days late → Interest receivable ₹150 |
+| Purchase from XYZ Suppliers | ₹20,000 | 12%         | 45 days late → Interest payable ₹296.71 |
+
+
+
+**Journal Entries:**
+- ABC Traders Dr ₹150  
+  To Interest Income ₹150  
+- Interest Expense ₹296.71 Dr  
+  To XYZ Suppliers ₹296.71
+
+---
+
+## Common Problems & Solutions
+
+| Problem                     | Cause                      | Fix                              |
+|-----------------------------|----------------------------|----------------------------------|
+| Interest not showing        | Interest not enabled       | Enable in ledger features        |
+| Wrong days count            | Using voucher date, not due| Set "Calculate From" = Due Date  |
+| Interest for whole ledger   | "Apply to all balances" on | Use transaction-wise option      |
+| Incorrect rate applied      | Advanced parameters missing| Set rate at ledger level         |
