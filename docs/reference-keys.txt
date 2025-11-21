@@ -13,6 +13,7 @@ altering-company-information
 closing-a-company
 backup-and-security-recommended
 summary
+illustration
 chart-of-accounts-groups-ledgers
 overview-concepts
 typical-group-hierarchy-example
