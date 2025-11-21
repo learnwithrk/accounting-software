@@ -24,9 +24,9 @@ This Book will help the learner in Creating the Company, necessary Ledgers and P
   <tr>
     <td style="padding:12px; font-weight:bold; width:40%;">Dr. V. Mallika</td>
     <td style="padding:12px;">
-      Associate Professor and Dean<br>
-      School of Commerce<br>
-      PSG College of Arts & Science
+      Associate Professor and Dean,<br>
+      School of Commerce,<br>
+      PSG College of Arts & Science.
     </td>
   </tr>
 
@@ -39,8 +39,8 @@ This Book will help the learner in Creating the Company, necessary Ledgers and P
   <tr>
     <td style="padding:12px; font-weight:bold;">Dr. M. Rajakrishnan</td>
     <td style="padding:12px;">
-      Assistant Professor in Commerce CA<br>
-      PSG College of Arts & Science
+      Assistant Professor in Commerce CA,<br>
+      PSG College of Arts & Science.
     </td>
   </tr>
 </table>
