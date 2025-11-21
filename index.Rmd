@@ -45,3 +45,5 @@ This Book will help the learner in Creating the Company, necessary Ledgers and P
   </tr>
 </table>
 
+<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://learnwithrk.github.io/accounting-software/&count_bg=%2379C83D&title_bg=%23555555&icon=github.svg&title=Page+Views&edge_flat=false"/>
+
