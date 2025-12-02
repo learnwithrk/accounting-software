@@ -10,41 +10,6 @@ site: bookdown::bookdown_site
 
 This Book will help the learner in Creating the Company, necessary Ledgers and Preparing various statements.
 
-<table style="width:90%; border-collapse:collapse; margin:auto; 
-             background:#e6f2ff; border:2px solid #4d94ff; 
-             font-family:Arial, sans-serif;">
-  <tr>
-    <th colspan="2" 
-        style="background:#4d94ff; color:white; padding:10px; 
-               font-size:20px; text-align:center;">
-      FECILITATORS
-    </th>
-  </tr>
-
-  <tr>
-    <td style="padding:12px; font-weight:bold; width:40%;">Dr. V. Mallika</td>
-    <td style="padding:12px;">
-      Associate Professor and Dean,<br>
-      School of Commerce,<br>
-      PSG College of Arts & Science.
-    </td>
-  </tr>
-
-  <tr>
-    <td colspan="2" style="padding:10px; text-align:center; font-weight:bold; color:#004080;">
-      &
-    </td>
-  </tr>
-
-  <tr>
-    <td style="padding:12px; font-weight:bold;">Dr. M. Rajakrishnan</td>
-    <td style="padding:12px;">
-      Assistant Professor in Commerce CA,<br>
-      PSG College of Arts & Science.
-    </td>
-  </tr>
-</table>
-
 ---
 
 <a href="https://info.flagcounter.com/HLAH"><img src="https://s01.flagcounter.com/count2/HLAH/bg_FFFFFF/txt_000000/border_CCCCCC/columns_4/maxflags_12/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
