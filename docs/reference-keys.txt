@@ -28,6 +28,7 @@ to-delete-a-ledger
 to-delete-a-group
 examples-typical-ledgers-and-groups
 example-chart-for-a-small-business
+illustration-1
 accounting-vouchers-types
 shortcuts-used-in-steps
 contra-voucher-transfer-between-cashbank
@@ -59,11 +60,10 @@ bill-wise-details-for-credit-transactions
 voucher-numbering-series
 using-narration-and-references
 reverse-adjust-transactions
-sample-vouchers-a-small-use-case-walkthrough
+illustration-2
 troubleshooting-common-issues
 example-payment-voucher-entry-screen
 quick-reference-table-voucher-types
-final-tips
 statement-of-accounts
 balance-sheet
 how-to-view-the-balance-sheet

@@ -261,7 +261,7 @@ Path: In voucher screen, press **F2** / check the bill-wise field and enter invo
 
 ---
 
-## Sample Vouchers: A Small Use-Case Walkthrough
+## Illustration
 
 1. Company starts business — Capital introduced ₹1,00,000 (Journal)
    - Dr Cash-in-Hand ₹1,00,000  
@@ -320,10 +320,3 @@ Path: In voucher screen, press **F2** / check the bill-wise field and enter invo
 | Debit Note | Purchase returns / debit from supplier | (Purchase menu) |
 
 ---
-
-## Final Tips
-
-- Keep voucher entries consistent and clearly narrated for audit purposes.  
-- Use **Invoice Mode** for all tax-relevant vouchers.  
-- Test critical processes such as tax, returns, and reversals in a **sample company** before applying them to live data.  
-- Always create a backup before large or bulk changes: `Alt + F3 → Backup`.
