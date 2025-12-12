@@ -103,7 +103,7 @@ Select the appropriate option based on business needs.
 
 ---
 
-## Backup and Security (Recommended)
+## Backup and Security 
 
 - **Backup:** Go to **Alt + F3 → Backup**, choose the destination drive, and confirm.  
 - **Restore:** Use **Alt + F3 → Restore** when required.  
@@ -131,39 +131,44 @@ Select the appropriate option based on business needs.
 
 **Journal Entries – April 2025 (Books of Rohit)**
 
-(a) 1 April 2025 – Cash Purchases ₹20,000
+(a) 1 April 2025 – Started Business with the Capital ₹2,00,000
+
+**Cash A/c** … Dr ₹2.00,000  
+  &nbsp;&nbsp;&nbsp;&nbsp;**To Capital A/c** ₹2.00,000  
+
+(b) 1 April 2025 – Cash Purchases ₹20,000
 
 **Cash A/c** … Dr ₹20,000  
   &nbsp;&nbsp;&nbsp;&nbsp;**To Purchases A/c** ₹20,000  
 
-(b) 9 April 2025 – Sold goods to Rama at ₹54,000 
+(c) 9 April 2025 – Sold goods to Rama at ₹54,000 
 
 **Rama A/c** … Dr ₹54,000  
   &nbsp;&nbsp;&nbsp;&nbsp;**To Sales A/c** ₹54,000  
 
-(c) 11 April 2025 – Purchased goods from Vinod ₹27,000 
+(d) 11 April 2025 – Purchased goods from Vinod ₹27,000 
 
 **Purchases A/c** … Dr ₹27,000  
   &nbsp;&nbsp;&nbsp;&nbsp;**To Vinod A/c** ₹27,000  
 
-(d) 18 April 2025 – Returned goods to Vinod ₹1,800
+(e) 18 April 2025 – Returned goods to Vinod ₹1,800
 
 **Vinod A/c** … Dr ₹1,800  
   &nbsp;&nbsp;&nbsp;&nbsp;**To Purchase Return A/c** ₹1,800  
 
-(e) 22 April 2025 – Paid Vinod ₹24,000 in full settlement  
+(f) 22 April 2025 – Paid Vinod ₹24,000 in full settlement  
 (He allowed discount = Balance – Amount Paid)
 
 **Vinod A/c** … Dr ₹25,200  
   &nbsp;&nbsp;&nbsp;&nbsp;**To Cash A/c** ₹24,000  
   &nbsp;&nbsp;&nbsp;&nbsp;**To Discount Received A/c** ₹1,200  
 
-(f) 25 April 2025 – Rama returned goods ₹9,000 
+(g) 25 April 2025 – Rama returned goods ₹9,000 
 
 **Sales Return A/c** … Dr ₹9,000  
   &nbsp;&nbsp;&nbsp;&nbsp;**To Rama A/c** ₹9,000  
 
-(g) 28 April 2025 – Rama paid ₹43,000 in full settlement  
+(h) 28 April 2025 – Rama paid ₹43,000 in full settlement  
 **Cash A/c** … Dr ₹43,000  
 **Discount Allowed A/c** … Dr ₹2,000  
   &nbsp;&nbsp;&nbsp;&nbsp;**To Rama A/c** ₹45,000  

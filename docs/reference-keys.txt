@@ -11,7 +11,7 @@ selection-closure-and-alteration-of-company
 selecting-a-company
 altering-company-information
 closing-a-company
-backup-and-security-recommended
+backup-and-security
 summary
 illustration
 chart-of-accounts-groups-ledgers
