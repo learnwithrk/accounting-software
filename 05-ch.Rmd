@@ -233,3 +233,54 @@ Closing balance = ₹20,000 (Dr).
 - **Cash/Bank Book** → Day-to-day cash/bank activities  
 - **Ledgers** → Individual account performance
 
+---
+
+## Illustration
+
+| **Name of the Account** | **Debit (Rs.)** | **Credit (Rs.)** |
+|-------------------------|------------------|------------------|
+| Drawings | 45,000 | |
+| Goodwill | 90,000 | |
+| Buildings | 60,000 | |
+| Machinery | 40,000 | |
+| Bills Receivable | 6,000 | |
+| Opening Stock | 40,000 | |
+| Purchase | 51,000 | |
+| Wages | 26,000 | |
+| Carriage Outward | 500 | |
+| Carriage Inward | 1,000 | |
+| Salary | 35,000 | |
+| Rent | 3,000 | |
+| Discount | 1,100 | |
+| Repairs | 2,300 | |
+| Bank | 25,000 | |
+| Cash | 1,600 | |
+| Debtors | 45,000 | |
+| Bad Debts | 1,200 | |
+| Sales Return | 2,000 | |
+| Furniture | 6,000 | |
+| Advertisement | 3,500 | |
+| General Expenses | 400 | |
+| Capital | | 1,60,000 |
+| Bills Payable | | 35,000 |
+| Creditors | | 70,000 |
+| Purchase Return | | 2,600 |
+| Sales | | 2,18,000 |
+**Total** | **4,85,650** | **4,85,600**
+
+---
+
+**Adjustments**
+
+1. Closing stock: **Rs. 35,000**  
+2. Provide depreciation @10% on:
+   - Machinery  
+   - Furniture  
+3. Outstanding wages: **Rs. 1,500**  
+4. Prepaid advertisement: **Rs. 500**  
+5. Create **5% provision for doubtful debts** on debtors  
+
+---
+
+
+

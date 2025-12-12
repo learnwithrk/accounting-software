@@ -267,34 +267,33 @@ Path: In voucher screen, press **F2** / check the bill-wise field and enter invo
    - Dr Cash-in-Hand ₹1,00,000  
    - Cr Capital Account ₹1,00,000
 
-2. Deposit ₹50,000 into bank (Contra)
+2. Deposit ₹50,000 into Canara bank (Contra)
    - Dr Bank ₹50,000  
    - Cr Cash ₹50,000
 
 3. Purchase goods on credit from ABC Suppliers ₹30,000 (Purchase)
    - Dr Purchases ₹30,000  
    - Cr Sundry Creditors — ABC Suppliers ₹30,000
+   
+4. Goods returned to ABC Suppliers ₹3,000 (Purchase Return / Debit Note)
+   - Dr Sundry Creditors — ABC Suppliers ₹3,000  
+   - Cr Purchase Return ₹3,000
 
-4. Make a payment to ABC Suppliers ₹15,000 (Payment)
+5. Make a payment to ABC Suppliers ₹15,000 (Payment)
    - Dr Sundry Creditors — ABC Suppliers ₹15,000  
    - Cr Bank ₹15,000
 
-5. Make sales to Ram Traders on credit ₹20,000 (Sales)
+6. Make sales to Ram Traders on credit ₹20,000 (Sales)
    - Dr Sundry Debtors — Ram Traders ₹20,000  
    - Cr Sales ₹20,000
 
-6. Ram Traders pays ₹20,000 by cash (Receipt)
-   - Dr Cash ₹20,000  
+7. Ram Traders returned goods ₹2,000 (Sales return / Credit Note)
+   - Dr Sales Return  ₹2,000  
+   - Cr Sundry Debtors — Ram Traders ₹2,000
+   
+8. Ram Traders pays ₹18,000 by cash (Receipt)
+   - Dr Cash ₹18,000  
    - Cr Sundry Debtors — Ram Traders ₹20,000
-
----
-
-## Troubleshooting & Common Issues
-
-- **Voucher type missing**: Check **F11 → Features** and voucher configuration; some vouchers are hidden by default.  
-- **Tax not calculated**: Ensure GST is enabled and tax ledgers are created and attached to item ledger.  
-- **Cannot delete voucher**: User permissions or voucher linked to reports — use Reverse/Adjustment instead.  
-- **Incorrect ledger chosen**: Undo (Ctrl+Z not always available) — use Voucher Alter to correct or create reversal voucher.
 
 ---
 
@@ -306,7 +305,7 @@ Path: In voucher screen, press **F2** / check the bill-wise field and enter invo
 
 ---
 
-## Quick Reference Table — Voucher Types
+## Voucher - Shortcuts
 
 | Voucher Type | Use | Typical Shortcut |
 |---------------|-----|------------------|

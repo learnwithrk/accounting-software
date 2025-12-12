@@ -152,7 +152,7 @@ View quantities per batch.
 
 ---
 
-## Example Walkthrough (End-to-End)
+## Example 
 
 ### Scenario
 
@@ -174,16 +174,6 @@ You want to manage using Stock Groups, Units, Categories.
 
 ---
 
-## Common Pitfalls & Troubleshooting
-
-- UOM mismatch: E.g., item created with Box, used as Nos without conversion; causes errors.
-- Wrong Stock Group: Items under wrong group distort reports; fix via Alter.
-- Import errors: Incorrect column names, encoding (use UTF-8), wrong parent names. Use exact names.
-- Batch/Expiry not enabled: Must enable before creating items.
-- Duplicate item names: Tally allows duplicates with different aliases—avoid for accuracy.
-
----
-
 ## Advanced: Godowns/Locations & Stock Transfer
 
 - Create Godowns via `Inventory Info → Godowns` (e.g., Main Warehouse, Shop1)
@@ -201,18 +191,7 @@ You want to manage using Stock Groups, Units, Categories.
 
 ---
 
-## Best Practices
-
-- Decide naming conventions before data entry
-- Use categories for variant management if supported; otherwise, create separate items per variant
-- Maintain consistent UOMs
-- Always backup before large imports or changes
-- Keep master data clean for accurate MIS
-- Run weekly stock summary and monthly reconciliation
-
----
-
-## Quick Reference — Common Menu Paths & Shortcuts
+## Shortcuts
 
 - **Inventory Features:** F11 → Inventory Features
 - **Create UOM:** Inventory Info → Units of Measure → Create
@@ -221,5 +200,29 @@ You want to manage using Stock Groups, Units, Categories.
 - **Create Stock Item:** Inventory Info → Stock Items → Create
 - **Stock Summary:** Display → Inventory Books → Stock Summary
 - **Import Masters:** Gateway of Tally → Import Data → Masters
+
+---
+
+## Illustration
+
+1. **Purchased** 5 Laptops @ ₹38,000 each from *ABC Traders*.
+
+2. **Purchased** 10 Office Chairs @ ₹2,400 each from *Comfort Furniture*.
+
+3. **Sold** 2 Laptops @ ₹45,000 each to *Tech Solutions*.
+
+4. **Sold** 1 HP Printer @ ₹12,000 to *Digital Store*.
+
+5. **Purchase Return:** Returned 1 Office Chair to *Comfort Furniture*.
+
+6. **Sales Return:** Customer *Tech Solutions* returned 1 Laptop.
+
+7. **Purchased** 50 A4 Paper Packs @ ₹110 per pack from *Paper Mart*.
+
+8. **Sold** 20 A4 Paper Packs @ ₹150 per pack to *City Office Ltd*.
+
+9. **Sold** 5 Office Chairs @ ₹3,200 each to *Smart Interiors*.
+
+10. **Stock Loss:** Damaged 2 A4 Paper Packs written off as stock loss.
 
 ---
