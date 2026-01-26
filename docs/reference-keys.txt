@@ -123,6 +123,9 @@ rejection-out
 stock-journal
 physical-stock-voucher
 summary-table
+illustration-5
+solution-step-by-step-recording-in-tally-prime
+key-reports-to-review
 inventory-reports
 stock-summary
 what-it-is

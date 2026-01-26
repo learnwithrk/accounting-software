@@ -23,7 +23,7 @@
 <meta name="author" content="RAJAKRISHNAN MANIVEL" />
 
 
-<meta name="date" content="2025-12-25" />
+<meta name="date" content="2026-01-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -262,6 +262,9 @@
 <li class="chapter" data-level="7.10" data-path="inventory-vouchers-in-tally-prime-detailed-steps-examples.html"><a href="inventory-vouchers-in-tally-prime-detailed-steps-examples.html#stock-journal"><i class="fa fa-check"></i><b>7.10</b> Stock Journal</a></li>
 <li class="chapter" data-level="7.11" data-path="inventory-vouchers-in-tally-prime-detailed-steps-examples.html"><a href="inventory-vouchers-in-tally-prime-detailed-steps-examples.html#physical-stock-voucher"><i class="fa fa-check"></i><b>7.11</b> Physical Stock Voucher</a></li>
 <li class="chapter" data-level="7.12" data-path="inventory-vouchers-in-tally-prime-detailed-steps-examples.html"><a href="inventory-vouchers-in-tally-prime-detailed-steps-examples.html#summary-table"><i class="fa fa-check"></i><b>7.12</b> Summary Table</a></li>
+<li class="chapter" data-level="7.13" data-path="inventory-vouchers-in-tally-prime-detailed-steps-examples.html"><a href="inventory-vouchers-in-tally-prime-detailed-steps-examples.html#illustration-5"><i class="fa fa-check"></i><b>7.13</b> Illustration</a></li>
+<li class="chapter" data-level="7.14" data-path="inventory-vouchers-in-tally-prime-detailed-steps-examples.html"><a href="inventory-vouchers-in-tally-prime-detailed-steps-examples.html#solution-step-by-step-recording-in-tally-prime"><i class="fa fa-check"></i><b>7.14</b> Solution: Step-by-Step Recording in Tally Prime</a></li>
+<li class="chapter" data-level="7.15" data-path="inventory-vouchers-in-tally-prime-detailed-steps-examples.html"><a href="inventory-vouchers-in-tally-prime-detailed-steps-examples.html#key-reports-to-review"><i class="fa fa-check"></i><b>7.15</b> Key Reports to Review</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="inventory-reports.html"><a href="inventory-reports.html"><i class="fa fa-check"></i><b>8</b> Inventory Reports</a>
 <ul>
@@ -671,6 +674,120 @@ Voucher updates the difference.</p>
 </tr>
 </tbody>
 </table>
+<hr />
+</div>
+<div id="illustration-5" class="section level2 hasAnchor" number="7.13">
+<h2><span class="header-section-number">7.13</span> Illustration<a href="inventory-vouchers-in-tally-prime-detailed-steps-examples.html#illustration-5" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><strong>April 1:</strong> Issued a <strong>Purchase Order (PO/001)</strong> to <em>Textile Hub</em> for 500 units of “Cotton Fabric” at ₹150/meter.</li>
+<li><strong>April 5:</strong> Received 480 meters of “Cotton Fabric” from <em>Textile Hub</em> against PO/001. A <strong>Receipt Note (RN/001)</strong> was generated.</li>
+<li><strong>April 7:</strong> Found 10 meters of fabric damaged and sent them back to the supplier using a <strong>Rejection Out</strong> voucher.</li>
+<li><strong>April 10:</strong> Received a <strong>Sales Order (SO/001)</strong> from <em>Fashion House</em> for 100 “Finished Shirts” at ₹800/unit.</li>
+<li><strong>April 12:</strong> Transferred 100 meters of “Cotton Fabric” from the “Main Warehouse” to the “Production Godown” using a <strong>Stock Journal</strong> for shirt manufacturing.</li>
+<li><strong>April 15:</strong> Delivered 100 “Finished Shirts” to <em>Fashion House</em> via <strong>Delivery Note (DN/001)</strong>.</li>
+<li><strong>April 18:</strong> <em>Fashion House</em> returned 2 shirts due to size issues. Recorded a <strong>Rejection In</strong>.</li>
+<li><strong>April 30:</strong> Performed a month-end audit. The book stock for “Cotton Fabric” showed 370 meters, but the actual count was 368 meters. Recorded a <strong>Physical Stock Voucher</strong>.</li>
+</ul>
+<hr />
+</div>
+<div id="solution-step-by-step-recording-in-tally-prime" class="section level2 hasAnchor" number="7.14">
+<h2><span class="header-section-number">7.14</span> Solution: Step-by-Step Recording in Tally Prime<a href="inventory-vouchers-in-tally-prime-detailed-steps-examples.html#solution-step-by-step-recording-in-tally-prime" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Step 1: Enable Features (F11)</strong></p>
+<p>Go to <strong>F11 (Features)</strong> and set the following to <strong>Yes</strong>:</p>
+<ul>
+<li><p>Enable Purchase Order Processing</p></li>
+<li><p>Enable Sales Order Processing</p></li>
+<li><p>Maintain Multiple Godowns</p></li>
+</ul>
+<p><strong>Step 2: Recording Transactions</strong></p>
+<table>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Date</th>
+<th align="left">Voucher Type</th>
+<th align="left">Shortcut</th>
+<th align="left">Entry Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>Apr 1</strong></td>
+<td align="left">Purchase Order</td>
+<td align="left"><code>Ctrl + F9</code></td>
+<td align="left">Party: Textile Hub. Order No: PO/001. Item: Cotton Fabric, 500m @ ₹150.</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Apr 5</strong></td>
+<td align="left">Receipt Note</td>
+<td align="left"><code>Alt + F9</code></td>
+<td align="left">Party: Textile Hub. Tracking No: RN/001. Order No: PO/001. Item: Cotton Fabric, 480m.</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Apr 7</strong></td>
+<td align="left">Rejection Out</td>
+<td align="left"><code>Ctrl + F5</code></td>
+<td align="left">Ledger: Textile Hub. Item: Cotton Fabric. Qty: 10m.</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Apr 10</strong></td>
+<td align="left">Sales Order</td>
+<td align="left"><code>Ctrl + F8</code></td>
+<td align="left">Party: Fashion House. Order No: SO/001. Item: Finished Shirts, 100 units @ ₹800.</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Apr 12</strong></td>
+<td align="left">Stock Journal</td>
+<td align="left"><code>Alt + F7</code></td>
+<td align="left"><strong>Source:</strong> Main Warehouse (100m). <strong>Destination:</strong> Production Godown (100m).</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Apr 15</strong></td>
+<td align="left">Delivery Note</td>
+<td align="left"><code>Alt + F8</code></td>
+<td align="left">Party: Fashion House. Tracking No: DN/001. Order No: SO/001. Item: Finished Shirts, 100 units.</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Apr 18</strong></td>
+<td align="left">Rejection In</td>
+<td align="left"><code>Ctrl + F6</code></td>
+<td align="left">Ledger: Fashion House. Item: Finished Shirts. Qty: 2 units.</td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Apr 30</strong></td>
+<td align="left">Physical Stock</td>
+<td align="left"><code>Ctrl + F10</code></td>
+<td align="left">Item: Cotton Fabric. Godown: Main Warehouse. <strong>Actual Qty: 368m</strong>.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Step 3: Final Stock Position Result</strong></p>
+<p>After recording these entries, the <strong>Stock Summary</strong> will automatically reflect:</p>
+<p><strong>Cotton Fabric</strong>
+* <strong>Initial Receipt:</strong> 480m
+* <strong>Rejection Out:</strong> -10m
+* <strong>Transfer to Production:</strong> -100m
+* <strong>Physical Adjustment:</strong> -2m (to match 368m count)
+* <strong>Final Balance:</strong> <strong>368 meters</strong></p>
+<p><strong>Finished Shirts</strong>
+* <strong>Delivery to Customer:</strong> 100 units (out)
+* <strong>Rejection In:</strong> 2 units (in)
+* <strong>Final Balance:</strong> <strong>-98 units</strong> <em>(Note: Shows negative balance assuming zero opening stock and no manufacturing entry).</em></p>
+<hr />
+</div>
+<div id="key-reports-to-review" class="section level2 hasAnchor" number="7.15">
+<h2><span class="header-section-number">7.15</span> Key Reports to Review<a href="inventory-vouchers-in-tally-prime-detailed-steps-examples.html#key-reports-to-review" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li><strong>Stock Summary:</strong> To see current quantities of items across different godowns.</li>
+<li><strong>Purchase Order Summary:</strong> To track the 20m of fabric never received from the original order.</li>
+<li><strong>Sales Order Summary:</strong> To monitor outstanding orders that have not yet been converted to invoices.</li>
+</ol>
 
 </div>
 </div>

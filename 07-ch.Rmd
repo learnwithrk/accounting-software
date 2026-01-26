@@ -222,3 +222,71 @@ Voucher updates the difference.
 | Rejection Out    | Purchase return                             |
 | Stock Journal    | Stock adjustment, production                |
 | Physical Stock   | Physical verification adjustments           |
+
+---
+
+
+## Illustration
+
+* **April 1:** Issued a **Purchase Order (PO/001)** to *Textile Hub* for 500 units of "Cotton Fabric" at ₹150/meter.
+* **April 5:** Received 480 meters of "Cotton Fabric" from *Textile Hub* against PO/001. A **Receipt Note (RN/001)** was generated.
+* **April 7:** Found 10 meters of fabric damaged and sent them back to the supplier using a **Rejection Out** voucher.
+* **April 10:** Received a **Sales Order (SO/001)** from *Fashion House* for 100 "Finished Shirts" at ₹800/unit.
+* **April 12:** Transferred 100 meters of "Cotton Fabric" from the "Main Warehouse" to the "Production Godown" using a **Stock Journal** for shirt manufacturing.
+* **April 15:** Delivered 100 "Finished Shirts" to *Fashion House* via **Delivery Note (DN/001)**.
+* **April 18:** *Fashion House* returned 2 shirts due to size issues. Recorded a **Rejection In**.
+* **April 30:** Performed a month-end audit. The book stock for "Cotton Fabric" showed 370 meters, but the actual count was 368 meters. Recorded a **Physical Stock Voucher**.
+
+---
+
+## Solution: Step-by-Step Recording in Tally Prime
+
+**Step 1: Enable Features (F11)**
+
+Go to **F11 (Features)** and set the following to **Yes**:
+
+* Enable Purchase Order Processing
+
+* Enable Sales Order Processing
+
+* Maintain Multiple Godowns
+
+**Step 2: Recording Transactions**
+
+| Date | Voucher Type | Shortcut | Entry Details |
+| :--- | :--- | :--- | :--- |
+| **Apr 1** | Purchase Order | `Ctrl + F9` | Party: Textile Hub. Order No: PO/001. Item: Cotton Fabric, 500m @ ₹150. |
+| **Apr 5** | Receipt Note | `Alt + F9` | Party: Textile Hub. Tracking No: RN/001. Order No: PO/001. Item: Cotton Fabric, 480m. |
+| **Apr 7** | Rejection Out | `Ctrl + F5` | Ledger: Textile Hub. Item: Cotton Fabric. Qty: 10m. |
+| **Apr 10** | Sales Order | `Ctrl + F8` | Party: Fashion House. Order No: SO/001. Item: Finished Shirts, 100 units @ ₹800. |
+| **Apr 12** | Stock Journal | `Alt + F7` | **Source:** Main Warehouse (100m). **Destination:** Production Godown (100m). |
+| **Apr 15** | Delivery Note | `Alt + F8` | Party: Fashion House. Tracking No: DN/001. Order No: SO/001. Item: Finished Shirts, 100 units. |
+| **Apr 18** | Rejection In | `Ctrl + F6` | Ledger: Fashion House. Item: Finished Shirts. Qty: 2 units. |
+| **Apr 30** | Physical Stock | `Ctrl + F10` | Item: Cotton Fabric. Godown: Main Warehouse. **Actual Qty: 368m**. |
+
+
+
+---
+
+**Step 3: Final Stock Position Result**
+
+After recording these entries, the **Stock Summary** will automatically reflect:
+
+**Cotton Fabric**
+* **Initial Receipt:** 480m
+* **Rejection Out:** -10m
+* **Transfer to Production:** -100m
+* **Physical Adjustment:** -2m (to match 368m count)
+* **Final Balance:** **368 meters**
+
+**Finished Shirts**
+* **Delivery to Customer:** 100 units (out)
+* **Rejection In:** 2 units (in)
+* **Final Balance:** **-98 units** *(Note: Shows negative balance assuming zero opening stock and no manufacturing entry).*
+
+---
+
+## Key Reports to Review
+1.  **Stock Summary:** To see current quantities of items across different godowns.
+2.  **Purchase Order Summary:** To track the 20m of fabric never received from the original order.
+3.  **Sales Order Summary:** To monitor outstanding orders that have not yet been converted to invoices.
