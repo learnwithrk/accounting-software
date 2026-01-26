@@ -253,3 +253,263 @@ Closing value: `80 × 192.5 = ₹15,400`
 - Movement Analysis — view monthly flows
 - Stock Transfer Register — validate inter-location transfers
 - Export item ledger for Excel-based MIS
+
+---
+
+## Illustration
+
+**Company Profile**
+
+**SmartTech Distributors** is a wholesale distributor of electronic goods.
+
+- Maintain Inventory: Yes  
+- Enable Godowns: Yes  
+
+---
+
+**Stock Groups**
+
+* Mobile Phones
+- Samsung Galaxy A54  
+- Redmi Note 13  
+
+* Accessories
+- Power Bank  
+- Bluetooth Headset  
+
+---
+
+**Godowns**
+
+- Main Warehouse  
+- Retail Showroom  
+
+---
+
+**Transactions**
+
+* April 1 – Opening Stock (Main Warehouse)
+
+- Samsung Galaxy A54 – 40 units @ ₹25,000  
+- Redmi Note 13 – 50 units @ ₹18,000  
+- Power Bank – 100 units @ ₹1,200  
+- Bluetooth Headset – 80 units @ ₹1,500  
+
+---
+
+* April 5 – Purchase
+
+Purchased from **Metro Suppliers**:
+
+- Samsung Galaxy A54 – 60 units @ ₹24,000  
+- Power Bank – 150 units @ ₹1,100  
+
+Stored in Main Warehouse.
+
+---
+
+* April 8 – Purchase
+
+Purchased from **Digital Traders**:
+
+- Redmi Note 13 – 70 units @ ₹17,500  
+- Bluetooth Headset – 120 units @ ₹1,400  
+
+Stored in Main Warehouse.
+
+---
+
+* April 12 – Stock Transfer
+
+Transferred to Retail Showroom:
+
+- Samsung Galaxy A54 – 30 units  
+- Redmi Note 13 – 40 units  
+- Power Bank – 100 units  
+
+---
+
+* April 18 – Sales (Retail Showroom)
+
+- Samsung Galaxy A54 – 20 units @ ₹28,000  
+- Redmi Note 13 – 25 units @ ₹22,000  
+- Power Bank – 80 units @ ₹1,500  
+
+---
+
+* April 22 – Sales (Main Warehouse)
+
+- Bluetooth Headset – 60 units @ ₹2,000  
+
+---
+
+## Solution 
+
+### Company Creation
+
+1. Create Company → “SmartTech Distributors”  
+2. Set Financial Year beginning 01-04-2024  
+3. Press **F11 (Features)**  
+   - Maintain Inventory → Yes  
+   - Enable Multiple Godowns → Yes  
+   - Integrate Accounts and Inventory → Yes  
+
+---
+
+### Creation of Masters
+
+**Stock Groups**
+- Mobile Phones  
+- Accessories  
+
+**Units of Measure**
+- Nos  
+
+**Godowns**
+- Main Warehouse  
+- Retail Showroom  
+
+**Stock Items**
+Create all items under respective groups and enter opening balances.
+
+---
+
+### Recording Transactions
+
+### A. Purchase Voucher (F9)
+
+Record purchases dated:
+- April 5  
+- April 8  
+
+Select:
+- Party Name  
+- Main Warehouse  
+- Quantity and Rate  
+
+---
+
+### B. Stock Journal (Alt + F7)
+
+Date: April 12  
+
+Source (Consumption):
+- Main Warehouse  
+
+Destination (Production):
+- Retail Showroom  
+
+Enter quantities transferred.
+
+---
+
+### C. Sales Voucher (F8)
+
+Record:
+- April 18 (Retail Showroom)  
+- April 22 (Main Warehouse)  
+
+Select correct godown while entering items.
+
+---
+
+### Inventory Reports and Analysis
+
+---
+
+### 1 Stock Summary
+
+**Access:**  
+Gateway of Tally → Stock Summary  
+
+This report shows:
+
+- Opening Quantity  
+- Inwards  
+- Outwards  
+- Closing Balance  
+- Stock Value  
+
+### 2 Closing Stock Calculation
+
+| Item | Opening | Purchase | Sold | Closing |
+|------|---------|----------|------|---------|
+| Samsung Galaxy A54 | 40 | 60 | 20 | 80 |
+| Redmi Note 13 | 50 | 70 | 25 | 95 |
+| Power Bank | 100 | 150 | 80 | 170 |
+| Bluetooth Headset | 80 | 120 | 60 | 140 |
+
+---
+
+### 3 Stock Group Summary
+
+**Access:**  
+Display More Reports → Inventory Books → Stock Group Summary  
+
+Purpose:
+- Shows category-wise totals  
+- Helps analyse investment in Mobile Phones vs Accessories  
+
+---
+
+### 4 Stock Item Report
+
+**Access:**  
+Inventory Books → Stock Item → Select Item  
+
+Example: Samsung Galaxy A54  
+
+Shows:
+- Opening: 40  
+- Purchase: 60  
+- Transfer: 30  
+- Sale: 20  
+- Closing: 80  
+
+Provides voucher-wise movement details.
+
+---
+
+### 5 MIS – Movement Analysis
+
+**Access:**  
+Inventory Books → Movement Analysis  
+
+This report:
+
+- Displays inward and outward movement  
+- Helps identify fast-moving and slow-moving items  
+- Assists in reorder decisions  
+
+Example Insight:
+- Power Bank is a fast-moving item  
+- Bluetooth Headset shows moderate movement  
+
+---
+
+### 6 Stock Transfer Register
+
+**Access:**  
+Inventory Books → Stock Journal Register  
+
+Shows:
+
+- Date  
+- Voucher Number  
+- Source Godown  
+- Destination Godown  
+- Quantity transferred  
+
+Confirms accuracy of inter-godown movements.
+
+---
+
+### 7 Managerial Interpretation
+
+From the above reports, management can conclude:
+
+- Mobile Phones generate higher revenue.
+- Accessories contribute to volume sales.
+- Inter-godown transfers support showroom operations.
+- Closing stock helps determine working capital.
+- MIS reports assist in demand forecasting and planning.

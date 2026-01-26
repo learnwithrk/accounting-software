@@ -312,6 +312,24 @@
 <li class="chapter" data-level="8.6" data-path="inventory-reports.html"><a href="inventory-reports.html#extra-common-filters-keys"><i class="fa fa-check"></i><b>8.6</b> Extra: Common Filters &amp; Keys</a></li>
 <li class="chapter" data-level="8.7" data-path="inventory-reports.html"><a href="inventory-reports.html#reconciliation-validation-checklist"><i class="fa fa-check"></i><b>8.7</b> Reconciliation &amp; Validation Checklist</a></li>
 <li class="chapter" data-level="8.8" data-path="inventory-reports.html"><a href="inventory-reports.html#example-walkthrough-end-to-end"><i class="fa fa-check"></i><b>8.8</b> Example Walkthrough (End-to-End)</a></li>
+<li class="chapter" data-level="8.9" data-path="inventory-reports.html"><a href="inventory-reports.html#illustration-6"><i class="fa fa-check"></i><b>8.9</b> Illustration</a></li>
+<li class="chapter" data-level="8.10" data-path="inventory-reports.html"><a href="inventory-reports.html#solution"><i class="fa fa-check"></i><b>8.10</b> Solution</a>
+<ul>
+<li class="chapter" data-level="8.10.1" data-path="inventory-reports.html"><a href="inventory-reports.html#company-creation"><i class="fa fa-check"></i><b>8.10.1</b> Company Creation</a></li>
+<li class="chapter" data-level="8.10.2" data-path="inventory-reports.html"><a href="inventory-reports.html#creation-of-masters"><i class="fa fa-check"></i><b>8.10.2</b> Creation of Masters</a></li>
+<li class="chapter" data-level="8.10.3" data-path="inventory-reports.html"><a href="inventory-reports.html#recording-transactions"><i class="fa fa-check"></i><b>8.10.3</b> Recording Transactions</a></li>
+<li class="chapter" data-level="8.10.4" data-path="inventory-reports.html"><a href="inventory-reports.html#a.-purchase-voucher-f9"><i class="fa fa-check"></i><b>8.10.4</b> A. Purchase Voucher (F9)</a></li>
+<li class="chapter" data-level="8.10.5" data-path="inventory-reports.html"><a href="inventory-reports.html#b.-stock-journal-alt-f7"><i class="fa fa-check"></i><b>8.10.5</b> B. Stock Journal (Alt + F7)</a></li>
+<li class="chapter" data-level="8.10.6" data-path="inventory-reports.html"><a href="inventory-reports.html#c.-sales-voucher-f8"><i class="fa fa-check"></i><b>8.10.6</b> C. Sales Voucher (F8)</a></li>
+<li class="chapter" data-level="8.10.7" data-path="inventory-reports.html"><a href="inventory-reports.html#inventory-reports-and-analysis"><i class="fa fa-check"></i><b>8.10.7</b> Inventory Reports and Analysis</a></li>
+<li class="chapter" data-level="8.10.8" data-path="inventory-reports.html"><a href="inventory-reports.html#stock-summary-1"><i class="fa fa-check"></i><b>8.10.8</b> 1 Stock Summary</a></li>
+<li class="chapter" data-level="8.10.9" data-path="inventory-reports.html"><a href="inventory-reports.html#closing-stock-calculation"><i class="fa fa-check"></i><b>8.10.9</b> 2 Closing Stock Calculation</a></li>
+<li class="chapter" data-level="8.10.10" data-path="inventory-reports.html"><a href="inventory-reports.html#stock-group-summary-1"><i class="fa fa-check"></i><b>8.10.10</b> 3 Stock Group Summary</a></li>
+<li class="chapter" data-level="8.10.11" data-path="inventory-reports.html"><a href="inventory-reports.html#stock-item-report"><i class="fa fa-check"></i><b>8.10.11</b> 4 Stock Item Report</a></li>
+<li class="chapter" data-level="8.10.12" data-path="inventory-reports.html"><a href="inventory-reports.html#mis-movement-analysis"><i class="fa fa-check"></i><b>8.10.12</b> 5 MIS – Movement Analysis</a></li>
+<li class="chapter" data-level="8.10.13" data-path="inventory-reports.html"><a href="inventory-reports.html#stock-transfer-register-1"><i class="fa fa-check"></i><b>8.10.13</b> 6 Stock Transfer Register</a></li>
+<li class="chapter" data-level="8.10.14" data-path="inventory-reports.html"><a href="inventory-reports.html#managerial-interpretation"><i class="fa fa-check"></i><b>8.10.14</b> 7 Managerial Interpretation</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="bank-reconciliation.html"><a href="bank-reconciliation.html"><i class="fa fa-check"></i><b>9</b> Bank Reconciliation</a>
 <ul>
@@ -840,7 +858,301 @@ Closing value: <code>80 × 192.5 = ₹15,400</code></p>
 - Movement Analysis — view monthly flows
 - Stock Transfer Register — validate inter-location transfers
 - Export item ledger for Excel-based MIS</p>
+<hr />
+</div>
+<div id="illustration-6" class="section level2 hasAnchor" number="8.9">
+<h2><span class="header-section-number">8.9</span> Illustration<a href="inventory-reports.html#illustration-6" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Company Profile</strong></p>
+<p><strong>SmartTech Distributors</strong> is a wholesale distributor of electronic goods.</p>
+<ul>
+<li>Maintain Inventory: Yes<br />
+</li>
+<li>Enable Godowns: Yes</li>
+</ul>
+<hr />
+<p><strong>Stock Groups</strong></p>
+<ul>
+<li><p>Mobile Phones</p></li>
+<li><p>Samsung Galaxy A54<br />
+</p></li>
+<li><p>Redmi Note 13</p></li>
+<li><p>Accessories</p></li>
+<li><p>Power Bank<br />
+</p></li>
+<li><p>Bluetooth Headset</p></li>
+</ul>
+<hr />
+<p><strong>Godowns</strong></p>
+<ul>
+<li>Main Warehouse<br />
+</li>
+<li>Retail Showroom</li>
+</ul>
+<hr />
+<p><strong>Transactions</strong></p>
+<ul>
+<li><p>April 1 – Opening Stock (Main Warehouse)</p></li>
+<li><p>Samsung Galaxy A54 – 40 units @ ₹25,000<br />
+</p></li>
+<li><p>Redmi Note 13 – 50 units @ ₹18,000<br />
+</p></li>
+<li><p>Power Bank – 100 units @ ₹1,200<br />
+</p></li>
+<li><p>Bluetooth Headset – 80 units @ ₹1,500</p></li>
+</ul>
+<hr />
+<ul>
+<li>April 5 – Purchase</li>
+</ul>
+<p>Purchased from <strong>Metro Suppliers</strong>:</p>
+<ul>
+<li>Samsung Galaxy A54 – 60 units @ ₹24,000<br />
+</li>
+<li>Power Bank – 150 units @ ₹1,100</li>
+</ul>
+<p>Stored in Main Warehouse.</p>
+<hr />
+<ul>
+<li>April 8 – Purchase</li>
+</ul>
+<p>Purchased from <strong>Digital Traders</strong>:</p>
+<ul>
+<li>Redmi Note 13 – 70 units @ ₹17,500<br />
+</li>
+<li>Bluetooth Headset – 120 units @ ₹1,400</li>
+</ul>
+<p>Stored in Main Warehouse.</p>
+<hr />
+<ul>
+<li>April 12 – Stock Transfer</li>
+</ul>
+<p>Transferred to Retail Showroom:</p>
+<ul>
+<li>Samsung Galaxy A54 – 30 units<br />
+</li>
+<li>Redmi Note 13 – 40 units<br />
+</li>
+<li>Power Bank – 100 units</li>
+</ul>
+<hr />
+<ul>
+<li><p>April 18 – Sales (Retail Showroom)</p></li>
+<li><p>Samsung Galaxy A54 – 20 units @ ₹28,000<br />
+</p></li>
+<li><p>Redmi Note 13 – 25 units @ ₹22,000<br />
+</p></li>
+<li><p>Power Bank – 80 units @ ₹1,500</p></li>
+</ul>
+<hr />
+<ul>
+<li><p>April 22 – Sales (Main Warehouse)</p></li>
+<li><p>Bluetooth Headset – 60 units @ ₹2,000</p></li>
+</ul>
+<hr />
+</div>
+<div id="solution" class="section level2 hasAnchor" number="8.10">
+<h2><span class="header-section-number">8.10</span> Solution<a href="inventory-reports.html#solution" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="company-creation" class="section level3 hasAnchor" number="8.10.1">
+<h3><span class="header-section-number">8.10.1</span> Company Creation<a href="inventory-reports.html#company-creation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ol style="list-style-type: decimal">
+<li>Create Company → “SmartTech Distributors”<br />
+</li>
+<li>Set Financial Year beginning 01-04-2024<br />
+</li>
+<li>Press <strong>F11 (Features)</strong>
+<ul>
+<li>Maintain Inventory → Yes<br />
+</li>
+<li>Enable Multiple Godowns → Yes<br />
+</li>
+<li>Integrate Accounts and Inventory → Yes</li>
+</ul></li>
+</ol>
+<hr />
+</div>
+<div id="creation-of-masters" class="section level3 hasAnchor" number="8.10.2">
+<h3><span class="header-section-number">8.10.2</span> Creation of Masters<a href="inventory-reports.html#creation-of-masters" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Stock Groups</strong>
+- Mobile Phones<br />
+- Accessories</p>
+<p><strong>Units of Measure</strong>
+- Nos</p>
+<p><strong>Godowns</strong>
+- Main Warehouse<br />
+- Retail Showroom</p>
+<p><strong>Stock Items</strong>
+Create all items under respective groups and enter opening balances.</p>
+<hr />
+</div>
+<div id="recording-transactions" class="section level3 hasAnchor" number="8.10.3">
+<h3><span class="header-section-number">8.10.3</span> Recording Transactions<a href="inventory-reports.html#recording-transactions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+<div id="a.-purchase-voucher-f9" class="section level3 hasAnchor" number="8.10.4">
+<h3><span class="header-section-number">8.10.4</span> A. Purchase Voucher (F9)<a href="inventory-reports.html#a.-purchase-voucher-f9" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Record purchases dated:
+- April 5<br />
+- April 8</p>
+<p>Select:
+- Party Name<br />
+- Main Warehouse<br />
+- Quantity and Rate</p>
+<hr />
+</div>
+<div id="b.-stock-journal-alt-f7" class="section level3 hasAnchor" number="8.10.5">
+<h3><span class="header-section-number">8.10.5</span> B. Stock Journal (Alt + F7)<a href="inventory-reports.html#b.-stock-journal-alt-f7" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Date: April 12</p>
+<p>Source (Consumption):
+- Main Warehouse</p>
+<p>Destination (Production):
+- Retail Showroom</p>
+<p>Enter quantities transferred.</p>
+<hr />
+</div>
+<div id="c.-sales-voucher-f8" class="section level3 hasAnchor" number="8.10.6">
+<h3><span class="header-section-number">8.10.6</span> C. Sales Voucher (F8)<a href="inventory-reports.html#c.-sales-voucher-f8" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Record:
+- April 18 (Retail Showroom)<br />
+- April 22 (Main Warehouse)</p>
+<p>Select correct godown while entering items.</p>
+<hr />
+</div>
+<div id="inventory-reports-and-analysis" class="section level3 hasAnchor" number="8.10.7">
+<h3><span class="header-section-number">8.10.7</span> Inventory Reports and Analysis<a href="inventory-reports.html#inventory-reports-and-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<hr />
+</div>
+<div id="stock-summary-1" class="section level3 hasAnchor" number="8.10.8">
+<h3><span class="header-section-number">8.10.8</span> 1 Stock Summary<a href="inventory-reports.html#stock-summary-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Access:</strong><br />
+Gateway of Tally → Stock Summary</p>
+<p>This report shows:</p>
+<ul>
+<li>Opening Quantity<br />
+</li>
+<li>Inwards<br />
+</li>
+<li>Outwards<br />
+</li>
+<li>Closing Balance<br />
+</li>
+<li>Stock Value</li>
+</ul>
+</div>
+<div id="closing-stock-calculation" class="section level3 hasAnchor" number="8.10.9">
+<h3><span class="header-section-number">8.10.9</span> 2 Closing Stock Calculation<a href="inventory-reports.html#closing-stock-calculation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Opening</th>
+<th>Purchase</th>
+<th>Sold</th>
+<th>Closing</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Samsung Galaxy A54</td>
+<td>40</td>
+<td>60</td>
+<td>20</td>
+<td>80</td>
+</tr>
+<tr class="even">
+<td>Redmi Note 13</td>
+<td>50</td>
+<td>70</td>
+<td>25</td>
+<td>95</td>
+</tr>
+<tr class="odd">
+<td>Power Bank</td>
+<td>100</td>
+<td>150</td>
+<td>80</td>
+<td>170</td>
+</tr>
+<tr class="even">
+<td>Bluetooth Headset</td>
+<td>80</td>
+<td>120</td>
+<td>60</td>
+<td>140</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</div>
+<div id="stock-group-summary-1" class="section level3 hasAnchor" number="8.10.10">
+<h3><span class="header-section-number">8.10.10</span> 3 Stock Group Summary<a href="inventory-reports.html#stock-group-summary-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Access:</strong><br />
+Display More Reports → Inventory Books → Stock Group Summary</p>
+<p>Purpose:
+- Shows category-wise totals<br />
+- Helps analyse investment in Mobile Phones vs Accessories</p>
+<hr />
+</div>
+<div id="stock-item-report" class="section level3 hasAnchor" number="8.10.11">
+<h3><span class="header-section-number">8.10.11</span> 4 Stock Item Report<a href="inventory-reports.html#stock-item-report" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Access:</strong><br />
+Inventory Books → Stock Item → Select Item</p>
+<p>Example: Samsung Galaxy A54</p>
+<p>Shows:
+- Opening: 40<br />
+- Purchase: 60<br />
+- Transfer: 30<br />
+- Sale: 20<br />
+- Closing: 80</p>
+<p>Provides voucher-wise movement details.</p>
+<hr />
+</div>
+<div id="mis-movement-analysis" class="section level3 hasAnchor" number="8.10.12">
+<h3><span class="header-section-number">8.10.12</span> 5 MIS – Movement Analysis<a href="inventory-reports.html#mis-movement-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Access:</strong><br />
+Inventory Books → Movement Analysis</p>
+<p>This report:</p>
+<ul>
+<li>Displays inward and outward movement<br />
+</li>
+<li>Helps identify fast-moving and slow-moving items<br />
+</li>
+<li>Assists in reorder decisions</li>
+</ul>
+<p>Example Insight:
+- Power Bank is a fast-moving item<br />
+- Bluetooth Headset shows moderate movement</p>
+<hr />
+</div>
+<div id="stock-transfer-register-1" class="section level3 hasAnchor" number="8.10.13">
+<h3><span class="header-section-number">8.10.13</span> 6 Stock Transfer Register<a href="inventory-reports.html#stock-transfer-register-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Access:</strong><br />
+Inventory Books → Stock Journal Register</p>
+<p>Shows:</p>
+<ul>
+<li>Date<br />
+</li>
+<li>Voucher Number<br />
+</li>
+<li>Source Godown<br />
+</li>
+<li>Destination Godown<br />
+</li>
+<li>Quantity transferred</li>
+</ul>
+<p>Confirms accuracy of inter-godown movements.</p>
+<hr />
+</div>
+<div id="managerial-interpretation" class="section level3 hasAnchor" number="8.10.14">
+<h3><span class="header-section-number">8.10.14</span> 7 Managerial Interpretation<a href="inventory-reports.html#managerial-interpretation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>From the above reports, management can conclude:</p>
+<ul>
+<li>Mobile Phones generate higher revenue.</li>
+<li>Accessories contribute to volume sales.</li>
+<li>Inter-godown transfers support showroom operations.</li>
+<li>Closing stock helps determine working capital.</li>
+<li>MIS reports assist in demand forecasting and planning.</li>
+</ul>
 
+</div>
 </div>
 </div>
             </section>
