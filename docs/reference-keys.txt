@@ -191,8 +191,8 @@ generate-reconciled-statement-reconciliation-report
 summary-statement
 detailed-report
 saving-locking-reconciliation-audit-trail
-practical-example-full-walkthrough
-troubleshooting-common-problems
+problem
+solution-1
 calculation-of-interest
 enable-interest-calculations-in-tally
 create-or-modify-ledgers-for-interest-calculation

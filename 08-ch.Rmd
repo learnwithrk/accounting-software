@@ -415,9 +415,8 @@ Select correct godown while entering items.
 
 ### Inventory Reports and Analysis
 
----
 
-### 1 Stock Summary
+###  Stock Summary
 
 **Access:**  
 Gateway of Tally → Stock Summary  
@@ -430,7 +429,7 @@ This report shows:
 - Closing Balance  
 - Stock Value  
 
-### 2 Closing Stock Calculation
+###  Closing Stock Calculation
 
 | Item | Opening | Purchase | Sold | Closing |
 |------|---------|----------|------|---------|
@@ -441,7 +440,7 @@ This report shows:
 
 ---
 
-### 3 Stock Group Summary
+###  Stock Group Summary
 
 **Access:**  
 Display More Reports → Inventory Books → Stock Group Summary  
@@ -452,7 +451,7 @@ Purpose:
 
 ---
 
-### 4 Stock Item Report
+###  Stock Item Report
 
 **Access:**  
 Inventory Books → Stock Item → Select Item  
@@ -470,7 +469,7 @@ Provides voucher-wise movement details.
 
 ---
 
-### 5 MIS – Movement Analysis
+###  MIS – Movement Analysis
 
 **Access:**  
 Inventory Books → Movement Analysis  
@@ -487,7 +486,7 @@ Example Insight:
 
 ---
 
-### 6 Stock Transfer Register
+###  Stock Transfer Register
 
 **Access:**  
 Inventory Books → Stock Journal Register  
@@ -504,7 +503,7 @@ Confirms accuracy of inter-godown movements.
 
 ---
 
-### 7 Managerial Interpretation
+###  Managerial Interpretation
 
 From the above reports, management can conclude:
 
