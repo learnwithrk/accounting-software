@@ -191,7 +191,7 @@ generate-reconciled-statement-reconciliation-report
 summary-statement
 detailed-report
 saving-locking-reconciliation-audit-trail
-problem
+illustration-7
 solution-1
 calculation-of-interest
 enable-interest-calculations-in-tally

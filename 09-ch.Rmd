@@ -137,7 +137,7 @@ If adjusted bank balance = book balance → reconciliation complete.
 
 ---
 
-## PROBLEM
+## Illustration
 
 M/s Lakshmi Traders maintains an account with **State Bank of India**.  
 The Cash Book shows a bank balance of ₹ 1,25,000 as on 31st March 2026.
