@@ -231,9 +231,7 @@ Interest Rate: **12% p.a.**
 Default Credit Period for Sundry Creditors **90 Days**
 Default Credit Period for Sundry Debtors **60**Days
 
----
-
-# TRANSACTIONS
+**TRANSACTIONS**
 
 | No | Date | Particulars | Amount (₹) |
 |---|------|------------|-----------|

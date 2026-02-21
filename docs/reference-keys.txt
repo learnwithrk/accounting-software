@@ -212,7 +212,6 @@ reports-used-for-interest
 example-20
 common-problems-solutions
 illustration-8
-transactions
 ratio-analysis-cash-flow-and-fund-flow-in-tally-prime
 ratio-analysis
 how-to-view-ratio-analysis
