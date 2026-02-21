@@ -130,10 +130,7 @@ If adjusted bank balance = book balance → reconciliation complete.
 
 ---
 
-## Saving & Locking Reconciliation (Audit Trail)
 
-- Save session; Tally records reconciliation date
-- Some versions allow locking or audit notes—add narration for reconciling items
 
 ---
 
@@ -263,56 +260,5 @@ Enter Bank Date for:
 | Interest | Reconciled | Enter 31-03-2026 |
 | Direct Deposit | Reconciled | Enter 31-03-2026 |
 | Rectification Entry | Reconciled | Enter 31-03-2026 |
-
----
-
-*PART C: BANK RECONCILIATION STATEMENT*
-
-*Step 1: Balance as per Cash Book*
-
-Balance as per Cash Book = ₹ 1,25,000
-
----
-
-*Step 2: Add Items*
-
-| Particulars | Amount (₹) |
-|-------------|------------|
-| Cheque issued but not presented | 15,000 |
-| Bank wrongly debited | 2,500 |
-
-Total Additions = 17,500
-
----
-
-*Step 3: Less Items*
-
-| Particulars | Amount (₹) |
-|-------------|------------|
-| Cheque deposited but not credited | 12,000 |
-
-Total Deductions = 12,000
-
----
-
-*Step 4: Adjusted Bank Balance*
-
-Cash Book Balance = 1,25,000  
-Add = 17,500  
-Less = 12,000  
-
-Adjusted Bank Balance = ₹ 1,30,500  
-
----
-
-*FINAL ANSWER*
-
-Balance as per Bank Statement = ₹ 1,30,500
-
----
-
-*RESULT*
-
-Thus, bank transactions were entered in Tally Prime and Bank Reconciliation Statement was prepared successfully.
 
 ---
