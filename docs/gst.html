@@ -23,7 +23,7 @@
 <meta name="author" content="RAJAKRISHNAN MANIVEL" />
 
 
-<meta name="date" content="2026-02-21" />
+<meta name="date" content="2026-02-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -419,6 +419,8 @@
 <li class="chapter" data-level="12.6" data-path="gst.html"><a href="gst.html#example-walkthrough-intra-state-sale-with-gst"><i class="fa fa-check"></i><b>12.6</b> Example Walkthrough — Intra-State Sale with GST</a></li>
 <li class="chapter" data-level="12.7" data-path="gst.html"><a href="gst.html#example-walkthrough-inter-state-purchase-with-gst"><i class="fa fa-check"></i><b>12.7</b> Example Walkthrough — Inter-State Purchase with GST</a></li>
 <li class="chapter" data-level="12.8" data-path="gst.html"><a href="gst.html#quick-reference-table-menu-paths-for-gst-in-tally"><i class="fa fa-check"></i><b>12.8</b> Quick Reference Table — Menu Paths for GST in Tally</a></li>
+<li class="chapter" data-level="12.9" data-path="gst.html"><a href="gst.html#illustration-9"><i class="fa fa-check"></i><b>12.9</b> Illustration</a></li>
+<li class="chapter" data-level="12.10" data-path="gst.html"><a href="gst.html#solution-2"><i class="fa fa-check"></i><b>12.10</b> Solution</a></li>
 </ul></li>
 <li class="chapter" data-level="13" data-path="cheque-printing-in-tally-prime.html"><a href="cheque-printing-in-tally-prime.html"><i class="fa fa-check"></i><b>13</b> Cheque Printing in Tally Prime</a>
 <ul>
@@ -601,6 +603,199 @@
 </tr>
 </tbody>
 </table>
+<hr />
+</div>
+<div id="illustration-9" class="section level2 hasAnchor" number="12.9">
+<h2><span class="header-section-number">12.9</span> Illustration<a href="gst.html#illustration-9" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Business Name: Joice Electronics<br />
+State: Tamil Nadu<br />
+GSTIN: 33ABCDE1234F1Z5</p>
+<p>GST Rates:
+- Mobile Phones → 18%
+- Chargers → 12%</p>
+<p>Purchased from Smart Suppliers : 10 Mobile Phones @ ₹10,000</p>
+<p>Sold to Chennai Mobiles : 5 Mobile Phones @ ₹12,000</p>
+<p>Sold to Kerala Stores : 2 Mobile Phones @ ₹12,000</p>
+<p>Returned 1 Mobile to Smart Suppliers</p>
+<p>Chennai Mobiles returned 1 Mobile</p>
+<hr />
+</div>
+<div id="solution-2" class="section level2 hasAnchor" number="12.10">
+<h2><span class="header-section-number">12.10</span> Solution<a href="gst.html#solution-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><em>PART A – ENABLE GST IN TALLY PRIME</em></p>
+<p>Gateway of Tally → F11 (Features) → Statutory &amp; Taxation</p>
+<p>Enable:</p>
+<ul>
+<li>Enable GST = Yes</li>
+<li>Set/Alter GST Details = Yes</li>
+<li>State = Tamil Nadu</li>
+<li>Registration Type = Regular</li>
+<li>Enter GSTIN</li>
+</ul>
+<p>Save</p>
+<hr />
+<p><em>PART B – CREATE LEDGERS</em></p>
+<p><em>Party Ledgers</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>State</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Chennai Mobiles</td>
+<td>Tamil Nadu</td>
+<td>Sundry Debtors</td>
+</tr>
+<tr class="even">
+<td>Kerala Stores</td>
+<td>Kerala</td>
+<td>Sundry Debtors</td>
+</tr>
+<tr class="odd">
+<td>Smart Suppliers</td>
+<td>Tamil Nadu</td>
+<td>Sundry Creditors</td>
+</tr>
+</tbody>
+</table>
+<p>Set GST Applicable = Yes</p>
+<hr />
+<p><em>Tax Ledgers</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>Ledger</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CGST 9%</td>
+<td>Duties &amp; Taxes</td>
+</tr>
+<tr class="even">
+<td>SGST 9%</td>
+<td>Duties &amp; Taxes</td>
+</tr>
+<tr class="odd">
+<td>IGST 18%</td>
+<td>Duties &amp; Taxes</td>
+</tr>
+<tr class="even">
+<td>CGST 6%</td>
+<td>Duties &amp; Taxes</td>
+</tr>
+<tr class="odd">
+<td>SGST 6%</td>
+<td>Duties &amp; Taxes</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>Stock Items</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>GST</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Mobile Phone</td>
+<td>18%</td>
+</tr>
+<tr class="even">
+<td>Charger</td>
+<td>12%</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>PART C – TRANSACTIONS</em></p>
+<hr />
+<p><em>1. Purchase (Intra-State)</em></p>
+<p>Purchased from Smart Suppliers<br />
+10 Mobile Phones @ ₹10,000</p>
+<p>Purchase Value = 1,00,000<br />
+CGST 9% = 9,000<br />
+SGST 9% = 9,000<br />
+Total = ₹1,18,000</p>
+<p>Voucher: Purchase (F9)</p>
+<hr />
+<p><em>2. Local Sale (Intra-State)</em></p>
+<p>Sold to Chennai Mobiles<br />
+5 Mobile Phones @ ₹12,000</p>
+<p>Sale Value = 60,000<br />
+CGST 9% = 5,400<br />
+SGST 9% = 5,400<br />
+Total = ₹70,800</p>
+<p>Voucher: Sales (F8)</p>
+<hr />
+<p><em>3. Inter-State Sale</em></p>
+<p>Sold to Kerala Stores<br />
+2 Mobile Phones @ ₹12,000</p>
+<p>Sale Value = 24,000<br />
+IGST 18% = 4,320<br />
+Total = ₹28,320</p>
+<p>Voucher: Sales (F8)</p>
+<hr />
+<p><em>4. Purchase Return</em></p>
+<p>Returned 1 Mobile to Smart Suppliers</p>
+<p>Value = 10,000<br />
+CGST = 900<br />
+SGST = 900<br />
+Total = ₹11,800</p>
+<p>Voucher: Debit Note (Ctrl+F9)</p>
+<hr />
+<p><em>5. Sales Return</em></p>
+<p>Chennai Mobiles returned 1 Mobile</p>
+<p>Value = 12,000<br />
+CGST = 1,080<br />
+SGST = 1,080<br />
+Total = ₹14,160</p>
+<p>Voucher: Credit Note (Ctrl+F8)</p>
+<hr />
+<p><em>PART D – GST REPORTS</em></p>
+<p>Gateway of Tally → Display More Reports → Statutory Reports → GST</p>
+<p>View:</p>
+<p><em>GSTR-1 (Sales Report)</em>
+Shows outward supplies:
+- Intra-state sales
+- Inter-state sales
+- Credit notes</p>
+<p><em>GSTR-2 (Purchase Report)</em>
+Shows inward supplies:
+- Purchases
+- Debit notes</p>
+<p><em>GSTR-3B Summary</em>
+Shows tax liability:</p>
+<p>Output CGST = 5,400 – 1,080 = 4,320<br />
+Output SGST = 5,400 – 1,080 = 4,320<br />
+Output IGST = 4,320</p>
+<p>Input CGST = 9,000 – 900 = 8,100<br />
+Input SGST = 9,000 – 900 = 8,100</p>
+<p>Net GST Payable:</p>
+<p>CGST = 4,320 – 8,100 = ITC Balance<br />
+SGST = 4,320 – 8,100 = ITC Balance<br />
+IGST = 4,320 Payable</p>
+<hr />
+<p><em>PART E – AUDIT TRAIL</em></p>
+<p>Enable:</p>
+<p>Gateway of Tally → F11 → Enable Edit Log = Yes</p>
+<p>Then:</p>
+<p>Alter any voucher → Change quantity → Save</p>
+<p>Now View:</p>
+<p>Gateway of Tally → Display More Reports → Audit Trail</p>
+<p>Shows:
+- User name
+- Date
+- Old value
+- New value</p>
 <hr />
 
 </div>

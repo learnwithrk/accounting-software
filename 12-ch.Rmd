@@ -116,3 +116,206 @@ Tally maintains an audit trail of GST transactions:
 | Credit/Debit Notes      | Accounting Vouchers → Sales / Purchase → Credit/Debit Note |
 
 ---
+
+## Illustration
+
+Business Name: Joice Electronics  
+State: Tamil Nadu  
+GSTIN: 33ABCDE1234F1Z5  
+
+GST Rates:
+- Mobile Phones → 18%
+- Chargers → 12%
+
+Purchased from Smart Suppliers  : 10 Mobile Phones @ ₹10,000
+
+Sold to Chennai Mobiles : 5 Mobile Phones @ ₹12,000
+
+Sold to Kerala Stores : 2 Mobile Phones @ ₹12,000
+
+Returned 1 Mobile to Smart Suppliers
+
+Chennai Mobiles returned 1 Mobile
+
+---
+
+## Solution
+
+*PART A – ENABLE GST IN TALLY PRIME*
+
+Gateway of Tally → F11 (Features) → Statutory & Taxation
+
+Enable:
+
+- Enable GST = Yes
+- Set/Alter GST Details = Yes
+- State = Tamil Nadu
+- Registration Type = Regular
+- Enter GSTIN
+
+Save
+
+---
+
+*PART B – CREATE LEDGERS*
+
+*Party Ledgers*
+
+| Name | State | Type |
+|-----|------|----|
+| Chennai Mobiles | Tamil Nadu | Sundry Debtors |
+| Kerala Stores | Kerala | Sundry Debtors |
+| Smart Suppliers | Tamil Nadu | Sundry Creditors |
+
+Set GST Applicable = Yes
+
+---
+
+*Tax Ledgers*
+
+| Ledger | Type |
+|------|----|
+| CGST 9% | Duties & Taxes |
+| SGST 9% | Duties & Taxes |
+| IGST 18% | Duties & Taxes |
+| CGST 6% | Duties & Taxes |
+| SGST 6% | Duties & Taxes |
+
+---
+
+*Stock Items*
+
+| Item | GST |
+|----|----|
+| Mobile Phone | 18% |
+| Charger | 12% |
+
+---
+
+*PART C – TRANSACTIONS*
+
+---
+
+*1. Purchase (Intra-State)*
+
+Purchased from Smart Suppliers  
+10 Mobile Phones @ ₹10,000
+
+Purchase Value = 1,00,000  
+CGST 9% = 9,000  
+SGST 9% = 9,000  
+Total = ₹1,18,000
+
+Voucher: Purchase (F9)
+
+---
+
+*2. Local Sale (Intra-State)*
+
+Sold to Chennai Mobiles  
+5 Mobile Phones @ ₹12,000
+
+Sale Value = 60,000  
+CGST 9% = 5,400  
+SGST 9% = 5,400  
+Total = ₹70,800
+
+Voucher: Sales (F8)
+
+---
+
+*3. Inter-State Sale*
+
+Sold to Kerala Stores  
+2 Mobile Phones @ ₹12,000
+
+Sale Value = 24,000  
+IGST 18% = 4,320  
+Total = ₹28,320
+
+Voucher: Sales (F8)
+
+---
+
+*4. Purchase Return*
+
+Returned 1 Mobile to Smart Suppliers
+
+Value = 10,000  
+CGST = 900  
+SGST = 900  
+Total = ₹11,800
+
+Voucher: Debit Note (Ctrl+F9)
+
+---
+
+*5. Sales Return*
+
+Chennai Mobiles returned 1 Mobile
+
+Value = 12,000  
+CGST = 1,080  
+SGST = 1,080  
+Total = ₹14,160
+
+Voucher: Credit Note (Ctrl+F8)
+
+---
+
+*PART D – GST REPORTS*
+
+Gateway of Tally → Display More Reports → Statutory Reports → GST
+
+View:
+
+*GSTR-1 (Sales Report)*
+Shows outward supplies:
+- Intra-state sales
+- Inter-state sales
+- Credit notes
+
+*GSTR-2 (Purchase Report)*
+Shows inward supplies:
+- Purchases
+- Debit notes
+
+*GSTR-3B Summary*
+Shows tax liability:
+
+Output CGST = 5,400 – 1,080 = 4,320  
+Output SGST = 5,400 – 1,080 = 4,320  
+Output IGST = 4,320  
+
+Input CGST = 9,000 – 900 = 8,100  
+Input SGST = 9,000 – 900 = 8,100  
+
+Net GST Payable:
+
+CGST = 4,320 – 8,100 = ITC Balance  
+SGST = 4,320 – 8,100 = ITC Balance  
+IGST = 4,320 Payable
+
+---
+
+*PART E – AUDIT TRAIL*
+
+Enable:
+
+Gateway of Tally → F11 → Enable Edit Log = Yes
+
+Then:
+
+Alter any voucher → Change quantity → Save
+
+Now View:
+
+Gateway of Tally → Display More Reports → Audit Trail
+
+Shows:
+- User name
+- Date
+- Old value
+- New value
+
+---

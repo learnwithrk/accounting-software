@@ -104,7 +104,7 @@ Drill down on any figure to view the individual vouchers behind the flow.
 ## End-to-End Example
 
 **Scenario:**
-- Company ABC, FY 2024-25
+- Company ABC
 
 ### Ratio Analysis
 

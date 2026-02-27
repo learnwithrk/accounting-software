@@ -238,6 +238,8 @@ gst-audit-trail-in-tally-prime
 example-walkthrough-intra-state-sale-with-gst
 example-walkthrough-inter-state-purchase-with-gst
 quick-reference-table-menu-paths-for-gst-in-tally
+illustration-9
+solution-2
 cheque-printing-in-tally-prime
 prerequisites-1
 configure-cheque-printing
