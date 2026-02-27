@@ -430,6 +430,8 @@
 <li class="chapter" data-level="13.4" data-path="cheque-printing-in-tally-prime.html"><a href="cheque-printing-in-tally-prime.html#print-cheque"><i class="fa fa-check"></i><b>13.4</b> Print Cheque</a></li>
 <li class="chapter" data-level="13.5" data-path="cheque-printing-in-tally-prime.html"><a href="cheque-printing-in-tally-prime.html#customize-cheque-format-if-needed"><i class="fa fa-check"></i><b>13.5</b> Customize Cheque Format (If Needed)</a></li>
 <li class="chapter" data-level="13.6" data-path="cheque-printing-in-tally-prime.html"><a href="cheque-printing-in-tally-prime.html#sample-scenario"><i class="fa fa-check"></i><b>13.6</b> Sample Scenario</a></li>
+<li class="chapter" data-level="13.7" data-path="cheque-printing-in-tally-prime.html"><a href="cheque-printing-in-tally-prime.html#illustration-10"><i class="fa fa-check"></i><b>13.7</b> Illustration</a></li>
+<li class="chapter" data-level="13.8" data-path="cheque-printing-in-tally-prime.html"><a href="cheque-printing-in-tally-prime.html#solution-3"><i class="fa fa-check"></i><b>13.8</b> Solution</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -558,6 +560,218 @@ Payment to Supplier XYZ<br />
 <li>Print cheque with configured format.</li>
 </ul></li>
 <li>Verify cheque details and sign physically before issue.</li>
+</ul>
+<hr />
+</div>
+<div id="illustration-10" class="section level2 hasAnchor" number="13.7">
+<h2><span class="header-section-number">13.7</span> Illustration<a href="cheque-printing-in-tally-prime.html#illustration-10" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>M/s Ragavi Traders maintains a Current Account with:</p>
+<ul>
+<li>Bank Name: Canara Bank<br />
+</li>
+<li>Branch: PSG<br />
+</li>
+<li>Account Number: 12345678901<br />
+</li>
+<li>Cheque Book Range: 000501 to 000550</li>
+</ul>
+<p>Record the following transactions and print cheques:</p>
+<ol style="list-style-type: decimal">
+<li>05-04– Paid Office Rent ₹35,000 to Mr. Ramesh<br />
+</li>
+<li>07-04– Paid Salary ₹60,000<br />
+</li>
+<li>10-04– Paid Smart Suppliers ₹1,20,000<br />
+</li>
+<li>12-04– Paid Electricity Bill ₹18,500<br />
+</li>
+<li>15-04– Paid Insurance Premium ₹22,000</li>
+</ol>
+<hr />
+</div>
+<div id="solution-3" class="section level2 hasAnchor" number="13.8">
+<h2><span class="header-section-number">13.8</span> Solution<a href="cheque-printing-in-tally-prime.html#solution-3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><em>PART A – COMPANY CREATION</em></p>
+<ol style="list-style-type: decimal">
+<li>Open Tally Prime<br />
+</li>
+<li>Create Company<br />
+</li>
+<li>Set Financial Year</li>
+</ol>
+<hr />
+<p><em>PART B – LEDGER CREATION</em></p>
+<p><em>1. Bank Ledger</em></p>
+<p>Gateway of Tally → Create → Ledger</p>
+<ul>
+<li>Name: Canara Bank<br />
+</li>
+<li>Under: Bank Accounts<br />
+</li>
+<li>Set/Alter Bank Details: Yes<br />
+</li>
+<li>Enable Cheque Printing: Yes</li>
+</ul>
+<p>Save.</p>
+<hr />
+<p><em>2. Expense &amp; Party Ledgers</em></p>
+<table>
+<thead>
+<tr class="header">
+<th>Ledger Name</th>
+<th>Under</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Rent</td>
+<td>Indirect Expenses</td>
+</tr>
+<tr class="even">
+<td>Salary</td>
+<td>Indirect Expenses</td>
+</tr>
+<tr class="odd">
+<td>Electricity Charges</td>
+<td>Indirect Expenses</td>
+</tr>
+<tr class="even">
+<td>Insurance Premium</td>
+<td>Indirect Expenses</td>
+</tr>
+<tr class="odd">
+<td>Smart Suppliers</td>
+<td>Sundry Creditors</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>PART C – CONFIGURE CHEQUE BOOK</em></p>
+<ol style="list-style-type: decimal">
+<li>Gateway of Tally → Alter → Canara Bank<br />
+</li>
+<li>Enable Cheque Book Management = Yes<br />
+</li>
+<li>Starting Cheque No = 000501<br />
+</li>
+<li>Ending Cheque No = 000550<br />
+</li>
+<li>Select Cheque Format (format if available)</li>
+</ol>
+<p>Save.</p>
+<hr />
+<p><em>PART D – RECORD PAYMENT VOUCHERS</em></p>
+<p>Use F5 – Payment Voucher</p>
+<hr />
+<p><em>Transaction 1 – Rent</em></p>
+<p>Date: 05-04</p>
+<p>Dr Rent ₹35,000<br />
+Cr Canara Bank ₹35,000</p>
+<p>Mode: Cheque<br />
+Cheque No: 000501</p>
+<hr />
+<p><em>Transaction 2 – Salary</em></p>
+<p>Cheque No: 000502<br />
+Amount: ₹60,000</p>
+<hr />
+<p><em>Transaction 3 – Supplier Payment</em></p>
+<p>Cheque No: 000503<br />
+Amount: ₹1,20,000</p>
+<hr />
+<p><em>Transaction 4 – Electricity</em></p>
+<p>Cheque No: 000504<br />
+Amount: ₹18,500</p>
+<hr />
+<p><em>Transaction 5 – Insurance</em></p>
+<p>Cheque No: 000505<br />
+Amount: ₹22,000</p>
+<hr />
+<p><em>PART E – CHEQUE PRINTING</em></p>
+<p>After saving voucher:</p>
+<ol style="list-style-type: decimal">
+<li>Press Alt + P<br />
+</li>
+<li>Select Cheque Printing<br />
+</li>
+<li>Confirm Bank Name<br />
+</li>
+<li>Confirm Cheque Number<br />
+</li>
+<li>Print</li>
+</ol>
+<p>Cheque will show:</p>
+<ul>
+<li>Date<br />
+</li>
+<li>Payee Name<br />
+</li>
+<li>Amount in Words<br />
+</li>
+<li>Amount in Figures<br />
+</li>
+<li>Authorized Signature</li>
+</ul>
+<hr />
+<p><em>PART F – CHEQUE REGISTER</em></p>
+<p>Gateway of Tally → Display More Reports → Banking → Cheque Register</p>
+<table>
+<thead>
+<tr class="header">
+<th>Cheque No</th>
+<th>Date</th>
+<th>Party</th>
+<th>Amount</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>000501</td>
+<td>05-04-26</td>
+<td>Ramesh</td>
+<td>35,000</td>
+<td>Issued</td>
+</tr>
+<tr class="even">
+<td>000502</td>
+<td>07-04-26</td>
+<td>Salary</td>
+<td>60,000</td>
+<td>Issued</td>
+</tr>
+<tr class="odd">
+<td>000503</td>
+<td>10-04-26</td>
+<td>Smart Suppliers</td>
+<td>1,20,000</td>
+<td>Issued</td>
+</tr>
+<tr class="even">
+<td>000504</td>
+<td>12-04-26</td>
+<td>Electricity</td>
+<td>18,500</td>
+<td>Issued</td>
+</tr>
+<tr class="odd">
+<td>000505</td>
+<td>15-04-26</td>
+<td>Insurance</td>
+<td>22,000</td>
+<td>Issued</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>RESULT</em></p>
+<ul>
+<li>Cheque book configured successfully<br />
+</li>
+<li>Payment entries recorded<br />
+</li>
+<li>Cheques printed<br />
+</li>
+<li>Cheque register maintained</li>
 </ul>
 <hr />
 

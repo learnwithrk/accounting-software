@@ -96,3 +96,160 @@ The cheque will print with details: date, payee, amount (figures and words), and
 - Verify cheque details and sign physically before issue.
 
 ---
+
+## Illustration
+
+M/s Ragavi Traders maintains a Current Account with:
+
+- Bank Name: Canara Bank  
+- Branch: PSG  
+- Account Number: 12345678901  
+- Cheque Book Range: 000501 to 000550  
+
+Record the following transactions and print cheques:
+
+1. 05-04– Paid Office Rent ₹35,000 to Mr. Ramesh  
+2. 07-04– Paid Salary ₹60,000  
+3. 10-04– Paid Smart Suppliers ₹1,20,000  
+4. 12-04– Paid Electricity Bill ₹18,500  
+5. 15-04– Paid Insurance Premium ₹22,000  
+
+---
+
+## Solution
+
+*PART A – COMPANY CREATION*
+
+1. Open Tally Prime  
+2. Create Company  
+3. Set Financial Year 
+
+---
+
+*PART B – LEDGER CREATION*
+
+*1. Bank Ledger*
+
+Gateway of Tally → Create → Ledger  
+
+- Name: Canara Bank  
+- Under: Bank Accounts  
+- Set/Alter Bank Details: Yes  
+- Enable Cheque Printing: Yes  
+
+Save.
+
+---
+
+*2. Expense & Party Ledgers*
+
+| Ledger Name | Under |
+|-------------|-------|
+| Rent | Indirect Expenses |
+| Salary | Indirect Expenses |
+| Electricity Charges | Indirect Expenses |
+| Insurance Premium | Indirect Expenses |
+| Smart Suppliers | Sundry Creditors |
+
+---
+
+*PART C – CONFIGURE CHEQUE BOOK*
+
+1. Gateway of Tally → Alter → Canara Bank  
+2. Enable Cheque Book Management = Yes  
+3. Starting Cheque No = 000501  
+4. Ending Cheque No = 000550  
+5. Select Cheque Format (format if available)  
+
+Save.
+
+---
+
+*PART D – RECORD PAYMENT VOUCHERS*
+
+Use F5 – Payment Voucher
+
+---
+
+*Transaction 1 – Rent*
+
+Date: 05-04 
+
+Dr Rent ₹35,000  
+Cr Canara Bank ₹35,000  
+
+Mode: Cheque  
+Cheque No: 000501  
+
+---
+
+*Transaction 2 – Salary*
+
+Cheque No: 000502  
+Amount: ₹60,000  
+
+---
+
+*Transaction 3 – Supplier Payment*
+
+Cheque No: 000503  
+Amount: ₹1,20,000  
+
+---
+
+*Transaction 4 – Electricity*
+
+Cheque No: 000504  
+Amount: ₹18,500  
+
+---
+
+*Transaction 5 – Insurance*
+
+Cheque No: 000505  
+Amount: ₹22,000  
+
+---
+
+*PART E – CHEQUE PRINTING*
+
+After saving voucher:
+
+1. Press Alt + P  
+2. Select Cheque Printing  
+3. Confirm Bank Name  
+4. Confirm Cheque Number  
+5. Print  
+
+Cheque will show:
+
+- Date  
+- Payee Name  
+- Amount in Words  
+- Amount in Figures  
+- Authorized Signature  
+
+---
+
+*PART F – CHEQUE REGISTER*
+
+Gateway of Tally → Display More Reports → Banking → Cheque Register  
+
+| Cheque No | Date | Party | Amount | Status |
+|------------|--------|--------|--------|--------|
+|000501|05-04-26|Ramesh|35,000|Issued|
+|000502|07-04-26|Salary|60,000|Issued|
+|000503|10-04-26|Smart Suppliers|1,20,000|Issued|
+|000504|12-04-26|Electricity|18,500|Issued|
+|000505|15-04-26|Insurance|22,000|Issued|
+
+---
+
+*RESULT*
+
+- Cheque book configured successfully  
+- Payment entries recorded  
+- Cheques printed  
+- Cheque register maintained  
+
+---

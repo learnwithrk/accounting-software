@@ -247,3 +247,5 @@ enter-payment-voucher-with-cheque-details
 print-cheque
 customize-cheque-format-if-needed
 sample-scenario
+illustration-10
+solution-3
